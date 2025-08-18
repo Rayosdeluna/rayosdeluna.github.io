@@ -41,35 +41,59 @@
 <!-- Inicio -->
 <section id="inicio" class="active">
   <h2>Bienvenido a Rayos de Luna</h2>
-  <p>Somos una marca de bisutería ecuatoriana, entregamos tus pedidos a domicilio y ofrecemos productos de alta calidad para resaltar tu estilo.</p>
-</section>
+  vSomos una marca de bisutería ecuatoriana, entregamos tus pedidos a domicilio y ofrecemos productos de alta calidad para resaltar tu estilo. </p>
+ <p>Ofrecemos piezas únicas y exclusivas para destacar tu estilo. Aquí cada detalle está pensado para ti. Encuentra productos únicos, de la mejor calidad y a precios que se ajustan a lo que buscas.</p>
+
+<p>💖 Compra fácil, segura y sin complicaciones, desde la comodidad de tu casa.</p>
+
+<p>👉 Solo elige tu favorito, haz tu pedido ¡y nosotros lo llevamos directo a tu puerta! 🚚 </p>
+
+  <!-- Nosotros -->
+<section id="nosotros"> class="active"> 
+  <h2>nosotros</h2>
+  <p>¿Quiénes somos?</p>
+   <p>En Rayos de Luna somos una marca de joyería apasionada por crear piezas únicas que reflejan elegancia, estilo y personalidad. Cada una de nuestras joyas está diseñada pensando en ti, para que puedas expresar tu esencia en cada momento especial. Nos caracterizamos por combinar calidad, creatividad y atención personalizada , ofreciendo no solo productos, sino experiencias que iluminan tu día a día. Nuestra misión es acercarte joyas que enamoran y te hagan sentir especial en cada ocasión.</p>
+  <p>Misión: Brindar piezas únicas y elegantes que realzan la belleza y personalidad de cada cliente, ofreciendo una experiencia de compra segura, accesible y cercana, con atención personalizada que genera confianza y satisfacción.</p>
+
+<p>Visión: Convertirnos en la marca de bisutería online preferida a nivel nacional, reconocida por la calidad de nuestros productos, la creatividad de nuestros diseños y la conexión emocional con nuestros clientes, inspirando momentos especiales y memorables.</p>
+
+<p>Valores: Calidad: Nos comprometemos a ofrecer productos duraderos y bien elaborados.
+
+Creatividad: Cada pieza refleja originalidad y estilo.
+
+Confianza: Atención cercana y honesta en cada compra.
+
+Pasión: Amamos lo que hacemos y transmitimos esa pasión en nuestros productos.
+
+Innovación: Buscamos siempre mejorar y sorprender a nuestros clientes con nuevas tendencias.</p>
+
 
 <!-- Productos -->
 <section id="productos">
-  <h2>Productos</h2>
+  <h2>Productos</Comboh2>
   <div class="combo">
       <img src="https://i.ibb.co/HD1bwv3t/tu-imagen.jpg" alt="Descripción de la imagen" width="500"> 
     <h3>Combo Estrella</h3>
     <p>Incluye: Un par de argollas</p>
-    <button class="btn" onclick="irPedido('Combo Estrella', 15)">Comprar</button>
+    <button class="btn" onclick="irPedido('Combo Estrella', 10)">Comprar</button>
   </div>
   <div class="combo">
     <img src="https://i.ibb.co/7tM5jJ5K/imagen.jpg" alt="Descripción de la imagen" width="500"> 
     <h3>Combo Doble Estrella</h3>
     <p>Incluye: Un par de argollas + Una pulsera</p>
-    <button class="btn" onclick="irPedido('Combo Doble Estrella', 25)">Comprar</button>
+    <button class="btn" onclick="irPedido('Combo Doble Estrella', 15)">Comprar</button>
   </div>
   <div class="combo">
     <a href="https://imgbb.com/"><img src="https://i.ibb.co/1GvnrWB1/4.png" alt="4" border="0"></a> 
     <h3>Combo Estelar</h3>
     <p>Incluye: Un juego de pulseras</p>
-    <button class="btn" onclick="irPedido('Combo Estelar', 20)">Comprar</button>
+    <button class="btn" onclick="irPedido('Combo Estelar', 13)">Comprar</button>
   </div>
   <div class="combo">
     <img src="https://i.ibb.co/C3qcfPkk/tu-imagen.jpg" alt="Descripción de la imagen" width="500">
     <h3>Colección Aura</h3>
     <p>Un par de argollas únicas</p>
-    <button class="btn" onclick="irPedido('Colección Aura', 30)">Comprar</button>
+    <button class="btn" onclick="irPedido('Colección Aura', 10)">Comprar</button>
   </div>
 </section>
 
