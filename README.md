@@ -42,10 +42,8 @@
 <p>💖 Compra fácil, segura y sin complicaciones, desde la comodidad de tu casa.</p>
 <p>👉 Solo elige tu favorito, haz tu pedido ¡y nosotros lo llevamos directo a tu puerta! 🚚
 <p>📍Ecuador - Guayaquil</p>
-  
-</section>
 
-<section id="productos">
+<section id="productos" class="active" 
   <h2>Productos</h2>
   <div class="combo">
       <img src="https://i.ibb.co/HD1bwv3t/tu-imagen.jpg" alt="Descripción de la imagen" width="500"> 
@@ -73,7 +71,7 @@
   </div>
 </section>
 
-<section id="pedidos">
+<section id="pedidos" class="active"
   <h2>Pedidos</h2>
   <form id="formPedido">
     <label>Nombre:</label>
@@ -97,7 +95,7 @@
   <div id="seguimiento"></div>
 </section>
 
-<section id="politicas">
+<section id="politicas" class="active"
   <h2>Políticas</h2>
   <h3>Privacidad</h3>
   <p>Cuidamos tu información personal con total responsabilidad. Los datos se usan solo para procesar pedidos y promociones.</p>
@@ -107,14 +105,14 @@
   <p>Aceptamos devoluciones solo por defectos de fabricación, hasta 48h después de la entrega. Contacto: rayo_de_luna_13@hotmail.com</p>
 </section>
 
-<section id="contacto">
+<section id="contacto" class="active"
   <h2>Contacto</h2>
   <p>Instagram & Facebook: @Rayos_de_luna_13</p>
   <p>Asistente virtual: Rayito ⚡</p>
   <p>Horario de atención: Lunes a Viernes 9AM - 4PM</p>
 </section>
 
-<section id="faq">
+<section id="faq" class="active"
   <h2>FAQ</h2>
   <p><strong>¿Cuáles son los combos?</strong> Combo Estrella, Doble Estrella, Estelar y la Colección Aura.</p>
   <p><strong>¿Cómo puedo pagar?</strong> Transferencia o efectivo.</p>
