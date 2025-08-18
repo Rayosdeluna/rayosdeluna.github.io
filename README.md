@@ -1,4 +1,3 @@
-
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -22,12 +21,13 @@
     #rayito h3 { margin-top: 0; }
     #rayito button { background: #f48b9a; color: white; border: none; padding: 8px 10px; cursor: pointer; border-radius: 5px; margin-top: 5px; width: 100%; }
     #rayito button:hover { background: #ffd6e4; color: #f48b9a; }
+    form input, form textarea, form select { width: 100%; padding: 8px; margin: 8px 0; border: 1px solid #f48b9a; border-radius: 5px; }
 </style>
 </head>
 <body>
 
 <header>
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/dJmSGh63/logo-Rayos-de-luna.png" alt="logo-Rayos-de-luna" border="0"></a>
+    <img src="https://i.ibb.co/dJmSGh63/logo-Rayos-de-luna.png" alt="logo-Rayos-de-luna" width="80">
     <h1>Rayos de Luna 💖</h1>
     <p>Bisutería únicas y especiales</p>
 </header>
@@ -46,41 +46,8 @@
 <section id="inicio" class="active">
     <h2>Bienvenidos a Rayos de Luna </h2>
     <p>Ofrecemos joyas únicas y exclusivas para destacar tu estilo.</p>
-    <p>Aquí cada detalle está pensado para ti. Encuentra productos únicos, de la mejor calidad y a precios que se ajustan a lo que buscas.</p>
-     <p>💖 Compra fácil, segura y sin complicaciones, desde la comodidad de tu casa.</p>
-     <p>👉 Solo elige tu favorito, haz tu pedido ¡y nosotros lo llevamos directo a tu puerta! 🚚✨</p>
-      <p> 📍Ecuador - Guayaquil</p>
-
-
- <button class="boton-compra" onclick="mostrarSeccion('productos')">Ver catálogo</button>
+    <button class="boton-compra" onclick="mostrarSeccion('productos')">Ver catálogo</button>
     <button class="boton-compra" onclick="mostrarSeccion('pedidos')">Comprar</button>
-    <button class="boton-compra" onclick="mostrarSeccion('contacto')">Contáctanos</button>
-</section>
-
-<!-- Nosotros -->
-<section id="nosotros">
-    <h2>Quiénes somos</h2>
-    <p>En Rayos de Luna somos una marca de joyería apasionada por crear piezas únicas que reflejan elegancia, estilo y personalidad. Cada una de nuestras joyas está diseñada pensando en ti, para que puedas expresar tu esencia en cada momento especial.
-
-Nos caracterizamos por combinar calidad, creatividad y atención personalizada , ofreciendo no solo productos, sino experiencias que iluminan tu día a día. Nuestra misión es acercarte joyas que enamoran y te hagan sentir especial en cada ocasión.</p>
-
-<p><b>Misión:</b> Brindar piezas únicas y elegantes que realzan la belleza y personalidad de cada cliente, ofreciendo una experiencia de compra segura, accesible y cercana, con atención personalizada que genera confianza y satisfacción.</p>
-
-  <p><b>Visión:</b> Convertirnos en la marca de bisutería online preferida a nivel nacional, reconocida por la calidad de nuestros productos, la creatividad de nuestros diseños y la conexión emocional con nuestros clientes, inspirando momentos especiales y memorables. </p>
-
-  <p><b>Valores:</b>Calidad: Nos comprometemos a ofrecer productos duraderos y bien elaborados.</p>
-
-
-<p>Creatividad: Cada pieza refleja originalidad y estilo.</p>
-
-
-<p>Confianza: Atención cercana y honesta en cada compra.</p>
-
-
-<p>Pasión: Amamos lo que hacemos y transmitimos esa pasión en nuestros productos.</p>
-
-
-<p>Innovación: Buscamos siempre mejorar y sorprender a nuestros clientes con nuevas tendencias..</p>
 </section>
 
 <!-- Productos -->
@@ -88,111 +55,45 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
     <h2>Productos / Combos</h2>
     <div class="productos">
         <div class="producto">
-        <img src="https://i.ibb.co/HD1bwv3t/tu-imagen.jpg" alt="Descripción de la imagen" width="500">
-
-   <h3>Combo Estrella</h3>
-            <p>Un par de argollas</p>
-            <p>$10</p>
-            <button class="boton-compra" onclick="comprar('Combo Estrella')">Comprar</button>
-        </div>
-        <div class="producto">
-            <img src="https://i.ibb.co/7tM5jJ5K/imagen.jpg" alt="Descripción de la imagen" width="500">
-            
-  <h3>Combo Doble Estrella</h3>
-            <p>Un par de argollas + una pulsera</p>
-            <p>$15</p>
-            <button class="boton-compra" onclick="comprar('Combo Doble Estrella')">Comprar</button>
-        </div>
-        <div class="producto">
-     <a href="https://imgbb.com/"><img src="https://i.ibb.co/1GvnrWB1/4.png" alt="4" border="0"></a>
-            
-<h3>Combo Estelar</h3>
-            <p>Dos pulseras a juego</p>
-            <p>$13</p>
-            <button class="boton-compra" onclick="comprar('Combo Estelar')">Comprar</button>
-        </div>
-        <div class="producto">
-<img src="https://i.ibb.co/C3qcfPkk/tu-imagen.jpg" alt="Descripción de la imagen" width="500">
-<h3>Colección Aura</h3>
-            <p>Un par de argollas únicas</p>
-            <p>$10</p>
-            <button class="boton-compra" onclick="comprar('Colección Aura')">Comprar</button>
-        </div>
-    </div>
-</section>
+          <img src="combo-estrella.jpg" alt="Combo Estrella"> <h3>Combo Estrella</h3> <p>Un par de argollas</p> <p>$10</p> 
+            <button class="boton-compra" onclick="comprar('Combo Estrella')">Comprar</button> </div> <div
+                                                                                                                                                                                                                        class="producto"><img src="combo-doble-estrella.jpg" alt="Combo Doble Estrella"> <h3>Combo Doble Estrella</h3> <p>Un par de argollas + una pulsera</p> <p>$15</p>
+                <button class="boton-compra" onclick="comprar('Combo Doble Estrella')">Comprar</button> </div> <div class="producto"> 
+                    <img src="combo-estelar.jpg" alt="Combo Estelar"> <h3>Combo Estelar</h3> <p>Dos pulseras a juego</p> <p>$13</p>
+                    <button class="boton-compra" onclick="comprar('Combo Estelar')">Comprar</button> </div> <div
+                                                                                                                                                                                                                                class="producto"> <img src="aura.jpg" alt="Colección Aura">
+                        <h3>Colección Aura</h3> <p>Un par de argollas únicas</p> <p>$10</p> <button class="boton-compra" onclick="comprar('Colección Aura')">Comprar</button>
 
 <!-- Pedidos -->
 <section id="pedidos">
-    <h2>Cómo comprar / Pedidos</h2>
-    <p>Para realizar tu pedido, puedes usar nuestro WhatsApp o llenar el formulario:</p>
-    <ul>
-<h1>Seguimiento de Pedidos</h1>
+    <h2>Formulario de Pedido</h2>
+    <form id="form-pedido">
+        <label>Producto seleccionado:</label>
+        <input type="text" id="producto" name="producto" readonly required>
+        
+ <label>Total a pagar:</label>
+        <input type="text" id="total" name="total" readonly required>
 
-<div class="tabs">
-    <button class="tab-button active" onclick="showCategory('todos')">Todos</button>
-    <button class="tab-button" onclick="showCategory('por-aprobar')">Por aprobar</button>
-    <button class="tab-button" onclick="showCategory('por-preparar')">Por preparar</button>
-    <button class="tab-button" onclick="showCategory('por-enviar')">Por enviar</button>
-    <button class="tab-button" onclick="showCategory('en-transito')">En tránsito</button>
-    <button class="tab-button" onclick="showCategory('entregado')">Entregado</button>
-    <button class="tab-button" onclick="showCategory('anulado')">Anulado</button>
-</div>
+   <label>Nombre completo:</label>
+        <input type="text" name="nombre" required>
 
-</div>
-        <li>Métodos de pago: Transferencia o efectivo</li>
-        <li>Envíos: Nacionales, según disponibilidad</li>
-    </ul>
-    <a href="https://wa.me/593995372875" target="_blank">
-        <button class="boton-compra">Escríbenos por WhatsApp</button>
-    </a>
-</section>
+  <label>Correo electrónico:</label>
+        <input type="email" name="correo" required>
 
-<!-- Políticas -->
-<section id="politicas">
-    <h2>Políticas</h2>
-    <h3>Política de Privacidad</h3>
-    <p>Cuidamos tu información personal con total responsabilidad. Los datos se usan solo para procesar pedidos y promociones.</p>
+   <label>Dirección de entrega:</label>
+        <textarea name="direccion" required></textarea>
 
- <h3>Pedidos y Compras</h3>
-    <p>Todos los pedidos se confirman por WhatsApp. Métodos de pago: transferencia o efectivo. Tiempo de entrega: 3 días hábiles.</p>
+   <label>Método de pago:</label>
+        <select name="pago" required>
+            <option value="Transferencia">Transferencia</option>
+            <option value="Efectivo">Efectivo</option>
+        </select>
 
-  <h3>Devoluciones y Cambios</h3>
-    <p>Aceptamos devoluciones solo por defectos de fabricación, hasta 48h después de la entrega.</p>
-</section>
-
-<!-- Contacto -->
-<section id="contacto">
-    <h2>Contacto</h2>
-    <p>Correo: <b>rayo_de_luna_13@hotmail.com</b></p>
-    <p>Instagram & Facebook: <b>@Rayos_de_luna_13</b></p>
-    <a href="https://wa.me/593995372875" target="_blank">
-        <button class="boton-compra">WhatsApp</button>
-    </a>
-    <form>
-        <input type="text" placeholder="Nombre" required><br><br>
-        <input type="email" placeholder="Correo" required><br><br>
-        <textarea placeholder="Mensaje" required></textarea><br><br>
-        <button type="submit" class="boton-compra">Enviar</button>
+  <button type="submit" class="boton-compra">Enviar pedido</button>
     </form>
 </section>
-
-<!-- Preguntas Frecuentes -->
-<section id="faq">
-    <h2>Preguntas Frecuentes</h2>
-    <p><b>¿Cuáles son los combos?</b> Combo Estrella, Doble Estrella, Estelar y la colección Aura.</p>
-    <p><b>¿Cómo puedo pagar?</b> Transferencia o efectivo.</p>
-    <p><b>¿Horario de atención?</b> Lun-Vie 9AM - 6PM.</p>
-</section>
-
-<!-- Asistente Rayito -->
-<div id="rayito">
-    <h3>Rayito ⚡</h3>
-    <p>¡Hola! Soy Rayito, tu asistente virtual 😊 ¿En qué puedo ayudarte?</p>
-    <button onclick="mostrarSeccion('productos')">Ver combos</button>
-    <button onclick="alert('Nuestro horario es Lun-Vie 9AM-6PM')">Horario de atención</button>
-    <button onclick="window.open('https://wa.me/593995372875','_blank')">WhatsApp</button>
-</div>
 
 <!-- Footer -->
 <footer>
     <p>© 2025 Rayos de Luna ⚡ | Todos los derechos reservados</p>
+</footer>
