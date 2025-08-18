@@ -62,10 +62,10 @@
 
 
 <header>
+  <a href="https://imgbb.com/"> <img src="https://i.ibb.co/dJmSGh63/logo-Rayos-de-luna.png" alt="logo-Rayos-de-luna" border="0"></a> 
   <h1>Rayos de Luna</h1>
-  <p>Joyas únicas de Ecuador con entregas a domicilio</p>
+  <p>bisutería únicas de Ecuador con entregas a domicilio</p>
 </header>
-<a href="https://imgbb.com/"> <img src="https://i.ibb.co/dJmSGh63/logo-Rayos-de-luna.png" alt="logo-Rayos-de-luna" border="0"></a> 
 <nav>
   <a href="#" data-tab="inicio">Inicio</a>
   <a href="#" data-tab="nosotros">Nosotros</a>
