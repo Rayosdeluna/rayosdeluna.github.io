@@ -65,7 +65,6 @@
   <h1>Rayos de Luna</h1>
   <p>Joyas únicas de Ecuador con entregas a domicilio</p>
 </header>
-
 <a href="https://imgbb.com/"> <img src="https://i.ibb.co/dJmSGh63/logo-Rayos-de-luna.png" alt="logo-Rayos-de-luna" border="0"></a> 
 <nav>
   <a href="#" data-tab="inicio">Inicio</a>
@@ -113,25 +112,25 @@ Innovación: Buscamos siempre mejorar y sorprender a nuestros clientes con nueva
       <img src="https://i.ibb.co/HD1bwv3t/tu-imagen.jpg" alt="Descripción de la imagen" width="500">
     <h3>Combo Estrella</h3>
     <p>Incluye: Un par de argollas</p>
-    <button class="btn" onclick="irPedido('Combo Estrella', 15)">Comprar - $15</button>
+    <button class="btn" onclick="irPedido('Combo Estrella', 10)">Comprar - $10</button>
   </div>
   <div class="combo">
    <img src="https://i.ibb.co/7tM5jJ5K/imagen.jpg" alt="Descripción de la imagen" width="500">
     <h3>Combo Doble Estrella</h3>
     <p>Incluye: Un par de argollas + Una pulsera</p>
-    <button class="btn" onclick="irPedido('Combo Doble Estrella', 25)">Comprar - $25</button>
+    <button class="btn" onclick="irPedido('Combo Doble Estrella', 15)">Comprar - $15</button>
   </div>
   <div class="combo">
    <a href="https://imgbb.com/"><img src="https://i.ibb.co/1GvnrWB1/4.png" alt="4" border="0"></a> 
     <h3>Combo Estelar</h3>
     <p>Incluye: Un juego de pulseras</p>
-    <button class="btn" onclick="irPedido('Combo Estelar', 20)">Comprar - $20</button>
+    <button class="btn" onclick="irPedido('Combo Estelar', 13)">Comprar - $13</button>
   </div>
   <div class="colección">
    <img src="https://i.ibb.co/C3qcfPkk/tu-imagen.jpg" alt="Descripción de la imagen" width="500">
     <h3>Colección Aura</h3>
     <p>Un par de argollas únicas</p>
-    <button class="btn" onclick="irPedido('Colección Aura', 30)">Comprar - $30</button>
+    <button class="btn" onclick="irPedido('Colección Aura', 10)">Comprar - $10</button>
   </div>
 </section>
 
