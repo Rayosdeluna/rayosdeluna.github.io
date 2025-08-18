@@ -137,10 +137,8 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
     <button class="tab-button" onclick="showCategory('en-transito')">En tránsito</button>
     <button class="tab-button" onclick="showCategory('entregado')">Entregado</button>
     <button class="tab-button" onclick="showCategory('anulado')">Anulado</button>
-</div>
-
-</div>
-        <li>Métodos de pago: Transferencia o efectivo</li>
+</div
+    <li>Métodos de pago: Transferencia o efectivo</li>
         <li>Envíos: Nacionales, según disponibilidad</li>
     </ul>
     <a href="https://wa.me/593995372875" target="_blank">
