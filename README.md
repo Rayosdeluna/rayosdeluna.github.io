@@ -92,9 +92,6 @@
 </head>
 <body>
   <header>
-    <nav class="nav">
-      <div class="brand">
-        <div class="logo">RL</div>
         <h1>Rayos de Luna Bisutería</h1>
       <div class="menu">
         <a href="#inicio">Inicio</a>
@@ -388,7 +385,6 @@
       'combo-doble':    { nombre: 'Combo Doble Estrella', precio: 15.00 },
       'combo-estelar':  { nombre: 'Combo Estelar', precio: 13.00 },
       'aura':           { nombre: 'Colección Aura', precio: 10.00 },
-    };
 
     // Rellena precios en cards por si se cambian arriba
     $$('#productos .product').forEach(card => {
