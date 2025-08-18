@@ -45,7 +45,8 @@
 <p>💖 Compra fácil, segura y sin complicaciones, desde la comodidad de tu casa.</p>
 <p>👉 Solo elige tu favorito, haz tu pedido ¡y nosotros lo llevamos directo a tu puerta! 🚚</p>
 <p>📍Ecuador - Guayaquil</p>
-  
+  </div>
+</section>
   <!-- Nosotros -->
 <section id="nosotros" class="active"> 
   <h2>nosotros</h2>
