@@ -159,36 +159,4 @@
 
   <footer>
     <p>&copy; 2025 Rayos de Luna | Ecuador</p>
-  </footer>
-
-  <script>
-    let pedidos = [];
-    let total = 0;
-
-    function agregarPedido(producto, precio) {
-      pedidos.push({producto, precio});
-      total += precio;
-      mostrarPedidos();
-      alert(producto + " agregado al carrito ✅");
-    }
-
-    function mostrarPedidos() {
-      let lista = document.getElementById("listaPedidos");
-      lista.innerHTML = "";
-      pedidos.forEach(p => {
-        let li = document.createElement("li");
-        li.textContent = p.producto + " - $" + p.precio;
-        lista.appendChild(li);
-      });
-      document.getElementById("total").textContent = total;
-    }
-
-    document.getElementById("formPedido").addEventListener("submit", function(e) {
-      e.preventDefault();
-      document.getElementById("seguimiento").classList.remove("oculto");
-      document.getElementById("estadoPedido").textContent = "Por aprobar ✅";
-      alert("Tu pedido ha sido registrado. Te contactaremos por WhatsApp para confirmarlo.");
-    });
-  </script>
-</body>
-</html>
+ 
