@@ -175,6 +175,8 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
    <button class="rayito-boton" onclick="window.open('https://wa.me/0995372875','_blank')">
 
   <h3>Rayito ⚡</h3>
+  <!-- Asistente Rayito -->
+<div id="rayito">
     <p>¡Hola! Soy Rayito, tu asistente virtual 😊 ¿En qué puedo ayudarte?</p>
     <button onclick="mostrarSeccion('productos')">Ver combos</button>
     <button onclick="alert('Nuestro horario es Lun-Vie 9AM-6PM')">Horario de atención</button>
@@ -183,8 +185,3 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
 <!-- Footer -->
 <footer>
     <p>© 2025 Rayos de Luna  | Todos los derechos reservados</p>
-</footer>
-</script>
-
-</body>
-</html>
