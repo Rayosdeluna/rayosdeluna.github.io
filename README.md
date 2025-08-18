@@ -144,6 +144,7 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
     <a href="https://wa.me/593995372875" target="_blank">
         <button class="boton-compra">Escríbenos por WhatsApp</button>
     </a>
+      </div>
 </section>
 
 <!-- Políticas -->
@@ -173,7 +174,6 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
         <textarea placeholder="Mensaje" required></textarea><br><br>
         <button type="submit" class="boton-compra">Enviar</button>
     </form>
-      </div>
 </section>
 
 <!-- Preguntas Frecuentes -->
