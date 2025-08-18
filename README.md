@@ -104,8 +104,7 @@ Confianza: Atención cercana y honesta en cada compra.
 
 Pasión: Amamos lo que hacemos y transmitimos esa pasión en nuestros productos.
 
-Innovación: Buscamos siempre mejorar y sorprender a nuestros clientes con nuevas tendencias.
-</p>
+Innovación: Buscamos siempre mejorar y sorprender a nuestros clientes con nuevas tendencias.</p>
 </section>
 
 <section id="productos">
