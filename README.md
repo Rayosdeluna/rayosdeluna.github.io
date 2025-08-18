@@ -83,7 +83,7 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
 <p>Innovación: Buscamos siempre mejorar y sorprender a nuestros clientes con nuevas tendencias..</p>
 </section>
 
-<p>!-- Productos --</p>
+<!-- Productos -->
 <section id="productos">
     <h2>Productos / Combos</h2>
     <div class="productos">
@@ -121,7 +121,7 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
     </div> 
 </section>
 
-<p>!-- Pedidos --</p>
+<!-- Pedidos -->
 <section id="pedidos">
     <h2>Cómo comprar / Pedidos</h2>
     <p>Para realizar tu pedido, puedes usar nuestro WhatsApp o llenar el formulario:</p>
@@ -155,7 +155,7 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
     </div> 
 </section>
 
-<p>!-- Políticas --</p>
+<!-- Políticas -->
 <section id="politicas">
     <h2>Políticas</h2>
     <h3>Política de Privacidad</h3>
