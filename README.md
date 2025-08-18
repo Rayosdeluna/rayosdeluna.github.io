@@ -94,8 +94,11 @@
   <header>
     <nav class="nav">
       <div class="brand">
-        <div class="logo">RL</div>
-        <a href="https://imgbb.com/"><img src="https://i.ibb.co/dJmSGh63/logo-Rayos-de-luna.png" alt="logo-Rayos-de-luna" border="0"></a>
+        <a href="https://imgbb.com/">
+  <img src="https://i.ibb.co/dJmSGh63/logo-Rayos-de-luna.png" 
+       alt="logo-Rayos-de-luna" 
+       style="width:120px; height:auto; border:0;" />
+</a>
         <h1>Rayos de Luna Bisutería</h1>
       </div>
       <div class="menu">
