@@ -152,13 +152,13 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
     <textarea name="direccion" required></textarea>
 
  <label>Producto:</label>
-    <select name="producto" required>
-      <option value="Combo estrella">Combo estrella</option>
+    
+ <option value="Combo estrella">Combo estrella</option>
       <option value="Combo doble estrella ">Combo doble estrella</option>
       <option value="Combo estelar">Combo estelar</option>
       <option value="Colección Aura">Colección Aura</option>
 
-    <a href="https://wa.me/593995372875" target="_blank">
+<a href="https://wa.me/593995372875" target="_blank">
        
     </a>
 </section>
