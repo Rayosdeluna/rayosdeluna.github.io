@@ -28,6 +28,7 @@
 
 <nav>
   <a href="#" data-tab="inicio">Inicio</a>
+  <a href="#" data-tab="nosotros">Nosotros</a>
   <a href="#" data-tab="productos">Productos</a>
   <a href="#" data-tab="pedidos">Pedidos</a>
   <a href="#" data-tab="politicas">Políticas</a>
