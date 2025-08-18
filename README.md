@@ -173,6 +173,7 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
         <textarea placeholder="Mensaje" required></textarea><br><br>
         <button type="submit" class="boton-compra">Enviar</button>
     </form>
+      </div>
 </section>
 
 <!-- Preguntas Frecuentes -->
