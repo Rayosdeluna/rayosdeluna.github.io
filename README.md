@@ -112,7 +112,6 @@
 <section id="contacto" 
   <h2>Contacto</h2>
   <p>Instagram & Facebook: @Rayos_de_luna_13</p>
-  <p>Asistente virtual: Rayito ⚡</p>
 <!-- Icono flotante del asistente -->
 <div id="asistente-container">
   <div id="asistente">⚡</div>
