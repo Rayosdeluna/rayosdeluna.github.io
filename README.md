@@ -193,7 +193,6 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
     <button onclick="mostrarSeccion('productos')">Ver combos</button>
     <button onclick="alert('Nuestro horario es Lun-Vie 9AM-6PM')">Horario de atención</button>
     <button onclick="window.open('https://wa.me/593995372875','_blank')">WhatsApp</button>
-</div>
 
 <!-- Footer -->
 <footer>
