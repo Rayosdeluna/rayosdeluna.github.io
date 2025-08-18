@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rayos de Luna | Joyas Ecuador</title>
+  <title>Rayos de Luna | Bisutería Ecuador</title>
   <style>
     body { font-family: Arial, sans-serif; margin:0; padding:0; background:#fff8f0; color:#333;}
     header { background:#f48b9a; padding:15px; text-align:center; color:white;}
@@ -44,7 +44,8 @@
 <p>👉 Solo elige tu favorito, haz tu pedido ¡y nosotros lo llevamos directo a tu puerta! 🚚
 <p>📍Ecuador - Guayaquil</p>
 
-<section id="productos" class="active" 
+  
+<section id="productos" 
   <h2>Productos</h2>
   <div class="combo">
       <img src="https://i.ibb.co/HD1bwv3t/tu-imagen.jpg" alt="Descripción de la imagen" width="500"> 
@@ -72,7 +73,7 @@
   </div>
 </section>
 
-<section id="pedidos" class="active"
+<section id="pedidos" 
   <h2>Pedidos</h2>
   <form id="formPedido">
     <label>Nombre:</label>
@@ -96,7 +97,7 @@
   <div id="seguimiento"></div>
 </section>
 
-<section id="politicas" class="active"
+<section id="politicas" 
   <h2>Políticas</h2>
   <h3>Privacidad</h3>
   <p>Cuidamos tu información personal con total responsabilidad. Los datos se usan solo para procesar pedidos y promociones.</p>
@@ -106,14 +107,14 @@
   <p>Aceptamos devoluciones solo por defectos de fabricación, hasta 48h después de la entrega. Contacto: rayo_de_luna_13@hotmail.com</p>
 </section>
 
-<section id="contacto" class="active"
+<section id="contacto" 
   <h2>Contacto</h2>
   <p>Instagram & Facebook: @Rayos_de_luna_13</p>
   <p>Asistente virtual: Rayito ⚡</p>
   <p>Horario de atención: Lunes a Viernes 9AM - 4PM</p>
 </section>
 
-<section id="faq" class="active"
+<section id="faq" 
   <h2>FAQ</h2>
   <p><strong>¿Cuáles son los combos?</strong> Combo Estrella, Doble Estrella, Estelar y la Colección Aura.</p>
   <p><strong>¿Cómo puedo pagar?</strong> Transferencia o efectivo.</p>
