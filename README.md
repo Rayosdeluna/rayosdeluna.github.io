@@ -1,4 +1,4 @@
-# rayosdeluna.github.io
+
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -29,7 +29,7 @@
 <header>
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/dJmSGh63/logo-Rayos-de-luna.png" alt="logo-Rayos-de-luna" border="0"></a>
     <h1>Rayos de Luna 💖</h1>
-    <p>Joyas únicas y especiales</p>
+    <p>Bisutería únicas y especiales</p>
 </header>
 
 <nav>
@@ -63,11 +63,11 @@
 
 Nos caracterizamos por combinar calidad, creatividad y atención personalizada , ofreciendo no solo productos, sino experiencias que iluminan tu día a día. Nuestra misión es acercarte joyas que enamoran y te hagan sentir especial en cada ocasión.</p>
 
-    <p><b>Misión:</b> Brindar piezas únicas y elegantes que realzan la belleza y personalidad de cada cliente, ofreciendo una experiencia de compra segura, accesible y cercana, con atención personalizada que genera confianza y satisfacción.</p>
+<p><b>Misión:</b> Brindar piezas únicas y elegantes que realzan la belleza y personalidad de cada cliente, ofreciendo una experiencia de compra segura, accesible y cercana, con atención personalizada que genera confianza y satisfacción.</p>
 
-    <p><b>Visión:</b> Convertirnos en la marca de bisutería online preferida a nivel nacional, reconocida por la calidad de nuestros productos, la creatividad de nuestros diseños y la conexión emocional con nuestros clientes, inspirando momentos especiales y memorables. </p>
+  <p><b>Visión:</b> Convertirnos en la marca de bisutería online preferida a nivel nacional, reconocida por la calidad de nuestros productos, la creatividad de nuestros diseños y la conexión emocional con nuestros clientes, inspirando momentos especiales y memorables. </p>
 
-    <p><b>Valores:</b>Calidad: Nos comprometemos a ofrecer productos duraderos y bien elaborados.</p>
+ <p><b>Valores:</b>Calidad: Nos comprometemos a ofrecer productos duraderos y bien elaborados.</p>
 
 
 <p>Creatividad: Cada pieza refleja originalidad y estilo.</p>
@@ -138,10 +138,19 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
     <button class="tab-button" onclick="showCategory('anulado')">Anulado</button>
 </div>
 
-</div>
-        <li>Métodos de pago: Transferencia o efectivo</li>
-        <li>Envíos: Nacionales, según disponibilidad</li>
+<li>Métodos de pago: Transferencia o efectivo</li>
+<li>Envíos: Nacionales, según disponibilidad</li>
     </ul>
+    <h2>Formulario de Compra</h2>
+
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="Nombre" required>
+
+    <label for="telefono">Teléfono / WhatsApp:</label>
+    <input type="tel" id="telefono" name="Teléfono" required>
+
+    <label for="direccion">Dirección de entrega:</label>
+    <textarea id="direccion" name="Dirección" rows="2" required></textarea>
     <a href="https://wa.me/593995372875" target="_blank">
         <button class="boton-compra">Escríbenos por WhatsApp</button>
     </a>
