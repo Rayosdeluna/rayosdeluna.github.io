@@ -59,10 +59,10 @@
     cursor: pointer;
   }
   #chatRayito button:hover { background:#d96c86; }
-<a href="https://imgbb.com/"> <img src="https://i.ibb.co/dJmSGh63/logo-Rayos-de-luna.png" alt="logo-Rayos-de-luna" border="0"></a>
+
 
 <header>
- 
+ <a href="https://imgbb.com/"> <img src="https://i.ibb.co/dJmSGh63/logo-Rayos-de-luna.png" alt="logo-Rayos-de-luna" border="0"></a>
   <h1>Rayos de Luna</h1>
   <p>bisutería únicas de Ecuador con entregas a domicilio</p>
 </header>
@@ -87,30 +87,30 @@
 </section>
 
 <section id="nosotros">
-  <h2>Nosotros</h2>
-  <h3>Misión</h3>
+  <p>Nosotros</p>
+  <p>Misión</p>
   <p>Brindar piezas únicas y elegantes que realzan la belleza y personalidad de cada cliente, ofreciendo una experiencia de compra segura, 
     accesible y cercana, con atención personalizada que genera confianza y satisfacción.</p>
-  <h3>Visión</h3>
+  <p>Visión</p>
   <p>Convertirnos en la marca de bisutería online preferida a nivel nacional, reconocida por la calidad de nuestros productos, la creatividad de 
     nuestros diseños y la conexión emocional con nuestros clientes, inspirando momentos especiales y memorables.</p>
-  <h3>Valores</h3>
-  <p>Valores: Calidad: Nos comprometemos a ofrecer productos duraderos y bien elaborados.
+  <p>Valores</p>
+  <p>Valores: Calidad: Nos comprometemos a ofrecer productos duraderos y bien elaborados.</p>
 
-Creatividad: Cada pieza refleja originalidad y estilo.
+<p>Creatividad: Cada pieza refleja originalidad y estilo.</p>
 
-Confianza: Atención cercana y honesta en cada compra.
+<p>Confianza: Atención cercana y honesta en cada compra.</p>
 
-Pasión: Amamos lo que hacemos y transmitimos esa pasión en nuestros productos.
+<p>Pasión: Amamos lo que hacemos y transmitimos esa pasión en nuestros productos.</p>
 
-Innovación: Buscamos siempre mejorar y sorprender a nuestros clientes con nuevas tendencias.</p>
+<p>Innovación: Buscamos siempre mejorar y sorprender a nuestros clientes con nuevas tendencias.</p>
 </section>
 
 <section id="productos">
   <h2>Productos</h2>
   <div class="combo">
       <img src="https://i.ibb.co/HD1bwv3t/tu-imagen.jpg" alt="Descripción de la imagen" width="500">
-    <h3>Combo Estrella</h3>
+    <p>Combo Estrella</p>
     <p>Incluye: Un par de argollas</p>
     <button class="btn" onclick="irPedido('Combo Estrella', 10)">Comprar - $10</button>
   </div>
