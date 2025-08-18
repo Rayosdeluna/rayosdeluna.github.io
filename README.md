@@ -51,7 +51,7 @@
 <body>
   <!-- LOGO -->
   <header>
-    <a href="https://imgbb.com/">
+    <a
       <img src="https://i.ibb.co/dJmSGh63/logo-Rayos-de-luna.png" alt="Logo Rayos de Luna">
     </a>
   </header>
