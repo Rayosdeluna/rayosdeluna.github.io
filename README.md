@@ -186,7 +186,8 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
 </section>
 
 <!-- Asistente Rayito -->
- <img src="https://i.ibb.co/your-rayito-icon.png" alt="Rayito" />
+ <a href="https://wa.me/0995372875" target="_blank" class="rayito-flotante">
+    <img src="https://i.ibb.co/your-rayito-icon.png" alt="Rayito">
     <h3>Rayito ⚡</h3>
     <p>¡Hola! Soy Rayito, tu asistente virtual 😊 ¿En qué puedo ayudarte?</p>
     <button onclick="mostrarSeccion('productos')">Ver combos</button>
