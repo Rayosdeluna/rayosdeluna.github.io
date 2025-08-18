@@ -64,11 +64,11 @@
 
 Nos caracterizamos por combinar calidad, creatividad y atención personalizada , ofreciendo no solo productos, sino experiencias que iluminan tu día a día. Nuestra misión es acercarte joyas que enamoran y te hagan sentir especial en cada ocasión.</p>
 
-    <p><b>Misión:</b> Brindar piezas únicas y elegantes que realzan la belleza y personalidad de cada cliente, ofreciendo una experiencia de compra segura, accesible y cercana, con atención personalizada que genera confianza y satisfacción.</p>
+<p><b>Misión:</b> Brindar piezas únicas y elegantes que realzan la belleza y personalidad de cada cliente, ofreciendo una experiencia de compra segura, accesible y cercana, con atención personalizada que genera confianza y satisfacción.</p>
 
-    <p><b>Visión:</b> Convertirnos en la marca de bisutería online preferida a nivel nacional, reconocida por la calidad de nuestros productos, la creatividad de nuestros diseños y la conexión emocional con nuestros clientes, inspirando momentos especiales y memorables. </p>
+  <p><b>Visión:</b> Convertirnos en la marca de bisutería online preferida a nivel nacional, reconocida por la calidad de nuestros productos, la creatividad de nuestros diseños y la conexión emocional con nuestros clientes, inspirando momentos especiales y memorables. </p>
 
-    <p><b>Valores:</b>Calidad: Nos comprometemos a ofrecer productos duraderos y bien elaborados.</p>
+  <p><b>Valores:</b>Calidad: Nos comprometemos a ofrecer productos duraderos y bien elaborados.</p>
 
 
 <p>Creatividad: Cada pieza refleja originalidad y estilo.</p>
