@@ -1,5 +1,4 @@
 # rayosdeluna.github.io
-<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -187,7 +186,9 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
 
 <!-- Asistente Rayito -->
  <a href="https://wa.me/0995372875" target="_blank" class="rayito-flotante">
+   <button class="rayito-boton" onclick="window.open('https://wa.me/0995372875','_blank')">
     <img src="https://i.ibb.co/your-rayito-icon.png" alt="Rayito">
+</button>
     <h3>Rayito ⚡</h3>
     <p>¡Hola! Soy Rayito, tu asistente virtual 😊 ¿En qué puedo ayudarte?</p>
     <button onclick="mostrarSeccion('productos')">Ver combos</button>
@@ -196,7 +197,7 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
 
 <!-- Footer -->
 <footer>
-    <p>© 2025 Rayos de Luna ⚡ | Todos los derechos reservados</p>
+    <p>© 2025 Rayos de Luna  | Todos los derechos reservados</p>
 </footer>
 
 <script>
