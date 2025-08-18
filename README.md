@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -56,25 +55,25 @@
       <img src="https://i.ibb.co/HD1bwv3t/tu-imagen.jpg" alt="Descripción de la imagen" width="500"> 
     <h3>Combo Estrella</h3>
     <p>Un par de argollas.</p>
-    <button onclick="agregarPedido('Combo Estrella', 20)">Comprar</button>
+    <button onclick="agregarPedido('Combo Estrella', $10)">Comprar</button>
   </div>
   <div class="producto">
     <img src="https://i.ibb.co/7tM5jJ5K/imagen.jpg" alt="Descripción de la imagen" width="500"> 
     <h3>Combo Doble Estrella</h3>
     <p>Un par de argollas + una pulsera.</p>
-    <button onclick="agregarPedido('Combo Doble Estrella', 35)">Comprar</button>
+    <button onclick="agregarPedido('Combo Doble Estrella', $15)">Comprar</button>
   </div>
   <div class="producto">
     <a href="https://imgbb.com/"><img src="https://i.ibb.co/1GvnrWB1/4.png" alt="4" border="0"></a> 
     <h3>Combo Estelar</h3>
     <p>Un juego de pulseras.</p>
-    <button onclick="agregarPedido('Combo Estelar', 25)">Comprar</button>
+    <button onclick="agregarPedido('Combo Estelar', $13)">Comprar</button>
   </div>
   <div class="producto">
     <img src="https://i.ibb.co/C3qcfPkk/tu-imagen.jpg" alt="Descripción de la imagen" width="500">
     <h3>Colección Aura</h3>
     <p>Un par de argollas únicas.</p>
-    <button onclick="agregarPedido('Colección Aura', 40)">Comprar</button>
+    <button onclick="agregarPedido('Colección Aura', $10)">Comprar</button>
   </div>
 </section>
 
