@@ -49,6 +49,7 @@
     <p>Aquí cada detalle está pensado para ti. Encuentra productos únicos, de la mejor calidad y a precios que se ajustan a lo que buscas.</p>
      <p>💖 Compra fácil, segura y sin complicaciones, desde la comodidad de tu casa.</p>
      <p>👉 Solo elige tu favorito, haz tu pedido ¡y nosotros lo llevamos directo a tu puerta! 🚚✨</p>
+      <p> 📍Ecuador - Guayaquil</p>
 
 
     <button class="boton-compra" onclick="mostrarSeccion('productos')">Ver catálogo</button>
@@ -89,7 +90,7 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
         <div class="producto">
         <img src="https://i.ibb.co/HD1bwv3t/tu-imagen.jpg" alt="Descripción de la imagen" width="500">
 
-            <h3>Combo Estrella</h3>
+ <h3>Combo Estrella</h3>
             <p>Un par de argollas</p>
             <p>$10</p>
             <button class="boton-compra" onclick="comprar('Combo Estrella')">Comprar</button>
@@ -97,7 +98,7 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
         <div class="producto">
             <img src="https://i.ibb.co/7tM5jJ5K/imagen.jpg" alt="Descripción de la imagen" width="500">
             
-            <h3>Combo Doble Estrella</h3>
+ <h3>Combo Doble Estrella</h3>
             <p>Un par de argollas + una pulsera</p>
             <p>$15</p>
             <button class="boton-compra" onclick="comprar('Combo Doble Estrella')">Comprar</button>
@@ -105,15 +106,14 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
         <div class="producto">
      <a href="https://imgbb.com/"><img src="https://i.ibb.co/1GvnrWB1/4.png" alt="4" border="0"></a>
             
-            <h3>Combo Estelar</h3>
+   <h3>Combo Estelar</h3>
             <p>Dos pulseras a juego</p>
             <p>$13</p>
             <button class="boton-compra" onclick="comprar('Combo Estelar')">Comprar</button>
         </div>
         <div class="producto">
 <img src="https://i.ibb.co/C3qcfPkk/tu-imagen.jpg" alt="Descripción de la imagen" width="500">
-            
-            <h3>Colección Aura</h3>
+                 <h3>Colección Aura</h3>
             <p>Un par de argollas únicas</p>
             <p>$10</p>
             <button class="boton-compra" onclick="comprar('Colección Aura')">Comprar</button>
@@ -126,39 +126,59 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
     <h2>Cómo comprar / Pedidos</h2>
     <p>Para realizar tu pedido, puedes usar nuestro WhatsApp o llenar el formulario:</p>
     <ul>
-<h1>Seguimiento de Pedidos</h1>
-
-<div class="tabs">
-    <button class="tab-button active" onclick="showCategory('todos')">Todos</button>
-    <button class="tab-button" onclick="showCategory('por-aprobar')">Por aprobar</button>
-    <button class="tab-button" onclick="showCategory('por-preparar')">Por preparar</button>
-    <button class="tab-button" onclick="showCategory('por-enviar')">Por enviar</button>
-    <button class="tab-button" onclick="showCategory('en-transito')">En tránsito</button>
-    <button class="tab-button" onclick="showCategory('entregado')">Entregado</button>
-    <button class="tab-button" onclick="showCategory('anulado')">Anulado</button>
-</div>
 
 <li>Métodos de pago: Transferencia o efectivo</li>
 <li>Envíos: Nacionales, según disponibilidad</li>
     </ul>
-    <h2>Completa tu pedido</h2>
-  <form onsubmit="enviarPedido(event)">
-    <label>Nombre completo:</label>
+   <h1>Formulario de Pedido</h1>
 
-<label>Teléfono:</label>
+  <form id="pedidoForm">
+    <label>Producto:</label>
+    <input type="text" id="producto" name="producto" readonly>
+
+    <label>Precio:</label>
+    <input type="text" id="precio" name="precio" readonly>
+
+    <label>Nombre:</label>
+    <input type="text" name="nombre" required>
+
+    <label>Dirección:</label>
+    <input type="text" name="direccion" required>
+
+    <label>Teléfono:</label>
     <input type="text" name="telefono" required>
 
-<label>Dirección:</label>
-    <textarea name="direccion" required></textarea>
+    <label>Cantidad:</label>
+    <input type="number" id="cantidad" name="cantidad" value="1" min="1" required>
 
- <label>Producto:</label>
-    
- <option value="Combo estrella">Combo estrella</option>
-      <option value="Combo doble estrella ">Combo doble estrella</option>
-      <option value="Combo estelar">Combo estelar</option>
-      <option value="Colección Aura">Colección Aura</option>
+    <label>Total:</label>
+    <input type="text" id="total" name="total" readonly>
 
-<a href="https://wa.me/593995372875" target="_blank">
+    <button type="submit">Confirmar Pedido</button>
+  </form>
+
+  <script>
+    // Capturar los parámetros de la URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const producto = urlParams.get("producto");
+    const precio = parseFloat(urlParams.get("precio"));
+
+    document.getElementById("producto").value = producto;
+    document.getElementById("precio").value = `$${precio.toFixed(2)}`;
+    document.getElementById("total").value = `$${precio.toFixed(2)}`;
+
+    // Actualizar total cuando cambie cantidad
+    document.getElementById("cantidad").addEventListener("input", function() {
+      const cantidad = this.value;
+      const total = precio * cantidad;
+      document.getElementById("total").value = `$${total.toFixed(2)}`;
+    });
+
+    // Manejo del formulario
+    document.getElementById("pedidoForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("✅ Pedido realizado con éxito. Te contactaremos pronto.");
+      window.location.href = "productos.html";
        
     </a>
 </section>
