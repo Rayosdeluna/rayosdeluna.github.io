@@ -50,20 +50,20 @@
 <section id="nosotros" class="active"> 
   <h2>nosotros</h2>
   <p>¿Quiénes somos?</p>
-   <p>En Rayos de Luna somos una marca de joyería apasionada por crear piezas únicas que reflejan elegancia, estilo y personalidad. Cada una de nuestras joyas está diseñada pensando en ti, para que puedas expresar tu esencia en cada momento especial. Nos caracterizamos por combinar calidad, creatividad y atención personalizada , ofreciendo no solo productos, sino experiencias que iluminan tu día a día. Nuestra misión es acercarte joyas que enamoran y te hagan sentir especial en cada ocasión.</p>
+<p>En Rayos de Luna somos una marca de joyería apasionada por crear piezas únicas que reflejan elegancia, estilo y personalidad. Cada una de nuestras joyas está diseñada pensando en ti, para que puedas expresar tu esencia en cada momento especial. Nos caracterizamos por combinar calidad, creatividad y atención personalizada , ofreciendo no solo productos, sino experiencias que iluminan tu día a día. Nuestra misión es acercarte joyas que enamoran y te hagan sentir especial en cada ocasión.</p>
   <p>Misión: Brindar piezas únicas y elegantes que realzan la belleza y personalidad de cada cliente, ofreciendo una experiencia de compra segura, accesible y cercana, con atención personalizada que genera confianza y satisfacción.</p>
 
 <p>Visión: Convertirnos en la marca de bisutería online preferida a nivel nacional, reconocida por la calidad de nuestros productos, la creatividad de nuestros diseños y la conexión emocional con nuestros clientes, inspirando momentos especiales y memorables.</p>
 
-<p>Valores: Calidad: Nos comprometemos a ofrecer productos duraderos y bien elaborados.
+<p>Valores: Calidad: Nos comprometemos a ofrecer productos duraderos y bien elaborados.</p>
 
-Creatividad: Cada pieza refleja originalidad y estilo.
+<p>Creatividad: Cada pieza refleja originalidad y estilo.</p>
 
-Confianza: Atención cercana y honesta en cada compra.
+<p>Confianza: Atención cercana y honesta en cada compra.</p>
 
-Pasión: Amamos lo que hacemos y transmitimos esa pasión en nuestros productos.
+<p>Pasión: Amamos lo que hacemos y transmitimos esa pasión en nuestros productos.</p>
 
-Innovación: Buscamos siempre mejorar y sorprender a nuestros clientes con nuevas tendencias.</p>
+<p>Innovación: Buscamos siempre mejorar y sorprender a nuestros clientes con nuevas tendencias.</p>
 
 
 <!-- Productos -->
