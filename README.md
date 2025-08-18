@@ -137,10 +137,16 @@ Innovación: Buscamos siempre mejorar y sorprender a nuestros clientes con nueva
 <section id="contacto">
   <h2>Contacto</h2>
   <p>Instagram & Facebook: @Rayos_de_luna_13</p>
-  <p>Asistente virtual: Rayito ⚡</p>
-  <p>Horario de atención: Lunes a Viernes 9AM - 4PM</p>
-</section>
-
+ <!-- Icono flotante del asistente -->
+<div id="asistente-container">
+  <div id="asistente">⚡</div>
+  <div id="chatRayito">
+    <p>¡Hola! Soy Rayito ⚡. ¿En qué puedo ayudarte?</p>
+    <button onclick="mostrarCombos()">Ver combos</button>
+    <button onclick="mostrarHorario()">Horario de atención</button> 9am a 4 pm
+    <button onclick="abrirWhatsApp()">WhatsApp</button>
+  </div>
+</div>
 <!-- Preguntas frecuentes -->
 <section id="faq">
   <h2>Preguntas Frecuentes</h2>
