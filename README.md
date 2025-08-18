@@ -151,7 +151,8 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
 <li>Métodos de pago: Transferencia o efectivo</li>
 <li>Envíos: Nacionales, según disponibilidad</li>
     </ul>
-   
+     </div>
+    </div> 
 </section>
 
 <p>!-- Políticas --</p>
@@ -161,10 +162,12 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
     <p>Cuidamos tu información personal con total responsabilidad. Los datos se usan solo para procesar pedidos y promociones.</p>
 
 <h3>Pedidos y Compras</h3>
-    <p>Todos los pedidos se confirman por WhatsApp. Métodos de pago: transferencia o efectivo. Tiempo de entrega: 3 días hábiles.</p>
+ <p>Todos los pedidos se confirman por WhatsApp. Métodos de pago: transferencia o efectivo. Tiempo de entrega: 3 días hábiles.</p>
 
 <h3>Devoluciones y Cambios</h3>
     <p>Aceptamos devoluciones solo por defectos de fabricación, hasta 48h después de la entrega.</p>
+      </div>
+    </div> 
 </section>
 
 <!-- Contacto -->
@@ -180,7 +183,8 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
         <input type="email" placeholder="Correo" required><br><br>
         <textarea placeholder="Mensaje" required></textarea><br><br>
         <button type="submit" class="boton-compra">Enviar</button>
-    </form>
+      </div>
+    </div> 
 </section>
 
 <!-- Preguntas Frecuentes -->
@@ -189,20 +193,21 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
     <p><b>¿Cuáles son los combos?</b> Combo Estrella, Doble Estrella, Estelar y la colección Aura.</p>
     <p><b>¿Cómo puedo pagar?</b> Transferencia o efectivo.</p>
     <p><b>¿Horario de atención?</b> Lun-Vie 9AM - 6PM.</p>
+      </div>
+    </div> 
 </section>
 
-<!-- Asistente Rayito -->
- <a href="https://wa.me/0995372875" target="_blank" class="rayito-flotante">
-   <button class="rayito-boton" onclick="window.open('https://wa.me/0995372875','_blank')">
 
-  <h3>Rayito ⚡</h3>
-  <!-- Asistente Rayito -->
+<!-- Asistente Rayito -->
 <div id="rayito">
+    <h3>Rayito ⚡</h3>
     <p>¡Hola! Soy Rayito, tu asistente virtual 😊 ¿En qué puedo ayudarte?</p>
     <button onclick="mostrarSeccion('productos')">Ver combos</button>
     <button onclick="alert('Nuestro horario es Lun-Vie 9AM-6PM')">Horario de atención</button>
     <button onclick="window.open('https://wa.me/593995372875','_blank')">WhatsApp</button>
-</section>
+</div>
+
 <!-- Footer -->
 <footer>
+
     <p>© 2025 Rayos de Luna  | Todos los derechos reservados</p>
