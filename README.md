@@ -141,16 +141,25 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
 <li>Métodos de pago: Transferencia o efectivo</li>
 <li>Envíos: Nacionales, según disponibilidad</li>
     </ul>
-    <h2>Formulario de Compra</h2>
+    <h2>Completa tu pedido</h2>
+  <form onsubmit="enviarPedido(event)">
+    <label>Nombre completo:</label>
+    <input type="text" name="nombre" required>
 
-    <label for="nombre">Nombre completo:</label>
-    <input type="text" id="nombre" name="Nombre" required>
+    <label>Teléfono:</label>
+    <input type="text" name="telefono" required>
 
-    <label for="telefono">Teléfono / WhatsApp:</label>
-    <input type="tel" id="telefono" name="Teléfono" required>
+    <label>Dirección:</label>
+    <textarea name="direccion" required></textarea>
 
-    <label for="direccion">Dirección de entrega:</label>
-    <textarea id="direccion" name="Dirección" rows="2" required></textarea>
+    <label>Producto:</label>
+    <select name="producto" required>
+      <option value="Combo estrella">Combo estrella</option>
+      <option value="Combo doble estrella ">Combo doble estrella</option>
+      <option value="Combo estelar">Combo estelar</option>
+      <option value="Colección Aura">Colección Aura</option>
+    </select>
+
     <a href="https://wa.me/593995372875" target="_blank">
         <button class="boton-compra">Escríbenos por WhatsApp</button>
     </a>
