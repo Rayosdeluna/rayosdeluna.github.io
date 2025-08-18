@@ -114,7 +114,7 @@
   <p>Instagram & Facebook: @Rayos_de_luna_13</p>
 <!-- Icono flotante del asistente -->
 <div id="asistente-container">
-  <div id="asistente">⚡</div>
+  <div id="asistente"></div>
   <div id="chatRayito">
     <p>¡Hola! Soy Rayito ⚡. ¿En qué puedo ayudarte?</p>
     <button onclick="mostrarCombos()">Ver combos<button/>
@@ -137,55 +137,5 @@
   <p>© 2025 Rayos de Luna. Todos los derechos reservados.</p>
 </footer>
 
-<script>
-  const tabs = document.querySelectorAll('nav a');
-  const sections = document.querySelectorAll('section');
 
-  tabs.forEach(tab => {
-    tab.addEventListener('click', function(e){
-      e.preventDefault();
-      const target = this.dataset.tab;
-      sections.forEach(sec => sec.classList.remove('active'));
-      document.getElementById(target).classList.add('active');
-    });
-  });
-
-  const form = document.getElementById('formPedido');
-  const totalSpan = document.getElementById('total');
-  const cantidadInput = document.getElementById('cantidad');
-  let precioBase = 0;
-
-  function irPedido(producto, precio){
-    document.getElementById('producto').value = producto;
-    document.getElementById('precio').value = precio;
-    precioBase = precio;
-    totalSpan.textContent = precio;
-    document.getElementById('pedidos').classList.add('active');
-    sections.forEach(sec => {
-      if(sec.id !== 'pedidos') sec.classList.remove('active');
-    });
-  }
-
-  cantidadInput.addEventListener('input', () => {
-    let cantidad = parseInt(cantidadInput.value);
-    totalSpan.textContent = precioBase * cantidad;
-  });
-
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const nombre = form.nombre.value;
-    const telefono = form.telefono.value;
-    const producto = form.producto.value;
-    const cantidad = form.cantidad.value;
-    const total = totalSpan.textContent;
-    const pago = form.pago.value;
-
-    const seguimiento = document.getElementById('seguimiento');
-    seguimiento.innerHTML = `
-      <p class="pedido-status">Pedido Generado: ${producto} x${cantidad} - Total: $${total} - Pago: ${pago}</p>
-      <p class="pedido-status">Estado del pedido: Por aprobar</p>
-    `;
-    alert('Pedido generado con éxito. Nos comunicaremos por WhatsApp.');
-    form.reset();
-    totalSpan.textContent = 0;
  
