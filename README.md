@@ -90,7 +90,7 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
         <div class="producto">
         <img src="https://i.ibb.co/HD1bwv3t/tu-imagen.jpg" alt="Descripción de la imagen" width="500">
 
-            <h3>Combo Estrella</h3>
+   <h3>Combo Estrella</h3>
             <p>Un par de argollas</p>
             <p>$10</p>
             <button class="boton-compra" onclick="comprar('Combo Estrella')">Comprar</button>
@@ -98,7 +98,7 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
         <div class="producto">
             <img src="https://i.ibb.co/7tM5jJ5K/imagen.jpg" alt="Descripción de la imagen" width="500">
             
-            <h3>Combo Doble Estrella</h3>
+  <h3>Combo Doble Estrella</h3>
             <p>Un par de argollas + una pulsera</p>
             <p>$15</p>
             <button class="boton-compra" onclick="comprar('Combo Doble Estrella')">Comprar</button>
@@ -106,15 +106,14 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
         <div class="producto">
      <a href="https://imgbb.com/"><img src="https://i.ibb.co/1GvnrWB1/4.png" alt="4" border="0"></a>
             
-            <h3>Combo Estelar</h3>
+<h3>Combo Estelar</h3>
             <p>Dos pulseras a juego</p>
             <p>$13</p>
             <button class="boton-compra" onclick="comprar('Combo Estelar')">Comprar</button>
         </div>
         <div class="producto">
 <img src="https://i.ibb.co/C3qcfPkk/tu-imagen.jpg" alt="Descripción de la imagen" width="500">
-            
-            <h3>Colección Aura</h3>
+<h3>Colección Aura</h3>
             <p>Un par de argollas únicas</p>
             <p>$10</p>
             <button class="boton-compra" onclick="comprar('Colección Aura')">Comprar</button>
@@ -154,10 +153,10 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
     <h3>Política de Privacidad</h3>
     <p>Cuidamos tu información personal con total responsabilidad. Los datos se usan solo para procesar pedidos y promociones.</p>
 
-    <h3>Pedidos y Compras</h3>
+ <h3>Pedidos y Compras</h3>
     <p>Todos los pedidos se confirman por WhatsApp. Métodos de pago: transferencia o efectivo. Tiempo de entrega: 3 días hábiles.</p>
 
-    <h3>Devoluciones y Cambios</h3>
+  <h3>Devoluciones y Cambios</h3>
     <p>Aceptamos devoluciones solo por defectos de fabricación, hasta 48h después de la entrega.</p>
 </section>
 
