@@ -101,7 +101,7 @@
 <section id="politicas" 
  
   <h2>Políticas</h2>
-  <h3>Privacidad</h3>
+  <h3>Políticas de privacidad</h3>
   <p>Cuidamos tu información personal con total responsabilidad. Los datos se usan solo para procesar pedidos y promociones.</p>
   <h3>Pedidos y Compras</h3>
   <p>Todos los pedidos se confirman por WhatsApp. Métodos de pago: transferencia o efectivo. Tiempo de entrega: 3 días hábiles.</p>
@@ -113,16 +113,12 @@
   <h2>Contacto</h2>
   <p>Instagram & Facebook: @Rayos_de_luna_13</p>
 <!-- Icono flotante del asistente -->
-<div id="asistente-container">
-  <div id="asistente"></div>
-  <div id="chatRayito">
-    <p>¡Hola! Soy Rayito ⚡. ¿En qué puedo ayudarte?</p>
-    <button onclick="mostrarCombos()">Ver combos<button/>
-    <button onclick="mostrarHorario()">Horario de atención<button/>
+<p>¡Hola! Soy Rayito ⚡. ¿En qué puedo ayudarte?</p>
+    <button onclick="mostrarCombos()">Ver combos</button>
+    <button onclick="mostrarHorario()">Horario de atención</button>
     <button onclick="abrirWhatsApp()">WhatsApp</button>
   </div>
 </div>
-
 
 <section id="faq" 
   
