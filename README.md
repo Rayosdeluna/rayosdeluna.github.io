@@ -25,7 +25,7 @@
   <header>
     <a href="https://imgbb.com/"><img src="https://i.ibb.co/dJmSGh63/logo-Rayos-de-luna.png" alt="logo-Rayos-de-luna" border="0"></a>
     <h1> Rayos de Luna </h1>
-    <p>Joyas hechas con amor desde Ecuador. Entregas a domicilio.</p>
+    <p>Bisutería hechas con amor desde Ecuador. Entregas a domicilio.</p>
   </header>
 
   <nav>
@@ -70,24 +70,28 @@
   <section id="productos">
     <h2>Nuestros Productos</h2>
     <div class="producto"> 
+      <img src="https://i.ibb.co/HD1bwv3t/tu-imagen.jpg" alt="Descripción de la imagen" width="500">
       <h3>Combo Estrella ⭐</h3>
       <p>Incluye: un par de argollas</p>
       <p>Precio: $10</p>
       <button class="boton" onclick="mostrar('pedidos')">Comprar</button>
     </div>
     <div class="producto">
+      <img src="https://i.ibb.co/7tM5jJ5K/imagen.jpg" alt="Descripción de la imagen" width="500"> 
       <h3>Combo Doble Estrella ⭐⭐</h3>
       <p>Incluye: un par de argollas + una pulsera</p>
       <p>Precio: $15</p>
       <button class="boton" onclick="mostrar('pedidos')">Comprar</button>
     </div>
     <div class="producto">
+      <a href="https://imgbb.com/"><img src="https://i.ibb.co/1GvnrWB1/4.png" alt="4" border="0"></a> estelar
       <h3>Combo Estelar 🌟</h3>
       <p>Incluye: un juego de pulseras</p>
       <p>Precio: $13</p>
       <button class="boton" onclick="mostrar('pedidos')">Comprar</button>
     </div>
     <div class="producto">
+      <img src="https://i.ibb.co/C3qcfPkk/tu-imagen.jpg" alt="Descripción de la imagen" width="500">
       <h3>Colección Aura ✨</h3>
       <p>Incluye: un par de argollas únicas</p>
       <p>Precio: $10</p>
@@ -96,7 +100,7 @@
   </section>
 
   <!-- PEDIDOS -->
-  <section id="pedidos">
+  <section id="pedidos" class=active>
     <h2>Formulario de Pedido</h2>
     <form class="formulario" onsubmit="procesarPedido(event)">
       <label>Nombre Completo:</label>
@@ -132,7 +136,7 @@
   </section>
 
   <!-- POLÍTICAS -->
-  <section id="politicas">
+  <section id="politicas" class=active>
     <h2>Políticas</h2>
     <h3>Privacidad</h3>
     <p>Cuidamos tu información personal con total responsabilidad. Los datos se usan solo para procesar pedidos y promociones.</p>
@@ -151,7 +155,7 @@
   </section>
 
   <!-- FAQ -->
-  <section id="faq">
+  <section id="faq" class=active>
     <h2>Preguntas Frecuentes</h2>
     <p><strong>¿Cuáles son los combos?</strong> Combo Estrella, Doble Estrella, Estelar y la colección Aura.</p>
     <p><strong>¿Cómo puedo pagar?</strong> Transferencia o efectivo.</p>
