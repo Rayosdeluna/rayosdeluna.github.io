@@ -158,10 +158,9 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
       <option value="Combo doble estrella ">Combo doble estrella</option>
       <option value="Combo estelar">Combo estelar</option>
       <option value="Colección Aura">Colección Aura</option>
-    </select>
 
     <a href="https://wa.me/593995372875" target="_blank">
-        <button class="boton-compra">Escríbenos por WhatsApp</button>
+       
     </a>
 </section>
 
