@@ -119,7 +119,6 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
             <button class="boton-compra" onclick="comprar('Colección Aura')">Comprar</button>
         </div>
     </div> 
-
 </section>
 
 <!-- Pedidos -->
@@ -174,9 +173,8 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
 <!-- Asistente Rayito -->
  <a href="https://wa.me/0995372875" target="_blank" class="rayito-flotante">
    <button class="rayito-boton" onclick="window.open('https://wa.me/0995372875','_blank')">
-    <img src="https://i.ibb.co/your-rayito-icon.png" alt="Rayito">
-</button>
-    <h3>Rayito ⚡</h3>
+
+  <h3>Rayito ⚡</h3>
     <p>¡Hola! Soy Rayito, tu asistente virtual 😊 ¿En qué puedo ayudarte?</p>
     <button onclick="mostrarSeccion('productos')">Ver combos</button>
     <button onclick="alert('Nuestro horario es Lun-Vie 9AM-6PM')">Horario de atención</button>
