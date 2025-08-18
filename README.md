@@ -174,21 +174,23 @@
       <button onclick="sendMessage()">➤</button>
     </div>
   </div>
-<!-- Botón flotante -->
-  <button class="chat-btn" onclick="toggleChat()">💬</button>
-
-  <!-- Caja de chat -->
-  <div class="chat-box" id="chatBox">
-    <div class="chat-header">Asistente Rayito</div>
-    <div class="chat-messages" id="chatMessages">
-      <p class="msg-bot">👋 Hola, soy Rayito. ¿En qué puedo ayudarte?</p>
-    </div>
-    <div class="chat-input">
-      <input type="text" id="userInput" placeholder="Escribe un mensaje...">
-      <button onclick="sendMessage()">➤</button>
-    </div>
-  </div>
+<!-- Caja de chat -->
+<div id="chatBox">
+  <div id="chatHeader">Asistente Rayito 🌙</div>
+  <div id="chatMessages"></div>
   
+  <div id="chatOptions">
+    <button onclick="sendOption('Ver productos')">📦 Productos</button>
+    <button onclick="sendOption('Horarios de atención')">⏰ Horarios</button>
+    <button onclick="sendOption('Combos')">🎁 Combos</button>
+    <button onclick="sendOption('Hablar por WhatsApp')">📲 WhatsApp</button>
+  </div>
+
+  <div id="chatInput">
+    <input type="text" id="userInput" placeholder="Escribe tu mensaje...">
+    <button onclick="sendMessage()">➤</button>
+  </div>
+</div>
 
   <script>
     function mostrar(id) {
