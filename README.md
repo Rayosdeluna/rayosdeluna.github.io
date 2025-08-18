@@ -215,7 +215,6 @@
             <input required name="direccion" placeholder="Calle, número, referencia" />
           </div>
         </div>
-
         <h3 style="margin:14px 0 8px">Selecciona tus productos</h3>
         <table class="items-table" id="items-table">
           <thead>
@@ -229,8 +228,7 @@
             </tr>
           </tfoot>
         </table>
-
-        <div class="form-row" style="margin-top:12px">
+     <div class="form-row" style="margin-top:12px">
           <div>
             <label>Método de pago</label>
             <select required name="pago">
@@ -243,17 +241,16 @@
             <input name="notas" placeholder="Instrucciones adicionales" />
           </div>
         </div>
+    <p style="font-size:13px;color:var(--muted);margin:10px 0">Todos los pedidos se <strong>confirman por WhatsApp</strong>. Tiempo de entrega estimado: <strong>3 días hábiles</strong>.</p>
 
-        <p style="font-size:13px;color:var(--muted);margin:10px 0">Todos los pedidos se <strong>confirman por WhatsApp</strong>. Tiempo de entrega estimado: <strong>3 días hábiles</strong>.</p>
-
-        <div class="cta">
+  <div class="cta">
           <button class="btn" type="submit">Generar pedido</button>
           <a class="btn secondary" id="whatsapp-confirm" href="#" target="_blank" rel="noopener" title="Abrir WhatsApp con el detalle" aria-disabled="true">Confirmar por WhatsApp</a>
         </div>
       </form>
     </div>
 
-    <div class="card" style="margin-top:16px">
+ <div class="card" style="margin-top:16px">
       <h3>Seguimiento de pedidos</h3>
       <div class="form-row">
         <div>
@@ -267,7 +264,7 @@
       </div>
       <div id="track-result" style="margin-top:10px"></div>
 
-      <h4 style="margin-top:16px">Todos los pedidos (local)</h4>
+   <h4 style="margin-top:16px">Todos los pedidos (local)</h4>
       <div class="orders">
         <table class="items-table" id="orders-table">
           <thead>
@@ -353,7 +350,7 @@
 
   <!-- RAYITO: asistente flotante -->
   <div class="rayito">
-    <button class="rayito-toggle" id="rayito-toggle">⚡ Rayito</button>
+    <button class="rayito-toggle" id="rayito-toggle"> ⚡</button>
   </div>
   <div class="rayito-window" id="rayito-window" aria-hidden="true">
     <div class="rayito-header">
@@ -383,10 +380,10 @@
 
     // ======= CATÁLOGO (edita precios y nombres aquí) =======
     const CATALOGO = {
-      'combo-estrella': { nombre: 'Combo Estrella', precio: 12.00 },
-      'combo-doble':    { nombre: 'Combo Doble Estrella', precio: 18.00 },
-      'combo-estelar':  { nombre: 'Combo Estelar', precio: 20.00 },
-      'aura':           { nombre: 'Colección Aura (argollas únicas)', precio: 15.00 },
+      'combo-estrella': { nombre: 'Combo Estrella', precio: 10.00 },
+      'combo-doble':    { nombre: 'Combo Doble Estrella', precio: 15.00 },
+      'combo-estelar':  { nombre: 'Combo Estelar', precio: 13.00 },
+      'aura':           { nombre: 'Colección Aura', precio: 10.00 },
     };
 
     // Rellena precios en cards por si se cambian arriba
@@ -583,5 +580,4 @@
     });
     $('#rayito-input').addEventListener('keydown', e=>{ if(e.key==='Enter'){ e.preventDefault(); $('#rayito-send').click(); }});
   </script>
-</body>
-</html>
+
