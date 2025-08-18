@@ -25,16 +25,14 @@
   <h1>Rayos de Luna</h1>
   <p>Bisutería únicas de Ecuador con entregas a domicilio</p>
 </header>
-
-
 <nav>
-  <a href="#" data-tab="inicio">Inicio</a>
-  <a href="#" data-tab="nosotros">Nosotros</a>
-  <a href="#" data-tab="productos">Productos</a>
-  <a href="#" data-tab="pedidos">Pedidos</a>
-  <a href="#" data-tab="politicas">Políticas</a>
-  <a href="#" data-tab="contacto">Contactos</a>
-  <a href="#" data-tab="faq">FAQ</a>
+  <a href="#inicio">Inicio</a>
+  <a href="#nosotros">Nosotros</a>
+  <a href="#productos">Productos</a>
+  <a href="#pedidos">Pedidos</a>
+  <a href="#politicas">Políticas</a>
+  <a href="#contacto">Contacto</a>
+  <a href="#faq">FAQ</a>
 </nav>
 
 <section id="inicio" class="active">
