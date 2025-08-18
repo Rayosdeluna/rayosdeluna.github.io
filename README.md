@@ -170,15 +170,5 @@ function mostrarPedidos() {
     lista.appendChild(li);
   });
   document.getElementById("total").textContent = total;
-}
 
-document.getElementById("formPedido").addEventListener("submit", function(e){
-  e.preventDefault();
-  document.getElementById("seguimiento").style.display = "block";
-  document.getElementById("estadoPedido").textContent = "Por aprobar ✅";
-  alert("Tu pedido ha sido registrado. Te contactaremos por WhatsApp para confirmarlo.");
-});
-</script>
 
-</body>
-</html>
