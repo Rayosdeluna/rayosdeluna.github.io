@@ -1,35 +1,30 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rayos de Luna | Bisuterías</title>
+  <title>Rayos de Luna | Bisutería</title>
   <style>
-    body {font-family: Arial, sans-serif; margin:0; padding:0; background:#fffafc;}
-    header {background:#f48b9a; color:white; padding:15px; text-align:center;}
-    nav {display:flex; justify-content:center; background:#ffd6e4;}
-    nav a {padding:14px 20px; text-decoration:none; color:#333; font-weight:bold;}
-    nav a:hover {background:#f48b9a; color:white;}
-    section {padding:40px; display:none;}
-    section.active {display:block;}
-    h2 {color:#f48b9a;}
-    .producto {border:1px solid #ffd6e4; border-radius:10px; padding:20px; margin:20px 0;}
-    button {background:#f48b9a; color:white; padding:10px 15px; border:none; border-radius:10px; cursor:pointer;}
-    button:hover {background:#ff5c7a;}
-    footer {background:#ffd6e4; text-align:center; padding:20px; margin-top:40px;}
-
-    /* Asistente virtual */
-    #asistente {position:fixed; bottom:20px; right:20px; background:#f48b9a; color:white; padding:15px; border-radius:50%; cursor:pointer; box-shadow:0 4px 6px rgba(0,0,0,0.2);} 
-    #chatbox {display:none; position:fixed; bottom:80px; right:20px; width:300px; background:white; border:1px solid #ccc; border-radius:10px; box-shadow:0 4px 6px rgba(0,0,0,0.2);}
-    #chatbox header {background:#f48b9a; color:white; padding:10px; border-radius:10px 10px 0 0;}
-    #chatbox div {padding:10px;}
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background: #f48b9a; padding: 15px; text-align: center; color: white; }
+    nav { background: #ffd6e4; padding: 10px; text-align: center; }
+    nav a { margin: 0 15px; text-decoration: none; color: #333; font-weight: bold; }
+    section { padding: 30px; display: none; }
+    section.active { display: block; }
+    .producto { border: 1px solid #ccc; padding: 15px; margin: 10px; border-radius: 8px; }
+    .boton { background: #f48b9a; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; }
+    .formulario input, .formulario select { display: block; margin: 10px 0; padding: 8px; width: 100%; }
+    footer { background: #f48b9a; color: white; text-align: center; padding: 15px; margin-top: 20px; }
+    #rayito { position: fixed; bottom: 20px; right: 20px; background: #ffd6e4; border-radius: 50%; padding: 15px; cursor: pointer; box-shadow: 0 4px 6px rgba(0,0,0,0.2); }
+    #rayitoMenu { display: none; position: fixed; bottom: 80px; right: 20px; background: white; border: 1px solid #ccc; border-radius: 10px; padding: 15px; width: 220px; }
+    #rayitoMenu p { margin: 8px 0; cursor: pointer; color: #f48b9a; }
   </style>
 </head>
 <body>
+
   <header>
     <a href="https://imgbb.com/"><img src="https://i.ibb.co/dJmSGh63/logo-Rayos-de-luna.png" alt="logo-Rayos-de-luna" border="0"></a>
-    <h1>✨ Rayos de Luna ✨</h1>
-    <p>Joyas únicas hechas en Ecuador, con entregas a domicilio</p>
+    <h1> Rayos de Luna </h1>
+    <p>Joyas hechas con amor desde Ecuador. Entregas a domicilio.</p>
   </header>
 
   <nav>
@@ -45,8 +40,7 @@
   <!-- INICIO -->
   <section id="inicio" class="active">
     <h2>Bienvenidos a Rayos de Luna</h2>
-    <p>Somos una marca ecuatoriana dedicada a la creación de joyas exclusivas. Contamos con entregas a domicilio en todo el país ✨.</p>
-    <p>Ofrecemos piezas únicas y exclusivas para destacar tu estilo.</p>
+    <p>Somos una marca ecuatoriana de bisutería exclusiva. Diseñamos piezas únicas para iluminar tus momentos especiales. Contamos con entregas a domicilio a nivel nacional.</p>
     <p>💖 Compra fácil, segura y sin complicaciones, desde la comodidad de tu casa.</p>
     <p>👉 Solo elige tu favorito, haz tu pedido ¡y nosotros lo llevamos directo a tu puerta! 🚚
     <p>📍Ecuador - Guayaquil</p>
@@ -55,58 +49,85 @@
 
   <!-- NOSOTROS -->
   <section id="nosotros">
-    <h2>Quiénes Somos</h2>
-    <p><strong>Misión:</strong> Diseñar joyas que iluminen cada momento especial de nuestros clientes.</p>
-    <p><strong>Visión:</strong> Ser la marca de joyería preferida en Ecuador por calidad y exclusividad.</p>
-    <p><strong>Valores:</strong> Confianza, responsabilidad y creatividad.</p>
+    <h2>¿Quiénes Somos?</h2>
+     <p>En Rayos de Luna somos marca d bisutería apasionada por crear puezas únicasque reflejan elegancia, estilo y personalidad. Cada una de nuestras piezas está diseñada pensando en ti, para que puedas  expresar tú esencia en cada momento especial. Nos caraterizamos por combinar calidad, creatividad y atención personalizada, ofrecemos no solo un producto, sino experiencias que ilumina tu día a día. Nuestra mision es  es acercarte a piezas que enamoran y te hagan sentir especial en cada ocación.</p>
+    <h3>Misión</h3>
+    <p>Brindar piezas únicas y elegantes que realzan la belleza y personalidad de cada cliente, ofreciendo una experiencia de compra segura, accesible y cercana, con atención personalizada que genera confianza y satisfacción.</p>
+    <h3>Visión</h3>
+    <p>Convertirnos en la marca de bisutería online preferida a nivel nacional, reconocida por la calidad de nuestros productos, la creatividad de nuestros diseños y la conexión emocional con nuestros clientes, inspirando momentos especiales y memorables.</p>
+    <h3>Valores</h3>
+    <ul>
+      <li>Calidad:Nos comprometemos a ofrecer productos duraderos y bien elaborados.</li>
+      <li>Creatividad: Cada pieza refleja originalidad y estilo.</li>
+      <li>Confianza: Atención cercana y honesta en cada compra.</li>
+      <li>Pasión: Amamos lo que hacemos y transmitimos esa pasión en nuestros productos.</li>
+      <li>innovación: Buscamos siempre mejorar y sorprender a nuestros clientes con nuevas tendencias.</li>
+    </ul>
   </section>
 
   <!-- PRODUCTOS -->
   <section id="productos">
     <h2>Nuestros Productos</h2>
     <div class="producto">
-      <h3>⭐ Combo Estrella</h3>
-      <p>Un par de argollas.</p>
-      <button onclick="mostrar('pedidos')">Comprar</button>
+      <h3>Combo Estrella ⭐</h3>
+      <p>Incluye: un par de argollas</p>
+      <p>Precio: $15</p>
+      <button class="boton" onclick="mostrar('pedidos')">Comprar</button>
     </div>
     <div class="producto">
-      <h3>⭐⭐ Combo Doble Estrella</h3>
-      <p>Un par de argollas + una pulsera.</p>
-      <button onclick="mostrar('pedidos')">Comprar</button>
+      <h3>Combo Doble Estrella ⭐⭐</h3>
+      <p>Incluye: un par de argollas + una pulsera</p>
+      <p>Precio: $25</p>
+      <button class="boton" onclick="mostrar('pedidos')">Comprar</button>
     </div>
     <div class="producto">
-      <h3>🌟 Combo Estelar</h3>
-      <p>Un juego de pulseras.</p>
-      <button onclick="mostrar('pedidos')">Comprar</button>
+      <h3>Combo Estelar 🌟</h3>
+      <p>Incluye: un juego de pulseras</p>
+      <p>Precio: $20</p>
+      <button class="boton" onclick="mostrar('pedidos')">Comprar</button>
     </div>
     <div class="producto">
-      <h3>✨ Colección Aura</h3>
-      <p>Un par de argollas únicas.</p>
-      <button onclick="mostrar('pedidos')">Comprar</button>
+      <h3>Colección Aura ✨</h3>
+      <p>Incluye: un par de argollas únicas</p>
+      <p>Precio: $18</p>
+      <button class="boton" onclick="mostrar('pedidos')">Comprar</button>
     </div>
   </section>
 
   <!-- PEDIDOS -->
   <section id="pedidos">
-    <h2>Realiza tu Pedido</h2>
-    <form id="formPedido">
-      <label>Nombre:</label><br>
-      <input type="text" required><br><br>
-      <label>Producto:</label><br>
-      <select id="producto">
-        <option value="Combo Estrella - $10">Combo Estrella - $10</option>
-        <option value="Combo Doble Estrella - $18">Combo Doble Estrella - $18</option>
-        <option value="Combo Estelar - $15">Combo Estelar - $15</option>
-        <option value="Colección Aura - $12">Colección Aura - $12</option>
-      </select><br><br>
-      <label>Método de pago:</label><br>
-      <select>
+    <h2>Formulario de Pedido</h2>
+    <form class="formulario" onsubmit="procesarPedido(event)">
+      <label>Nombre Completo:</label>
+      <input type="text" required>
+      <label>Correo:</label>
+      <input type="email" required>
+      <label>Producto:</label>
+      <select id="producto" onchange="actualizarTotal()">
+        <option value="15">Combo Estrella - $10</option>
+        <option value="25">Combo Doble Estrella - $15</option>
+        <option value="20">Combo Estelar - $13</option>
+        <option value="18">Colección Aura - $10</option>
+      </select>
+      <label>Cantidad:</label>
+      <input type="number" id="cantidad" value="1" min="1" onchange="actualizarTotal()">
+      <p><strong>Total: $<span id="total">15</span></strong></p>
+      <label>Método de Pago:</label>
+      <select required>
         <option>Transferencia</option>
         <option>Efectivo</option>
-      </select><br><br>
-      <button type="submit">Generar Pedido</button>
+      </select>
+      <button class="boton" type="submit">Generar Pedido</button>
     </form>
-    <p id="resPedido"></p>
+    <h3>Estado del Pedido</h3>
+    <ul>
+      <li>Por aprobar</li>
+      <li>Por preparar</li>
+      <li>Por enviar</li>
+      <li>En tránsito</li>
+      <li>Entregado</li>
+      <li>Anulado</li>
+    </ul>
   </section>
 
   <!-- POLÍTICAS -->
@@ -114,64 +135,69 @@
     <h2>Políticas</h2>
     <h3>Privacidad</h3>
     <p>Cuidamos tu información personal con total responsabilidad. Los datos se usan solo para procesar pedidos y promociones.</p>
-
-  <h3>Pedidos y Compras</h3>
-    <p>Todos los pedidos se confirman por WhatsApp.<br> Métodos de pago: transferencia o efectivo.<br> Tiempo de entrega: 3 días hábiles.</p>
-
-   <h3>Devoluciones y Cambios</h3>
+    <h3>Pedidos y Compras</h3>
+    <p>Todos los pedidos se confirman por WhatsApp. Métodos de pago: transferencia o efectivo. Tiempo de entrega: 3 días hábiles.</p>
+    <h3>Devoluciones y Cambios</h3>
     <p>Aceptamos devoluciones solo por defectos de fabricación, hasta 48h después de la entrega.</p>
   </section>
 
   <!-- CONTACTO -->
   <section id="contacto">
     <h2>Contacto</h2>
-    <p>Correo: <a href="mailto:rayo_de_luna_13@hotmail.com">rayo_de_luna_13@hotmail.com</a></p>
-    <p>Instagram & Facebook: @Rayos_de_luna_13</p>
+    <p>📧 Correo: rayo_de_luna_13@hotmail.com</p>
+    <p>📱 Instagram & Facebook: @Rayos_de_luna_13</p>
+    <p>🕒 Horario de atención: Lun-Vie 9AM - 4PM</p>
   </section>
 
-  <!-- PREGUNTAS FRECUENTES -->
+  <!-- FAQ -->
   <section id="faq">
     <h2>Preguntas Frecuentes</h2>
-    <p><strong>¿Cuáles son los combos?</strong> Combo Estrella, Doble Estrella, Estelar y la Colección Aura.</p>
+    <p><strong>¿Cuáles son los combos?</strong> Combo Estrella, Doble Estrella, Estelar y la colección Aura.</p>
     <p><strong>¿Cómo puedo pagar?</strong> Transferencia o efectivo.</p>
-    <p><strong>¿Horario de atención?</strong> Lun-Vie 9AM - 4PM.</p>
+    <p><strong>¿Horario de atención?</strong> Lun-Vie 9AM - 4PM</p>
   </section>
 
   <footer>
-    <p>© 2025 Rayos de Luna. Todos los derechos reservados.</p>
+    <p>&copy; 2025 Rayos de Luna - Todos los derechos reservados.</p>
   </footer>
 
   <!-- Asistente Virtual Rayito -->
-  <div id="asistente" onclick="abrirChat()">⚡</div>
-  <div id="chatbox">
-    <header>Rayito ⚡</header>
-    <div>
-      <p>¡Hola! Soy Rayito, tu asistente virtual 🌙<br> ¿En qué puedo ayudarte?</p>
-      <ul>
-        <li><a href="#" onclick="mostrar('productos')">Ver Combos</a></li>
-        <li><a href="#" onclick="mostrar('faq')">Preguntas Frecuentes</a></li>
-        <li><a href="https://wa.me/593995372875" target="_blank">WhatsApp</a></li>
-        <li>Horario de atención: 9AM - 4PM</li>
-      </ul>
-    </div>
+  <div id="rayito">⚡</div>
+  iv class="asistente" onclick="mostrarAsistente()">⚡</div>
+
+<script>
+function mostrarAsistente() {
+  alert("Hola! Soy Rayito ⚡. Puedo ayudarte con:\n1. Ver combos\n2. Horario de atención\n3. WhatsApp");
+  <div id="rayitoMenu">
+    <p onclick="mostrar('productos')">Ver Combos</p>
+    <p onclick="mostrar('contacto')">Horarios de Atención</p>
+    <p onclick="mostrar('faq')">Preguntas Frecuentes</p>
+    <p><a href="https://wa.me/593995372875" target="_blank">WhatsApp</a></p>
   </div>
 
   <script>
-    function mostrar(id){
-      document.querySelectorAll('section').forEach(sec=>sec.classList.remove('active'));
+    function mostrar(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
       document.getElementById(id).classList.add('active');
     }
 
-    function abrirChat(){
-      const chat = document.getElementById('chatbox');
-      chat.style.display = chat.style.display === 'block' ? 'none' : 'block';
+    function actualizarTotal() {
+      let precio = parseFloat(document.getElementById('producto').value);
+      let cantidad = parseInt(document.getElementById('cantidad').value);
+      document.getElementById('total').innerText = precio * cantidad;
     }
 
-    document.getElementById("formPedido").addEventListener("submit", function(e){
+    function procesarPedido(e) {
       e.preventDefault();
-      let producto = document.getElementById("producto").value;
-      document.getElementById("resPedido").innerText = "✅ Pedido generado: " + producto + ". Estado: Por aprobar.";
+      alert("✅ Pedido generado con éxito. Te confirmaremos por WhatsApp.");
+    }
+
+    document.getElementById('rayito').addEventListener('click', () => {
+      let menu = document.getElementById('rayitoMenu');
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
     });
   </script>
+
 </body>
 </html>
+
