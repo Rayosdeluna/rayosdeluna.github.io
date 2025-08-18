@@ -92,6 +92,9 @@
 </head>
 <body>
   <header>
+    <nav class="nav">
+      <div class="brand">
+        <div class="logo">RL</div>
         <h1>Rayos de Luna Bisutería</h1>
       <div class="menu">
         <a href="#inicio">Inicio</a>
