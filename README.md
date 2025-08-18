@@ -2,7 +2,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rayos de Luna | Joyas</title>
+  <a href="https://imgbb.com/"><img src="https://i.ibb.co/dJmSGh63/logo-Rayos-de-luna.png" alt="logo-Rayos-de-luna" border="0"></a>
+  <title>Rayos de Luna | Bisutería</title>
   <meta name="description" content="Bisutería y joyas hechas con amor en Ecuador. Entregas a domicilio. Combos y colección Aura. Pedidos con seguimiento." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
