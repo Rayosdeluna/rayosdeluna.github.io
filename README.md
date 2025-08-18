@@ -67,6 +67,7 @@
   <h1>Rayos de Luna</h1>
   <p>Joyas únicas de Ecuador con entregas a domicilio</p>
 </header>
+
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/dJmSGh63/logo-Rayos-de-luna.png" alt="logo-Rayos-de-luna" border="0"></a>
 <nav>
   <a href="#" data-tab="inicio">Inicio</a>
@@ -91,11 +92,22 @@
 <section id="nosotros">
   <h2>Nosotros</h2>
   <h3>Misión</h3>
-  <p>Ofrecer joyas de alta calidad que resalten tu estilo.</p>
+  <p>Brindar piezas únicas y elegantes que realzan la belleza y personalidad de cada cliente, ofreciendo una experiencia de compra segura, 
+    accesible y cercana, con atención personalizada que genera confianza y satisfacción.</p>
   <h3>Visión</h3>
-  <p>Ser la marca líder de joyas personalizadas en Ecuador.</p>
+  <p>Convertirnos en la marca de bisutería online preferida a nivel nacional, reconocida por la calidad de nuestros productos, la creatividad de 
+    nuestros diseños y la conexión emocional con nuestros clientes, inspirando momentos especiales y memorables.</p>
   <h3>Valores</h3>
-  <p>Calidad, confianza, exclusividad y cercanía con nuestros clientes.</p>
+  <p>Valores: Calidad: Nos comprometemos a ofrecer productos duraderos y bien elaborados.
+
+Creatividad: Cada pieza refleja originalidad y estilo.
+
+Confianza: Atención cercana y honesta en cada compra.
+
+Pasión: Amamos lo que hacemos y transmitimos esa pasión en nuestros productos.
+
+Innovación: Buscamos siempre mejorar y sorprender a nuestros clientes con nuevas tendencias.
+</p>
 </section>
 
 <section id="productos">
