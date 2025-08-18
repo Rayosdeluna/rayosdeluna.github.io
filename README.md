@@ -72,7 +72,6 @@
     <p>Un par de argollas únicas</p>
     <button class="btn" onclick="irPedido('Colección Aura', $10)">Comprar</button>
   </div>
-</section>
 
 <section id="pedidos" 
   <h2>Pedidos</h2>
@@ -99,6 +98,7 @@
 </section>
 
 <section id="politicas" 
+ 
   <h2>Políticas</h2>
   <h3>Privacidad</h3>
   <p>Cuidamos tu información personal con total responsabilidad. Los datos se usan solo para procesar pedidos y promociones.</p>
@@ -117,12 +117,12 @@
   <div id="asistente">⚡</div>
   <div id="chatRayito">
     <p>¡Hola! Soy Rayito ⚡. ¿En qué puedo ayudarte?</p>
-    <button onclick="mostrarCombos()">Ver combos</button>
-    <button onclick="mostrarHorario()">Horario de atención</button>
+    <button onclick="mostrarCombos()">Ver combos<button/>
+    <button onclick="mostrarHorario()">Horario de atención<button/>
     <button onclick="abrirWhatsApp()">WhatsApp</button>
   </div>
 </div>
-</section>
+
 
 <section id="faq" 
   
