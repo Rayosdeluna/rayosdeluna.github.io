@@ -41,7 +41,6 @@
 <!-- Inicio -->
 <section id="inicio" class="active">
   <h2>Bienvenido a Rayos de Luna</h2>
-  vSomos una marca de bisutería ecuatoriana, entregamos tus pedidos a domicilio y ofrecemos productos de alta calidad para resaltar tu estilo. </p>
  <p>Ofrecemos piezas únicas y exclusivas para destacar tu estilo. Aquí cada detalle está pensado para ti. Encuentra productos únicos, de la mejor calidad y a precios que se ajustan a lo que buscas.</p>
 
 <p>💖 Compra fácil, segura y sin complicaciones, desde la comodidad de tu casa.</p>
