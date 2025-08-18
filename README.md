@@ -118,8 +118,7 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
             <p>$10</p>
             <button class="boton-compra" onclick="comprar('Colección Aura')">Comprar</button>
         </div>
-    </div> <button type="submit">Confirmar Pedido</button>
-  </form>
+    </div> 
 
 </section>
 
@@ -132,54 +131,7 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
 <li>Métodos de pago: Transferencia o efectivo</li>
 <li>Envíos: Nacionales, según disponibilidad</li>
     </ul>
-   <h1>Formulario de Pedido</h1>
-
-  <form id="pedidoForm">
-    <label>Producto:</label>
-    <input type="text" id="producto" name="producto" readonly>
-
- <label>Precio:</label>
-    <input type="text" id="precio" name="precio" readonly>
-
-  <label>Nombre:</label>
-    <input type="text" name="nombre" required>
-
-<label>Dirección:</label>
-    <input type="text" name="direccion" required>
-
-<label>Teléfono:</label>
-    <input type="text" name="telefono" required>
-
- <label>Cantidad:</label>
-    <input type="number" id="cantidad" name="cantidad" value="1" min="1" required>
-
-<label>Total:</label>
-    <input type="text" id="total" name="total" readonly>
-
-
-  <script>
-    // Capturar los parámetros de la URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const producto = urlParams.get("producto");
-    const precio = parseFloat(urlParams.get("precio"));
-
-    document.getElementById("producto").value = producto;
-    document.getElementById("precio").value = `$${precio.toFixed(2)}`;
-    document.getElementById("total").value = `$${precio.toFixed(2)}`;
-
-    // Actualizar total cuando cambie cantidad
-    document.getElementById("cantidad").addEventListener("input", function() {
-      const cantidad = this.value;
-      const total = precio * cantidad;
-      document.getElementById("total").value = `$${total.toFixed(2)}`;
-    });
-
-    // Manejo del formulario
-    document.getElementById("pedidoForm").addEventListener("submit", function(e) {
-      e.preventDefault();
-      alert("✅ Pedido realizado con éxito. Te contactaremos pronto.");
-      window.location.href = "productos.html";
-       
+   
     </a>
 </section>
 
