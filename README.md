@@ -39,7 +39,7 @@
   </nav>
 
   <!-- INICIO -->
-  <section id="inicio" class="active">
+  <section id="inicio">
     <h2>Bienvenidos a Rayos de Luna</h2>
     <p>Somos una marca ecuatoriana de bisutería exclusiva. Diseñamos piezas únicas para iluminar tus momentos especiales. Contamos con entregas a domicilio a nivel nacional.</p>
     <p>💖 Compra fácil, segura y sin complicaciones, desde la comodidad de tu casa.</p>
@@ -58,7 +58,7 @@
     <p>Convertirnos en la marca de bisutería online preferida a nivel nacional, reconocida por la calidad de nuestros productos, la creatividad de nuestros diseños y la conexión emocional con nuestros clientes, inspirando momentos especiales y memorables.</p>
     <h3>Valores</h3>
     <ul>
-      <li>Calidad:Nos comprometemos a ofrecer productos duraderos y bien elaborados.</li>
+      <p>Calidad:Nos comprometemos a ofrecer productos duraderos y bien elaborados.</p>
       <li>Creatividad: Cada pieza refleja originalidad y estilo.</li>
       <li>Confianza: Atención cercana y honesta en cada compra.</li>
       <li>Pasión: Amamos lo que hacemos y transmitimos esa pasión en nuestros productos.</li>
@@ -116,7 +116,7 @@
       </select>
       <label>Cantidad:</label>
       <input type="number" id="cantidad" value="1" min="1" onchange="actualizarTotal()">
-      <p><strong>Total: $<span id="total">15</span></strong></p>
+      <p><strong>Total: $<span id="total"></span></strong></p>
       <label>Método de Pago:</label>
       <select required>
         <option>Transferencia</option>
@@ -136,7 +136,7 @@
   </section>
 
   <!-- POLÍTICAS -->
-  <section id="politicas" class=active>
+  <section id="politicas">
     <h2>Políticas</h2>
     <h3>Privacidad</h3>
     <p>Cuidamos tu información personal con total responsabilidad. Los datos se usan solo para procesar pedidos y promociones.</p>
@@ -155,7 +155,7 @@
   </section>
 
   <!-- FAQ -->
-  <section id="faq" class=active>
+  <section id="faq" 
     <h2>Preguntas Frecuentes</h2>
     <p><strong>¿Cuáles son los combos?</strong> Combo Estrella, Doble Estrella, Estelar y la colección Aura.</p>
     <p><strong>¿Cómo puedo pagar?</strong> Transferencia o efectivo.</p>
@@ -165,36 +165,26 @@
   <footer>
     <p>&copy; 2025 Rayos de Luna - Todos los derechos reservados.</p>
   </footer>
+ <!-- Botón flotante -->
+  <button id="chat-btn">💬</button>
 
-  <!-- Asistente Virtual Rayito -->
-  <!-- Caja de chat -->
-  <div class="chat-box" id="chatBox">
-    <div class="chat-header">Asistente Rayito</div>
-    <div class="chat-messages" id="chatMessages">
-      <p class="msg-bot">👋 Hola, soy Rayito. ¿En qué puedo ayudarte?</p>
+  <!-- Caja del chat -->
+  <div id="chat-box">
+    <div id="chat-header">Asistente Rayito</div>
+    <div id="chat-messages">
+      <div class="msg bot">¡Hola! Soy Rayito 🌙<br> ¿En qué puedo ayudarte?</div>
+      <div>
+        <span class="option-btn" onclick="sendOption('Ver combos')">Ver combos</span>
+        <span class="option-btn" onclick="sendOption('Horario de atención')">Horario de atención</span>
+        <span class="option-btn" onclick="sendOption('Hablar por WhatsApp')">Hablar por WhatsApp</span>
+      </div>
     </div>
-    <div class="chat-input">
-      <input type="text" id="userInput" placeholder="Escribe un mensaje...">
-      <button onclick="sendMessage()">➤</button>
+    <div id="chat-input">
+      <input type="text" id="user-input" placeholder="Escribe un mensaje...">
+      <button id="send-btn">➤</button>
     </div>
-  </div>
-<!-- Caja de chat -->
-<div id="chatBox">
-  <div id="chatHeader">Asistente Rayito 🌙</div>
-  <div id="chatMessages"></div>
-  
-  <div id="chatOptions">
-    <button onclick="sendOption('Ver productos')">📦 Productos</button>
-    <button onclick="sendOption('Horarios de atención')">⏰ Horarios</button>
-    <button onclick="sendOption('Combos')">🎁 Combos</button>
-    <button onclick="sendOption('Hablar por WhatsApp')">📲 WhatsApp</button>
   </div>
 
-  <div id="chatInput">
-    <input type="text" id="userInput" placeholder="Escribe tu mensaje...">
-    <button onclick="sendMessage()">➤</button>
-  </div>
-</div>
 
   <script>
     function mostrar(id) {
