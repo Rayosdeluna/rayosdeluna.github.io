@@ -92,13 +92,6 @@
 </head>
 <body>
   <header>
-    <nav class="nav">
-      <div class="brand">
-        <a href="https://imgbb.com/">
-  <img src="https://i.ibb.co/dJmSGh63/logo-Rayos-de-luna.png" 
-       alt="logo-Rayos-de-luna" 
-       style="width:120px; height:auto; border:0;" />
-</a>
         <h1>Rayos de Luna Bisutería</h1>
       </div>
       <div class="menu">
@@ -125,10 +118,11 @@
       </div>
     </div>
     <div class="card">
-      <img alt="Joyas Rayos de Luna" src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=1200&auto=format&fit=crop"/>
-    </div>
-  </section>
-
+      <a href="https://imgbb.com/">
+  <img src="https://i.ibb.co/dJmSGh63/logo-Rayos-de-luna.png" 
+       alt="logo-Rayos-de-luna" 
+       style="width:120px; height:auto; border:0;" />
+</a>
   <!-- NOSOTROS -->
   <section id="nosotros">
     <h2>Nosotros</h2>
