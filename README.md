@@ -83,7 +83,6 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
 <p>Innovación: Buscamos siempre mejorar y sorprender a nuestros clientes con nuevas tendencias..</p>
 </section>
 
-<!-- Productos -->
 <section id="productos">
     <h2>Productos / Combos</h2>
     <div class="productos">
@@ -126,35 +125,7 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
     <h2>Cómo comprar / Pedidos</h2>
     <p>Para realizar tu pedido, puedes usar nuestro WhatsApp o llenar el formulario:</p>
     <ul>
- <h2>Formulario de Pedido</h2>
-  <form>
-    <label>Producto:</label>
-    <input type="text" id="producto" name="producto" readonly><br><br>
-
-<label>Precio:</label>
-    <input type="text" id="precio" name="precio" readonly><br><br>
-
-  <label>Nombre:</label>
-    <input type="text" name="nombre" required><br><br>
-
-   <label>Dirección:</label>
-    <input type="text" name="direccion" required><br><br>
-
-   <label>Cantidad:</label>
-    <input type="number" id="cantidad" name="cantidad" value="1" min="1"><br><br>
-
-<label>Total:</label>
-    <input type="text" id="total" name="total" readonly><br><br>
-
-  <button type="submit">Confirmar Pedido</button>
-  </form>
-<li>Métodos de pago: Transferencia o efectivo</li>
-<li>Envíos: Nacionales, según disponibilidad</li>
-    </ul>
-     </div>
-    </div> 
-</section>
-
+ 
 
 <section id="politicas">
     <h2>Políticas</h2>
@@ -167,7 +138,6 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
 <h3>Devoluciones y Cambios</h3>
     <p>Aceptamos devoluciones solo por defectos de fabricación, hasta 48h después de la entrega.</p>
       </div>
-    </div> 
 </section>
 
 <section id="contacto">
@@ -176,14 +146,12 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
     <p>Instagram & Facebook: <b>@Rayos_de_luna_13</b></p>
     <a href="https://wa.me/593995372875" target="_blank">
         <button class="boton-compra">WhatsApp</button>
-    </a>
-    <form>
-        <input type="text" placeholder="Nombre" required><br><br>
+    
+ <input type="text" placeholder="Nombre" required><br><br>
         <input type="email" placeholder="Correo" required><br><br>
         <textarea placeholder="Mensaje" required></textarea><br><br>
         <button type="submit" class="boton-compra">Enviar</button>
       </div>
-    </div> 
 </section>
 
 <section id="faq">
@@ -192,7 +160,7 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
     <p><b>¿Cómo puedo pagar?</b> Transferencia o efectivo.</p>
     <p><b>¿Horario de atención?</b> Lun-Vie 9AM - 6PM.</p>
       </div>
-    </div> 
+    
 </section>
 
 
