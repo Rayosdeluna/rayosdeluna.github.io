@@ -160,7 +160,6 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
     <p><b>¿Cómo puedo pagar?</b> Transferencia o efectivo.</p>
     <p><b>¿Horario de atención?</b> Lun-Vie 9AM - 6PM.</p>
       </div>
-    
 </section>
 
 
@@ -171,8 +170,5 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
     <button onclick="alert('Nuestro horario es Lun-Vie 9AM-6PM')">Horario de atención</button>
     <button onclick="window.open('https://wa.me/593995372875','_blank')">WhatsApp</button>
 </div>
-
-<!-- Footer -->
-<footer>
-
+</section>
     <p>© 2025 Rayos de Luna  | Todos los derechos reservados</p>
