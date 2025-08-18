@@ -52,7 +52,7 @@
       <p> 📍Ecuador - Guayaquil</p>
 
 
-    <button class="boton-compra" onclick="mostrarSeccion('productos')">Ver catálogo</button>
+ <button class="boton-compra" onclick="mostrarSeccion('productos')">Ver catálogo</button>
     <button class="boton-compra" onclick="mostrarSeccion('pedidos')">Comprar</button>
     <button class="boton-compra" onclick="mostrarSeccion('contacto')">Contáctanos</button>
 </section>
