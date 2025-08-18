@@ -83,7 +83,7 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
 <p>Innovación: Buscamos siempre mejorar y sorprender a nuestros clientes con nuevas tendencias..</p>
 </section>
 
-<!-- Productos -->
+<p>!-- Productos --</p>
 <section id="productos">
     <h2>Productos / Combos</h2>
     <div class="productos">
@@ -121,19 +121,40 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
     </div> 
 </section>
 
-<!-- Pedidos -->
+<p>!-- Pedidos --</p>
 <section id="pedidos">
     <h2>Cómo comprar / Pedidos</h2>
     <p>Para realizar tu pedido, puedes usar nuestro WhatsApp o llenar el formulario:</p>
     <ul>
+ <h2>Formulario de Pedido</h2>
+  <form>
+    <label>Producto:</label>
+    <input type="text" id="producto" name="producto" readonly><br><br>
 
+<label>Precio:</label>
+    <input type="text" id="precio" name="precio" readonly><br><br>
+
+  <label>Nombre:</label>
+    <input type="text" name="nombre" required><br><br>
+
+   <label>Dirección:</label>
+    <input type="text" name="direccion" required><br><br>
+
+   <label>Cantidad:</label>
+    <input type="number" id="cantidad" name="cantidad" value="1" min="1"><br><br>
+
+<label>Total:</label>
+    <input type="text" id="total" name="total" readonly><br><br>
+
+  <button type="submit">Confirmar Pedido</button>
+  </form>
 <li>Métodos de pago: Transferencia o efectivo</li>
 <li>Envíos: Nacionales, según disponibilidad</li>
     </ul>
    
 </section>
 
-<!-- Políticas -->
+<p>!-- Políticas --</p>
 <section id="politicas">
     <h2>Políticas</h2>
     <h3>Política de Privacidad</h3>
@@ -181,7 +202,7 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
     <button onclick="mostrarSeccion('productos')">Ver combos</button>
     <button onclick="alert('Nuestro horario es Lun-Vie 9AM-6PM')">Horario de atención</button>
     <button onclick="window.open('https://wa.me/593995372875','_blank')">WhatsApp</button>
-
+</section>
 <!-- Footer -->
 <footer>
     <p>© 2025 Rayos de Luna  | Todos los derechos reservados</p>
