@@ -132,7 +132,6 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
 <li>Envíos: Nacionales, según disponibilidad</li>
     </ul>
    
-    </a>
 </section>
 
 <!-- Políticas -->
@@ -141,7 +140,7 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
     <h3>Política de Privacidad</h3>
     <p>Cuidamos tu información personal con total responsabilidad. Los datos se usan solo para procesar pedidos y promociones.</p>
 
- <h3>Pedidos y Compras</h3>
+<h3>Pedidos y Compras</h3>
     <p>Todos los pedidos se confirman por WhatsApp. Métodos de pago: transferencia o efectivo. Tiempo de entrega: 3 días hábiles.</p>
 
 <h3>Devoluciones y Cambios</h3>
