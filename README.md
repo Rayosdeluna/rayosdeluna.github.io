@@ -25,16 +25,15 @@
   <h1>Rayos de Luna</h1>
   <p>Bisutería únicas de Ecuador con entregas a domicilio</p>
 </header>
-<div class="nav-interna">
-    <a href="#inicio">Inicio</a>
-    <a href="#nosotros">Nosotros</a>
-    <a href="#productos">Productos</a>
-    <a href="#pedidos">Pedidos</a>
-    <a href="#politicas">Políticas</a>
-    <a href="#contacto">Contacto</a>
-    <a href="#faq">FAQ</a>
-  </div>
-</section>
+<nav>
+  <button class="tab-btn active" onclick="mostrarSeccion('inicio')">Inicio</button>
+  <button class="tab-btn" onclick="mostrarSeccion('nosotros')">Nosotros</button>
+  <button class="tab-btn" onclick="mostrarSeccion('productos')">Productos</button>
+  <button class="tab-btn" onclick="mostrarSeccion('pedidos')">Pedidos</button>
+  <button class="tab-btn" onclick="mostrarSeccion('politicas')">Políticas</button>
+  <button class="tab-btn" onclick="mostrarSeccion('contacto')">Contacto</button>
+  <button class="tab-btn" onclick="mostrarSeccion('faq')">FAQ</button>
+</nav>
 
 <section id="inicio" class="active">
   <h2>Bienvenido a Rayos de Luna</h2>
