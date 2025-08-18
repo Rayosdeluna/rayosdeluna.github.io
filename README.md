@@ -47,7 +47,7 @@
 <p>📍Ecuador - Guayaquil</p>
   
   <!-- Nosotros -->
-<section id="nosotros"> class="active"> 
+<section id="nosotros" class="active"> 
   <h2>nosotros</h2>
   <p>¿Quiénes somos?</p>
    <p>En Rayos de Luna somos una marca de joyería apasionada por crear piezas únicas que reflejan elegancia, estilo y personalidad. Cada una de nuestras joyas está diseñada pensando en ti, para que puedas expresar tu esencia en cada momento especial. Nos caracterizamos por combinar calidad, creatividad y atención personalizada , ofreciendo no solo productos, sino experiencias que iluminan tu día a día. Nuestra misión es acercarte joyas que enamoran y te hagan sentir especial en cada ocasión.</p>
@@ -147,7 +147,7 @@ Innovación: Buscamos siempre mejorar y sorprender a nuestros clientes con nueva
 </div>
 <!-- Preguntas frecuentes -->
 <section id="faq">
-  <h2>Preguntas Frecuentes</h2>
+  <h2>FAQs</h2>
   <p><strong>¿Cuáles son los combos?</strong> Combo Estrella, Doble Estrella, Estelar y la Colección Aura.</p>
   <p><strong>¿Cómo puedo pagar?</strong> Transferencia o efectivo.</p>
   <p><strong>Horario de atención:</strong> Lun-Vie 9AM - 4PM</p>
