@@ -45,7 +45,7 @@
     <p>👉 Solo elige tu favorito, haz tu pedido ¡y nosotros lo llevamos directo a tu puerta! 🚚
     <p>📍Ecuador - Guayaquil</p>
 
-  </section>
+  
 
   <!-- NOSOTROS -->
   <section id="nosotros">
@@ -68,28 +68,28 @@
   <!-- PRODUCTOS -->
   <section id="productos">
     <h2>Nuestros Productos</h2>
-    <div class="producto">
+    <div class="producto"> 
       <h3>Combo Estrella ⭐</h3>
       <p>Incluye: un par de argollas</p>
-      <p>Precio: $15</p>
+      <p>Precio: $10</p>
       <button class="boton" onclick="mostrar('pedidos')">Comprar</button>
     </div>
     <div class="producto">
       <h3>Combo Doble Estrella ⭐⭐</h3>
       <p>Incluye: un par de argollas + una pulsera</p>
-      <p>Precio: $25</p>
+      <p>Precio: $15</p>
       <button class="boton" onclick="mostrar('pedidos')">Comprar</button>
     </div>
     <div class="producto">
       <h3>Combo Estelar 🌟</h3>
       <p>Incluye: un juego de pulseras</p>
-      <p>Precio: $20</p>
+      <p>Precio: $13</p>
       <button class="boton" onclick="mostrar('pedidos')">Comprar</button>
     </div>
     <div class="producto">
       <h3>Colección Aura ✨</h3>
       <p>Incluye: un par de argollas únicas</p>
-      <p>Precio: $18</p>
+      <p>Precio: $10</p>
       <button class="boton" onclick="mostrar('pedidos')">Comprar</button>
     </div>
   </section>
@@ -162,11 +162,19 @@
   </footer>
 
   <!-- Asistente Virtual Rayito -->
-  <div id="rayito">⚡</div>
-  iv class="asistente" onclick="mostrarAsistente()">⚡</div>
+  <!-- Caja de chat -->
+  <div class="chat-box" id="chatBox">
+    <div class="chat-header">Asistente Rayito</div>
+    <div class="chat-messages" id="chatMessages">
+      <p class="msg-bot">👋 Hola, soy Rayito. ¿En qué puedo ayudarte?</p>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="userInput" placeholder="Escribe un mensaje...">
+      <button onclick="sendMessage()">➤</button>
+    </div>
+  </div>
 
-<script>
-function mostrarAsistente() {
+  <div id="rayito">⚡</div>
   alert("Hola! Soy Rayito ⚡. Puedo ayudarte con:\n1. Ver combos\n2. Horario de atención\n3. WhatsApp");
   <div id="rayitoMenu">
     <p onclick="mostrar('productos')">Ver Combos</p>
