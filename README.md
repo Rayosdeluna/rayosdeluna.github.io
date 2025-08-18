@@ -14,7 +14,7 @@
   button:hover { background:#e36b81; }
   footer { background:#333; color:white; text-align:center; padding:20px; margin-top:30px; }
   .faq h3 { margin-bottom:5px; }
-  input, textarea, select { width:100%; padding:8px; margin-top:5px; margin-bottom:15px; border-radius:6px; border:1px solid #ccc; }
+  input, textarea, select { width:100%; padding:8px; margin-top:5px; margin-bottom:15px; border-radius:6px; border:1px solid #ccc;}
   ul { padding-left:20px; }
   .chatbox { position:fixed; bottom:20px; right:20px; width:250px; background:#ffd6e4; border-radius:15px; padding:15px; box-shadow:0 4px 6px rgba(0,0,0,0.2); }
 </style>
@@ -22,6 +22,7 @@
 <body>
 
 <header>
+  <a href="https://imgbb.com/"><img src="https://i.ibb.co/dJmSGh63/logo-Rayos-de-luna.png" alt="logo-Rayos-de-luna" border="0"></a>
   <h1>Rayos de Luna ✨</h1>
   <p>Bisutería desde Ecuador con entregas a domicilio</p>
 </header>
@@ -37,38 +38,47 @@
 </nav>
 
 <section id="inicio">
-  <h2>Bienvenidos</h2>
+  <h2>Bienvenidos a Rayos de luna</h2>
   <p>Somos Rayos de Luna, una bisutería ecuatoriana que ofrece piezas únicas, elegantes y de calidad. Disfruta de nuestras entregas rápidas y seguras en todo el país.</p>
 </section>
 
-<section id="quienes">
-  <h2>Quiénes Somos</h2>
-  <p><strong>Misión:</strong> Ofrecer bisutería de calidad que inspire confianza y elegancia.</p>
-  <p><strong>Visión:</strong> Ser reconocidos como la bisutería ecuatoriana de mayor prestigio por nuestro diseño y cercanía con los clientes.</p>
-  <p><strong>Valores:</strong> Confianza, Responsabilidad y Creatividad.</p>
+<section id="nosotros">
+  <h2>Nosotros</h2>
+   <p><strong>¿Quiénes somos?:</strong> En Rayos de Luna somos marca de bisutería apasionada por crear puezas únicas que reflejan elegancia, estilo y personalidad. Cada una de nuestras piezas está diseñada pensando en ti, para que puedas expresar tú esencia en cada momento especial. Nos caraterizamos por combinar calidad, creatividad y atención personalizada, ofrecemos no solo un producto, sino experiencias que iluminan tu día a día. Nuestra misión es es acercarte a piezas que enamoran y te hagan sentir especial en cada ocasión.</p>
+  <p><strong>Misión:</strong> Brindar piezas únicas y elegantes que realzan la belleza y personalidad de cada cliente, ofreciendo una experiencia de compra segura, accesible y cercana, con atención personalizada que genera confianza y satisfacción.</p>
+  <p><strong>Visión:</strong> Convertirnos en la marca de bisutería online preferida a nivel nacional, reconocida por la calidad de nuestros productos, la creatividad de nuestros diseños y la conexión emocional con nuestros clientes, inspirando momentos especiales y memorables.</p>
+  <p><strong>Valores:</strong> Calidad: Nos comprometemos a ofrecer productos duraderos y bien elaborados.
+Creatividad: Cada pieza refleja originalidad y estilo.
+Confianza: Atención cercana y honesta en cada compra.
+Pasión: Amamos lo que hacemos y transmitimos esa pasión en nuestros productos.
+Innovación: Buscamos siempre mejorar y sorprender a nuestros clientes con nuevas tendencias.</p>
 </section>
 
 <section id="productos">
   <h2>Nuestros Productos</h2>
   <div class="producto">
     <h3>Combo Estrella</h3>
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/bgqCwhDs/combo-estrella.png" alt="combo-estrella" border="0"></a>
     <p>Un par de argollas.</p>
-    <button onclick="agregarPedido('Combo Estrella', 20)">Comprar</button>
+    <button onclick="agregarPedido('Combo Estrella', 10)">Comprar</button>
   </div>
   <div class="producto">
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/Xx0gjZgt/2.png" alt="2" border="0"></a>
     <h3>Combo Doble Estrella</h3>
     <p>Un par de argollas + una pulsera.</p>
-    <button onclick="agregarPedido('Combo Doble Estrella', 35)">Comprar</button>
+    <button onclick="agregarPedido('Combo Doble Estrella', 15)">Comprar</button>
   </div>
   <div class="producto">
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/1GvnrWB1/4.png" alt="4" border="0"></a> 
     <h3>Combo Estelar</h3>
     <p>Un juego de pulseras.</p>
-    <button onclick="agregarPedido('Combo Estelar', 25)">Comprar</button>
+    <button onclick="agregarPedido('Combo Estelar', 13)">Comprar</button>
   </div>
   <div class="producto">
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/8LJCHYWW/3.png" alt="3" border="0"></a>
     <h3>Colección Aura</h3>
     <p>Un par de argollas únicas.</p>
-    <button onclick="agregarPedido('Colección Aura', 40)">Comprar</button>
+    <button onclick="agregarPedido('Colección Aura', 10)">Comprar</button>
   </div>
 </section>
 
