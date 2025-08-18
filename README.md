@@ -64,8 +64,8 @@
 <p>Pasión: Amamos lo que hacemos y transmitimos esa pasión en nuestros productos.</p>
 
 <p>Innovación: Buscamos siempre mejorar y sorprender a nuestros clientes con nuevas tendencias.</p>
-
-
+</div>
+</section>
 <!-- Productos -->
 <section id="productos">
   <h2>Productos</Comboh2>
