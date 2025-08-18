@@ -64,11 +64,11 @@
 
 Nos caracterizamos por combinar calidad, creatividad y atención personalizada , ofreciendo no solo productos, sino experiencias que iluminan tu día a día. Nuestra misión es acercarte joyas que enamoran y te hagan sentir especial en cada ocasión.</p>
 
-    <p><b>Misión:</b> Brindar piezas únicas y elegantes que realzan la belleza y personalidad de cada cliente, ofreciendo una experiencia de compra segura, accesible y cercana, con atención personalizada que genera confianza y satisfacción.</p>
+<p><b>Misión:</b> Brindar piezas únicas y elegantes que realzan la belleza y personalidad de cada cliente, ofreciendo una experiencia de compra segura, accesible y cercana, con atención personalizada que genera confianza y satisfacción.</p>
 
-    <p><b>Visión:</b> Convertirnos en la marca de bisutería online preferida a nivel nacional, reconocida por la calidad de nuestros productos, la creatividad de nuestros diseños y la conexión emocional con nuestros clientes, inspirando momentos especiales y memorables. </p>
+  <p><b>Visión:</b> Convertirnos en la marca de bisutería online preferida a nivel nacional, reconocida por la calidad de nuestros productos, la creatividad de nuestros diseños y la conexión emocional con nuestros clientes, inspirando momentos especiales y memorables. </p>
 
-    <p><b>Valores:</b>Calidad: Nos comprometemos a ofrecer productos duraderos y bien elaborados.</p>
+<p><b>Valores:</b>Calidad: Nos comprometemos a ofrecer productos duraderos y bien elaborados.</p>
 
 
 <p>Creatividad: Cada pieza refleja originalidad y estilo.</p>
@@ -90,15 +90,15 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
         <div class="producto">
         <img src="https://i.ibb.co/HD1bwv3t/tu-imagen.jpg" alt="Descripción de la imagen" width="500">
 
-            <h3>Combo Estrella</h3>
-            <p>Un par de argollas</p>
+ <h3>Combo Estrella</h3>
+         <p>Un par de argollas</p>
             <p>$10</p>
             <button class="boton-compra" onclick="comprar('Combo Estrella')">Comprar</button>
         </div>
-        <div class="producto">
+       <div class="producto">
             <img src="https://i.ibb.co/7tM5jJ5K/imagen.jpg" alt="Descripción de la imagen" width="500">
             
-            <h3>Combo Doble Estrella</h3>
+  <h3>Combo Doble Estrella</h3>
             <p>Un par de argollas + una pulsera</p>
             <p>$15</p>
             <button class="boton-compra" onclick="comprar('Combo Doble Estrella')">Comprar</button>
@@ -106,7 +106,7 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
         <div class="producto">
      <a href="https://imgbb.com/"><img src="https://i.ibb.co/1GvnrWB1/4.png" alt="4" border="0"></a>
             
-            <h3>Combo Estelar</h3>
+<h3>Combo Estelar</h3>
             <p>Dos pulseras a juego</p>
             <p>$13</p>
             <button class="boton-compra" onclick="comprar('Combo Estelar')">Comprar</button>
@@ -114,7 +114,7 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
         <div class="producto">
 <img src="https://i.ibb.co/C3qcfPkk/tu-imagen.jpg" alt="Descripción de la imagen" width="500">
             
-            <h3>Colección Aura</h3>
+  <h3>Colección Aura</h3>
             <p>Un par de argollas únicas</p>
             <p>$10</p>
             <button class="boton-compra" onclick="comprar('Colección Aura')">Comprar</button>
@@ -154,11 +154,11 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
     <h3>Política de Privacidad</h3>
     <p>Cuidamos tu información personal con total responsabilidad. Los datos se usan solo para procesar pedidos y promociones.</p>
 
-    <h3>Pedidos y Compras</h3>
+  <h3>Pedidos y Compras</h3>
     <p>Todos los pedidos se confirman por WhatsApp. Métodos de pago: transferencia o efectivo. Tiempo de entrega: 3 días hábiles.</p>
 
-    <h3>Devoluciones y Cambios</h3>
-    <p>Aceptamos devoluciones solo por defectos de fabricación, hasta 48h después de la entrega.</p>
+  <h3>Devoluciones y Cambios</h3>
+  <p>Aceptamos devoluciones solo por defectos de fabricación, hasta 48h después de la entrega.</p>
 </section>
 
 <!-- Contacto -->
@@ -199,16 +199,3 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
     <p>© 2025 Rayos de Luna ⚡ | Todos los derechos reservados</p>
 </footer>
 
-<script>
-    function mostrarSeccion(id){
-        document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
-        document.getElementById(id).classList.add('active');
-    }
-
-    function comprar(producto){
-        window.open('https://wa.me/593995372875?text=Hola,+quiero+comprar+' + encodeURIComponent(producto),'_blank');
-    }
-</script>
-
-</body>
-</html>
