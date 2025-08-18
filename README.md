@@ -121,7 +121,7 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
     </div> 
 </section>
 
-<!-- Pedidos -->
+
 <section id="pedidos">
     <h2>Cómo comprar / Pedidos</h2>
     <p>Para realizar tu pedido, puedes usar nuestro WhatsApp o llenar el formulario:</p>
@@ -155,7 +155,7 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
     </div> 
 </section>
 
-<!-- Políticas -->
+
 <section id="politicas">
     <h2>Políticas</h2>
     <h3>Política de Privacidad</h3>
@@ -170,7 +170,6 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
     </div> 
 </section>
 
-<!-- Contacto -->
 <section id="contacto">
     <h2>Contacto</h2>
     <p>Correo: <b>rayo_de_luna_13@hotmail.com</b></p>
@@ -187,7 +186,6 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
     </div> 
 </section>
 
-<!-- Preguntas Frecuentes -->
 <section id="faq">
     <h2>Preguntas Frecuentes</h2>
     <p><b>¿Cuáles son los combos?</b> Combo Estrella, Doble Estrella, Estelar y la colección Aura.</p>
@@ -198,7 +196,6 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
 </section>
 
 
-<!-- Asistente Rayito -->
 <div id="rayito">
     <h3>Rayito ⚡</h3>
     <p>¡Hola! Soy Rayito, tu asistente virtual 😊 ¿En qué puedo ayudarte?</p>
