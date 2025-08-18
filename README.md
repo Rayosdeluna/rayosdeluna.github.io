@@ -93,7 +93,6 @@
 <body>
   <header>
         <h1>Rayos de Luna Bisutería</h1>
-      </div>
       <div class="menu">
         <a href="#inicio">Inicio</a>
         <a href="#nosotros">Nosotros</a>
@@ -103,7 +102,6 @@
         <a href="#contacto">Contacto</a>
         <a href="#faq">Preguntas frecuentes</a>
       </div>
-    </nav>
   </header>
 
   <!-- INICIO -->
