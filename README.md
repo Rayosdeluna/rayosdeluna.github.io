@@ -34,8 +34,8 @@
   <a href="#productos">Productos</a>
   <a href="#pedidos">Pedidos</a>
   <a href="#politicas">Políticas</a>
-  <a href="#faq">Preguntas Frecuentes</a>
   <a href="#contacto">Contacto</a>
+  <a href="#faq">Preguntas Frecuentes</a>
 </nav>
 
 <section id="inicio">
@@ -112,6 +112,11 @@
   <h3>Devoluciones y Cambios</h3>
   <p>Aceptamos devoluciones solo por defectos de fabricación, hasta 48h después de la entrega.</p>
 </section>
+<section id="contacto">
+  <h2>Contacto</h2>
+  <p><strong>Correo:</strong> rayo_de_luna_13@hotmail.com</p>
+  <p><strong>Instagram & Facebook:</strong> @Rayos_de_luna_13</p>
+</section>
 
 <section id="faq">
   <h2>Preguntas Frecuentes</h2>
@@ -129,14 +134,9 @@
   </div>
 </section>
 
-<section id="contacto">
-  <h2>Contacto</h2>
-  <p><strong>Correo:</strong> rayo_de_luna_13@hotmail.com</p>
-  <p><strong>Instagram & Facebook:</strong> @Rayos_de_luna_13</p>
-</section>
 
 <div class="chatbox">
-  <h4>🤖 Rayito - Tu asistente virtual</h4>
+  <h4>⚡ Rayito - Tu asistente virtual</h4>
   <p>Hola, soy Rayito. ¿Cómo te puedo ayudar?</p>
   <ul>
     <li><a href="#productos">Ver Combos</a></li>
