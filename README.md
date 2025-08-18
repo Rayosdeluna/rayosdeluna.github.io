@@ -118,7 +118,9 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
             <p>$10</p>
             <button class="boton-compra" onclick="comprar('Colección Aura')">Comprar</button>
         </div>
-    </div>
+    </div> <button type="submit">Confirmar Pedido</button>
+  </form>
+
 </section>
 
 <!-- Pedidos -->
@@ -136,26 +138,24 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
     <label>Producto:</label>
     <input type="text" id="producto" name="producto" readonly>
 
-    <label>Precio:</label>
+ <label>Precio:</label>
     <input type="text" id="precio" name="precio" readonly>
 
-    <label>Nombre:</label>
+  <label>Nombre:</label>
     <input type="text" name="nombre" required>
 
-    <label>Dirección:</label>
+<label>Dirección:</label>
     <input type="text" name="direccion" required>
 
-    <label>Teléfono:</label>
+<label>Teléfono:</label>
     <input type="text" name="telefono" required>
 
-    <label>Cantidad:</label>
+ <label>Cantidad:</label>
     <input type="number" id="cantidad" name="cantidad" value="1" min="1" required>
 
-    <label>Total:</label>
+<label>Total:</label>
     <input type="text" id="total" name="total" readonly>
 
-    <button type="submit">Confirmar Pedido</button>
-  </form>
 
   <script>
     // Capturar los parámetros de la URL
