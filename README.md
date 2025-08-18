@@ -26,14 +26,15 @@
   <p>Bisutería únicas de Ecuador con entregas a domicilio</p>
 </header>
 
+
 <nav>
   <a href="#" data-tab="inicio">Inicio</a>
   <a href="#" data-tab="nosotros">Nosotros</a>
   <a href="#" data-tab="productos">Productos</a>
   <a href="#" data-tab="pedidos">Pedidos</a>
   <a href="#" data-tab="politicas">Políticas</a>
-  <a href="#" data-tab="contacto">Contacto</a>
-  <a href="#" data-tab="faq">Preguntas Frecuentes</a>
+  <a href="#" data-tab="contacto">Contactos</a>
+  <a href="#" data-tab="faq">FAQ</a>
 </nav>
 
 <section id="inicio" class="active">
