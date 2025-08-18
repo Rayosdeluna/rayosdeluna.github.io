@@ -144,15 +144,14 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
     <h2>Completa tu pedido</h2>
   <form onsubmit="enviarPedido(event)">
     <label>Nombre completo:</label>
-    <input type="text" name="nombre" required>
 
-    <label>Teléfono:</label>
+<label>Teléfono:</label>
     <input type="text" name="telefono" required>
 
-    <label>Dirección:</label>
+<label>Dirección:</label>
     <textarea name="direccion" required></textarea>
 
-    <label>Producto:</label>
+ <label>Producto:</label>
     <select name="producto" required>
       <option value="Combo estrella">Combo estrella</option>
       <option value="Combo doble estrella ">Combo doble estrella</option>
@@ -170,10 +169,10 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
     <h3>Política de Privacidad</h3>
     <p>Cuidamos tu información personal con total responsabilidad. Los datos se usan solo para procesar pedidos y promociones.</p>
 
-    <h3>Pedidos y Compras</h3>
+ <h3>Pedidos y Compras</h3>
     <p>Todos los pedidos se confirman por WhatsApp. Métodos de pago: transferencia o efectivo. Tiempo de entrega: 3 días hábiles.</p>
 
-    <h3>Devoluciones y Cambios</h3>
+<h3>Devoluciones y Cambios</h3>
     <p>Aceptamos devoluciones solo por defectos de fabricación, hasta 48h después de la entrega.</p>
 </section>
 
