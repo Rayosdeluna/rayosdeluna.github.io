@@ -187,16 +187,6 @@ Nos caracterizamos por combinar calidad, creatividad y atención personalizada ,
 <footer>
     <p>© 2025 Rayos de Luna  | Todos los derechos reservados</p>
 </footer>
-
-<script>
-    function mostrarSeccion(id){
-        document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
-        document.getElementById(id).classList.add('active');
-    }
-
-    function comprar(producto){
-        window.open('https://wa.me/593995372875?text=Hola,+quiero+comprar+' + encodeURIComponent(producto),'_blank');
-    }
 </script>
 
 </body>
