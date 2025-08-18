@@ -4,7 +4,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rayos de Luna | Bisutería</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+ 
+  body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
     header { background: #f48b9a; padding: 15px; text-align: center; color: white; }
     nav { background: #ffd6e4; padding: 10px; text-align: center; }
     nav a { margin: 0 15px; text-decoration: none; color: #333; font-weight: bold; }
@@ -173,15 +174,21 @@
       <button onclick="sendMessage()">➤</button>
     </div>
   </div>
+<!-- Botón flotante -->
+  <button class="chat-btn" onclick="toggleChat()">💬</button>
 
-  <div id="rayito">⚡</div>
-  alert("Hola! Soy Rayito ⚡. Puedo ayudarte con:\n1. Ver combos\n2. Horario de atención\n3. WhatsApp");
-  <div id="rayitoMenu">
-    <p onclick="mostrar('productos')">Ver Combos</p>
-    <p onclick="mostrar('contacto')">Horarios de Atención</p>
-    <p onclick="mostrar('faq')">Preguntas Frecuentes</p>
-    <p><a href="https://wa.me/593995372875" target="_blank">WhatsApp</a></p>
+  <!-- Caja de chat -->
+  <div class="chat-box" id="chatBox">
+    <div class="chat-header">Asistente Rayito</div>
+    <div class="chat-messages" id="chatMessages">
+      <p class="msg-bot">👋 Hola, soy Rayito. ¿En qué puedo ayudarte?</p>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="userInput" placeholder="Escribe un mensaje...">
+      <button onclick="sendMessage()">➤</button>
+    </div>
   </div>
+  
 
   <script>
     function mostrar(id) {
