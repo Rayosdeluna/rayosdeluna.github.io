@@ -59,9 +59,7 @@
     cursor: pointer;
   }
   #chatRayito button:hover { background:#d96c86; }
-</style>
-</head>
-<body>
+
 
 <header>
   <h1>Rayos de Luna</h1>
