@@ -42,6 +42,7 @@
 <p>💖 Compra fácil, segura y sin complicaciones, desde la comodidad de tu casa.</p>
 <p>👉 Solo elige tu favorito, haz tu pedido ¡y nosotros lo llevamos directo a tu puerta! 🚚
 <p>📍Ecuador - Guayaquil</p>
+  
 </section>
 
 <section id="productos">
@@ -175,8 +176,4 @@
     alert('Pedido generado con éxito. Nos comunicaremos por WhatsApp.');
     form.reset();
     totalSpan.textContent = 0;
-  });
-</script>
-
-</body>
-</html>
+ 
