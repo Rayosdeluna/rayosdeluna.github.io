@@ -112,14 +112,25 @@
   <h2>Contacto</h2>
   <p>Instagram & Facebook: @Rayos_de_luna_13</p>
   <p>Asistente virtual: Rayito ⚡</p>
-  <p>Horario de atención: Lunes a Viernes 9AM - 4PM</p>
+<!-- Icono flotante del asistente -->
+<div id="asistente-container">
+  <div id="asistente">⚡</div>
+  <div id="chatRayito">
+    <p>¡Hola! Soy Rayito ⚡. ¿En qué puedo ayudarte?</p>
+    <button onclick="mostrarCombos()">Ver combos</button>
+    <button onclick="mostrarHorario()">Horario de atención</button>
+    <button onclick="abrirWhatsApp()">WhatsApp</button>
+  </div>
+</div>
 </section>
 
 <section id="faq" 
-  <h2>FAQ</h2>
+  
+ <p>FAQ</h2>
   <p><strong>¿Cuáles son los combos?</strong> Combo Estrella, Doble Estrella, Estelar y la Colección Aura.</p>
   <p><strong>¿Cómo puedo pagar?</strong> Transferencia o efectivo.</p>
   <p><strong>Horario de atención:</strong> Lun-Vie 9AM - 4PM</p>
+  
 </section>
 
 <footer>
