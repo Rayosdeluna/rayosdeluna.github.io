@@ -57,21 +57,25 @@
   <section id="productos">
     <h2>Nuestros Productos</h2>
     <div class="producto">
+        <img src="https://i.ibb.co/HD1bwv3t/tu-imagen.jpg" alt="Descripción de la imagen" width="500"> 
       <h3>Combo Estrella</h3>
       <p>Un par de argollas.</p>
       <button onclick="agregarPedido('Combo Estrella', $10)">Comprar</button>
     </div>
     <div class="producto">
+      <img src="https://i.ibb.co/7tM5jJ5K/imagen.jpg" alt="Descripción de la imagen" width="500"> 
       <h3>Combo Doble Estrella</h3>
       <p>Un par de argollas + una pulsera.</p>
       <button onclick="agregarPedido('Combo Doble Estrella', $15)">Comprar</button>
     </div>
     <div class="producto">
+      <a href="https://imgbb.com/"><img src="https://i.ibb.co/1GvnrWB1/4.png" alt="4" border="0"></a>
       <h3>Combo Estelar</h3>
       <p>Un juego de pulseras.</p>
       <button onclick="agregarPedido('Combo Estelar', $13)">Comprar</button>
     </div>
     <div class="producto">
+      <img src="https://i.ibb.co/C3qcfPkk/tu-imagen.jpg" alt="Descripción de la imagen" width="500">
       <h3>Colección Aura</h3>
       <p>Un par de argollas únicas.</p>
       <button onclick="agregarPedido('Colección Aura', $10)">Comprar</button>
@@ -159,4 +163,31 @@
 
   <footer>
     <p>&copy; 2025 Rayos de Luna | Ecuador</p>
- 
+ script>
+    let pedidos = [];
+    let total = 0;
+
+  function agregarPedido(producto, precio) {
+      pedidos.push({producto, precio});
+      total += precio;
+      mostrarPedidos();
+      alert(producto + " agregado al carrito ✅");
+    }
+
+  function mostrarPedidos() {
+      let lista = document.getElementById("listaPedidos");
+      lista.innerHTML = "";
+      pedidos.forEach(p => {
+        let li = document.createElement("li");
+        li.textContent = p.producto + " - $" + p.precio;
+        lista.appendChild(li);
+      });
+      document.getElementById("total").textContent = total;
+    }
+
+  document.getElementById("formPedido").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.getElementById("seguimiento").classList.remove("oculto");
+      document.getElementById("estadoPedido").textContent = "Por aprobar ✅";
+      alert("Tu pedido ha sido registrado. Te contactaremos por WhatsApp para confirmarlo.");
+    });
