@@ -345,237 +345,26 @@
       <p>Hecho con ♥ para brillar contigo</p>
     </div>
   </footer>
-
-  <!-- ASISTENTE RAYITO -->
+<!-- RAYITO: asistente flotante -->
   <div class="rayito">
-    <button class="rayito-toggle" onclick="toggleRayito()">⚡</button>
-    <div class="rayito-window" id="rayitoWindow">
-      <div class="rayito-header">
-        <span>⚡</span>
-        <button onclick="toggleRayito()">X</button>
+    <button class="rayito-toggle" id="rayito-toggle">⚡ Rayito</button>
+  </div>
+  <div class="rayito-window" id="rayito-window" aria-hidden="true">
+    <div class="rayito-header">
+      <strong>Rayito</strong>
+      <button id="rayito-close" class="btn" style="padding:6px 10px; background:rgba(255,255,255,.2); border:1px solid rgba(255,255,255,.5)">✕</button>
+    </div>
+    <div class="rayito-body" id="rayito-body">
+      <div class="rayito-msg">¡Hola! Soy <strong>Rayito</strong> ⚡ ¿En qué puedo ayudarte?</div>
+      <div class="rayito-actions">
+        <a href="#productos">Ver combos</a>
+        <button data-action="horario">Horarios</button>
+        <a href="#faq">FAQ</a>
+        <a href="https://wa.me/593995372875?text=Hola%20Rayitos%20de%20Luna%2C%20necesito%20ayuda%20con%20mi%20compra" target="_blank" rel="noopener">WhatsApp</a>
       </div>
-      <div class="rayito-body">
-        <div class="rayito-msg">¡Hola! Soy Rayito ⚡, ¿en qué puedo ayudarte hoy? </div>
-        <div class="rayito-actions">
-          <a href="#productos">Ver Combos</a>
-          <a href="https://wa.me/593995372875">WhatsApp</a>
-       <p>Horario de atención:</p>
-  <button class="alert('Nuestro horario de atención es de 9am - 4pm')">Ver Horario</button>
-</div>
-        <div class="rayito-input">
-          <input type="text" placeholder="Escribe tu mensaje..."/>
-           <button class="btn" id="rayito-send" style="padding:8px 12px">Enviar</button>
+    </div>
+    <div class="rayito-input">
+      <input id="rayito-input" placeholder="Escribe aquí... (ej: combos, horario, pagar)"/>
+      <button class="btn" id="rayito-send" style="padding:8px 12px">Enviar</button>
     </div>
   </div>
-  
-<script>
-    // ======= UTILIDADES =======
-    const $ = (sel, ctx=document) => ctx.querySelector(sel);
-    const $$ = (sel, ctx=document) => Array.from(ctx.querySelectorAll(sel));
-    const formatMoney = n => '$' + n.toFixed(2);
-
-    // ======= CATÁLOGO (edita precios y nombres aquí) =======
-    const CATALOGO = {
-      'combo-estrella': { nombre: 'Combo Estrella', precio: 10.00 },
-      'combo-doble':    { nombre: 'Combo Doble Estrella', precio: 15.00 },
-      'combo-estelar':  { nombre: 'Combo Estelar', precio: 13.00 },
-      'aura':           { nombre: 'Colección Aura (argollas únicas)', precio: 10.00 },
-    };
-
-    // Rellena precios en cards por si se cambian arriba
-    $$('#productos .product').forEach(card => {
-      const sku = card.dataset.sku; const p = CATALOGO[sku]?.precio ?? 0;
-      const priceEl = card.querySelector('.price-val'); if(priceEl) priceEl.textContent = p.toFixed(2);
-    });
-
-    // ======= PEDIDOS (tabla dinámica) =======
-    const itemsBody = $('#items-table tbody');
-    const totalCell = $('#total-cell');
-    const whatsappBtn = $('#whatsapp-confirm');
-
-    function crearFila(sku) {
-      const prod = CATALOGO[sku]; if(!prod) return;
-      const tr = document.createElement('tr'); tr.dataset.sku = sku;
-      tr.innerHTML = `
-        <td>${prod.nombre}</td>
-        <td>${formatMoney(prod.precio)}</td>
-        <td>
-          <input type="number" min="0" value="1" style="width:80px" aria-label="Cantidad" />
-        </td>
-        <td class="subtotal">${formatMoney(prod.precio)}</td>
-      `;
-      const qty = tr.querySelector('input');
-      qty.addEventListener('input', () => { if(qty.value < 0) qty.value = 0; actualizarTotal(); });
-      itemsBody.appendChild(tr);
-      actualizarTotal();
-    }
-
-    function actualizarTotal(){
-      let total = 0;
-      $$('#items-table tbody tr').forEach(tr => {
-        const sku = tr.dataset.sku; const precio = CATALOGO[sku].precio; const qty = Number(tr.querySelector('input').value || 0);
-        const sub = precio * qty; tr.querySelector('.subtotal').textContent = formatMoney(sub); total += sub;
-      });
-      totalCell.textContent = formatMoney(total);
-      // Habilitar/enlazar WhatsApp
-      const data = obtenerDatosFormulario(false);
-      if(total > 0 && data.nombre && data.whatsapp){
-        const texto = encodeURIComponent(
-          `Hola Rayos de Luna, quiero confirmar mi pedido.\n`+
-          `Nombre: ${data.nombre}\nWhatsApp: ${data.whatsapp}\nDirección: ${data.direccion}\n`+
-          `Pago: ${data.pago || '-'}\n`+
-          `Productos:\n`+
-          $$('#items-table tbody tr').map(tr=>{
-            const sku = tr.dataset.sku; const q = tr.querySelector('input').value; return `- ${CATALOGO[sku].nombre} x${q}`;
-          }).join('\n') + `\nTotal: ${totalCell.textContent}`
-        );
-        whatsappBtn.href = `https://wa.me/593995372875?text=${texto}`;
-        whatsappBtn.removeAttribute('aria-disabled');
-      } else {
-        whatsappBtn.href = '#';
-        whatsappBtn.setAttribute('aria-disabled','true');
-      }
-    }
-
-    function obtenerDatosFormulario(includeItems=true){
-      const form = $('#order-form');
-      const fd = new FormData(form);
-      const data = Object.fromEntries(fd.entries());
-      data.items = includeItems ? $$('#items-table tbody tr').map(tr=>({
-        sku: tr.dataset.sku,
-        nombre: CATALOGO[tr.dataset.sku].nombre,
-        precio: CATALOGO[tr.dataset.sku].precio,
-        cantidad: Number(tr.querySelector('input').value || 0),
-      })) : [];
-      data.total = $$('#items-table tbody tr').reduce((acc,tr)=>{
-        const sku = tr.dataset.sku; return acc + CATALOGO[sku].precio * Number(tr.querySelector('input').value||0)
-      },0);
-      return data;
-    }
-
-    // Añadir productos desde cards
-    $$('.add-to-order').forEach(btn => btn.addEventListener('click', () => {
-      const sku = btn.dataset.sku; const existente = $(`#items-table tbody tr[data-sku="${sku}"]`);
-      if(!existente){ crearFila(sku); } else {
-        const qty = existente.querySelector('input'); qty.value = Number(qty.value||0) + 1; actualizarTotal();
-      }
-      // Ir a Pedidos
-      location.hash = '#pedidos';
-    }));
-
-    // Render inicial: todas las filas con cantidad 0 para que el cliente elija
-    Object.keys(CATALOGO).forEach(sku=>{ crearFila(sku); const row = $(`#items-table tbody tr[data-sku="${sku}"]`); if(row){ row.querySelector('input').value = 0; }});
-    actualizarTotal();
-
-    // ======= GENERAR PEDIDO =======
-    const ORD_KEY = 'rayosdluna_pedidos_v1';
-    const leerPedidos = () => JSON.parse(localStorage.getItem(ORD_KEY) || '[]');
-    const guardarPedidos = (arr) => localStorage.setItem(ORD_KEY, JSON.stringify(arr));
-
-    function generarId(){
-      const hoy = new Date();
-      const year = hoy.getFullYear();
-      const num = (leerPedidos().length + 1).toString().padStart(4,'0');
-      return `RL-${year}-${num}`;
-    }
-
-    function renderTablaPedidos(){
-      const pedidos = leerPedidos();
-      const tbody = $('#orders-table tbody');
-      tbody.innerHTML = '';
-      pedidos.forEach(p => {
-        const tr = document.createElement('tr');
-        tr.innerHTML = `
-          <td>${p.id}</td>
-          <td>${p.nombre}</td>
-          <td>${formatMoney(p.total)}</td>
-          <td><span class="status-chip status-${p.estado.replaceAll(' ','\ ')}">${p.estado}</span></td>
-          <td>
-            <select data-id="${p.id}">
-              ${['Por aprobar','Por preparar','Por enviar','En tránsito','Entregado','Anulado'].map(s=>`<option ${s===p.estado?'selected':''}>${s}</option>`).join('')}
-            </select>
-          </td>`;
-        tbody.appendChild(tr);
-      });
-      // listeners de cambio de estado
-      $$('#orders-table select').forEach(sel=> sel.addEventListener('change', e=>{
-        const pedidos = leerPedidos();
-        const id = sel.dataset.id; const idx = pedidos.findIndex(x=>x.id===id);
-        if(idx>-1){ pedidos[idx].estado = sel.value; guardarPedidos(pedidos); renderTablaPedidos(); renderTrack(); }
-      }));
-    }
-
-    function renderTrack(){
-      const id = $('#track-id').value.trim();
-      const pedidos = leerPedidos();
-      const p = pedidos.find(x=>x.id===id);
-      const out = $('#track-result');
-      if(!id){ out.innerHTML = '<p style="color:var(--muted)">Ingresa un ID de pedido para ver el estado.</p>'; return; }
-      if(!p){ out.innerHTML = '<p style="color:var(--danger)">No encontramos ese pedido. Verifica el ID.</p>'; return; }
-      out.innerHTML = `
-        <div class="card" style="background:#fff">
-          <p><strong>Pedido:</strong> ${p.id}</p>
-          <p><strong>Cliente:</strong> ${p.nombre}</p>
-          <p><strong>Total:</strong> ${formatMoney(p.total)}</p>
-          <p><strong>Estado:</strong> <span class="status-chip status-${p.estado.replaceAll(' ','\ ')}">${p.estado}</span></p>
-        </div>`;
-    }
-
-    $('#btn-track').addEventListener('click', renderTrack);
-
-    $('#order-form').addEventListener('submit', e => {
-      e.preventDefault();
-      const data = obtenerDatosFormulario();
-      if(data.total <= 0){ alert('Selecciona al menos un producto.'); return; }
-
-      const nuevo = {
-        id: generarId(),
-        fecha: new Date().toISOString(),
-        estado: 'Por aprobar',
-        ...data,
-      };
-      const pedidos = leerPedidos(); pedidos.push(nuevo); guardarPedidos(pedidos);
-      renderTablaPedidos();
-
-      alert(`¡Pedido generado! ID: ${nuevo.id}. Ahora confirma por WhatsApp.`);
-      $('#track-id').value = nuevo.id; renderTrack();
-      actualizarTotal();
-    });
-
-    renderTablaPedidos();
-
-    // Footer year
-    $('#year').textContent = new Date().getFullYear();
-
-    // ======= RAYITO =======
-    const rayitoWin = $('#rayito-window');
-    $('#rayito-toggle').addEventListener('click', ()=>{ rayitoWin.style.display = 'flex'; rayitoWin.setAttribute('aria-hidden','false'); });
-    $('#rayito-close').addEventListener('click', ()=>{ rayitoWin.style.display = 'none'; rayitoWin.setAttribute('aria-hidden','true'); });
-
-    function rayitoResponder(text){
-      const body = $('#rayito-body');
-      const bubble = (msg, mine=false)=>{
-        const div = document.createElement('div');
-        div.className = 'rayito-msg';
-        div.style.background = mine ? '#eef2ff' : 'var(--brand-soft)';
-        div.textContent = msg; body.appendChild(div); body.scrollTop = body.scrollHeight;
-      };
-      bubble(text, true);
-      const t = text.toLowerCase();
-      let resp = 'Puedo ayudarte a ver combos, horario, métodos de pago y preguntas frecuentes.';
-      if(t.includes('combo')) resp = 'Tenemos: Combo Estrella, Doble Estrella, Estelar y Colección Aura. Mira en Productos.';
-      else if(t.includes('hora')) resp = 'Atendemos Lun–Vie de 9AM a 4PM.';
-      else if(t.includes('pagar') || t.includes('pago')) resp = 'Puedes pagar por Transferencia o Efectivo. Confirmamos por WhatsApp.';
-      else if(t.includes('whatsapp')) resp = 'Escríbenos al 099 537 2875 o usa el botón de WhatsApp.';
-      setTimeout(()=> bubble(resp), 300);
-    }
-
-    $('[data-action="horario"]').addEventListener('click', ()=> rayitoResponder('Horario: Lun–Vie 9AM a 4PM.'));
-    $('#rayito-send').addEventListener('click', ()=>{
-      const input = $('#rayito-input'); if(!input.value.trim()) return; rayitoResponder(input.value.trim()); input.value='';
-    });
-    $('#rayito-input').addEventListener('keydown', e=>{ if(e.key==='Enter'){ e.preventDefault(); $('#rayito-send').click(); }});
-  </script>
-</body>
-</html>
-   
