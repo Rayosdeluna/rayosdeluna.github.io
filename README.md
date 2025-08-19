@@ -360,7 +360,7 @@
           <a href="#productos">Ver Combos</a>
           <a href="https://wa.me/593995372875">WhatsApp</a>
        <p>Horario de atención:</p>
-  <button onclick="alert('Nuestro horario de atención es de 9am - 4pm')">Ver Horario</button>
+  <button class="alert('Nuestro horario de atención es de 9am - 4pm')">Ver Horario</button>
 </div>
         <div class="rayito-input">
           <input type="text" placeholder="Escribe tu mensaje..."/>
