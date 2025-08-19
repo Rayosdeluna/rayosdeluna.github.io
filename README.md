@@ -348,7 +348,7 @@
 
   <!-- ASISTENTE RAYITO -->
   <div class="rayito">
-    <button class="rayito-toggle" onclick="toggleRayito()">⚡</button>
+    <button class="rayito-toggle" onclick="toggleRayito()">⚡Rayito</button>
     <div class="rayito-window" id="rayitoWindow">
       <div class="rayito-header">
         <span>⚡</span>
