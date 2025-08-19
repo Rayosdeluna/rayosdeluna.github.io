@@ -115,7 +115,7 @@
       </div>
     </div>
     <div class="card">
-      <img alt="Bisitería Rayos de Luna" <img src="https://i.ibb.co/27MR6yxh/El-texto-del-p-rrafo-1.png" alt="El-texto-del-p-rrafo-1" border="0"></a>
+      <img src="https://i.ibb.co/27MR6yxh/El-texto-del-p-rrafo-1.png" alt="El-texto-del-p-rrafo-1" border="0"></a>
     </div>
   </section>
   
