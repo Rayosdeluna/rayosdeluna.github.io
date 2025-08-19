@@ -355,7 +355,7 @@
       <strong>Rayito</strong>
       <button id="rayito-close" class="btn" style="padding:6px 10px; background:rgba(255,255,255,.2); border:1px solid rgba(255,255,255,.5)">✕</button>
     </div>
-    <div class="rayito-body" id="rayito-body">
+    <div class="rayito-chatbox" id="rayito-chatbox">
       <div class="rayito-msg">¡Hola! Soy <strong>Rayito</strong> ⚡ ¿En qué puedo ayudarte?</div>
       <div class="rayito-actions">
         <a href="#productos">Ver combos</a>
