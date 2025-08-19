@@ -364,7 +364,9 @@
 </div>
         <div class="rayito-input">
           <input type="text" placeholder="Escribe tu mensaje..."/>
-          <button>Enviar</button>
+           <button class="btn" id="rayito-send" style="padding:8px 12px">Enviar</button>
+    </div>
+  </div>
   
 <script>
     // ======= UTILIDADES =======
