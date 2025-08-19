@@ -358,10 +358,15 @@
       <div class="rayito-msg">¡Hola! Soy <strong>Rayito</strong> ⚡ ¿En qué puedo ayudarte?</div>
       <div class="rayito-actions">
         <a href="#productos">Ver combos</a>
-        <button data-action="horario">Horarios</button>
+        <button data-action="horario de atención 9AM - 4PM">Horarios</button>
         <a href="#faq">FAQ</a>
         <a href="https://wa.me/593995372875?text=Hola%20Rayitos%20de%20Luna%2C%20necesito%20ayuda%20con%20mi%20compra" target="_blank" rel="noopener">WhatsApp</a>
       </div>
+    </div>
+    <div class="rayito-input">
+      <input id="rayito-input" placeholder="Escribe aquí... (ej: combos, horario, pagar)"/>
+      <button class="btn" id="rayito-send" style="padding:8px 12px">Enviar</button>
+    </div>
     </div>
     <div class="rayito-input">
       <input id="rayito-input" placeholder="Escribe aquí... (ej: combos, horario, pagar)"/>
