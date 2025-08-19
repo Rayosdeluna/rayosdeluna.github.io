@@ -342,42 +342,43 @@
       <p>Hecho con ♥ para brillar contigo</p>
     </div>
   </footer>
-
-
-  <!-- RAYITO: asistente flotante -->
-  <div class="rayito">
-    <button class="rayito-toggle" id="rayito-toggle"> ⚡</button>
-  </div>
-  <div class="rayito-window" id="rayito-window" aria-hidden="true">
-    <div class="rayito-header">
-      <strong>Rayito</strong>
-      <button id="rayito-close" class="btn" style="padding:6px 10px; background:rgba(255,255,255,.2); border:1px solid rgba(255,255,255,.5)">✕</button>
+<!-- BOTÓN CATALOGO -->
+    <div class="cta">
+      <a class="btn ghost" href="https://www.canva.com/design/DAGvc_2MElU/qVUR8dLijXOCEZZoHOpr8A/view?utm_content=DAGvc_2MElU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc23b1edaf1" target="_blank" rel="noopener">Ver catálogo completo</a>
     </div>
-    <div class="rayito-body" id="rayito-body">
-      <div class="rayito-msg">¡Hola! Soy <strong>Rayito</strong> ⚡ ¿En qué puedo ayudarte?</div>
-      <div class="rayito-actions">
-        <a href="#productos">Ver combos</a>
-        <button data-action="horario">Horarios</button>
-        <a href="#faq">FAQ</a>
-        <a href="https://wa.me/593995372875?text=Hola%20Rayitos%20de%20Luna%2C%20necesito%20ayuda%20con%20mi%20compra" target="_blank" rel="noopener">WhatsApp</a>
+  </section>
+
+  <!-- ASISTENTE RAYITO -->
+  <div class="rayito">
+    <button class="rayito-toggle" onclick="toggleRayito()">💫 Rayito</button>
+    <div class="rayito-window" id="rayitoWindow">
+      <div class="rayito-header">
+        <span>Rayito 💫</span>
+        <button onclick="toggleRayito()">X</button>
+      </div>
+      <div class="rayito-body">
+        <div class="rayito-msg">¡Hola! Soy Rayito, ¿en qué puedo ayudarte hoy? 🌙</div>
+        <div class="rayito-actions">
+          <a href="#productos">Ver Combos</a>
+          <a href="https://www.canva.com/design/DAGvc_2MElU/qVUR8dLijXOCEZZoHOpr8A/view?utm_content=DAGvc_2MElU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc23b1edaf1" target="_blank">Catálogo</a>
+          <a href="https://wa.me/593995372875">WhatsApp</a>
+        </div>
+        <div class="rayito-input">
+          <input type="text" placeholder="Escribe tu mensaje..."/>
+          <button>Enviar</button>
+        </div>
       </div>
     </div>
-    <div class="rayito-input">
-      <input id="rayito-input" placeholder="Escribe aquí... (ej: combos, horario, pagar)"/>
-      <button class="btn" id="rayito-send" style="padding:8px 12px">Enviar</button>
-       <section id="catalogo">
-  <h2>Catálogo</h2>
-  <iframe 
-    src="https://www.canva.com/design/DAGvc_2MElU/qVUR8dLijXOCEZZoHOpr8/embed" 
-    width="100%" 
-    height="600" 
-    frameborder="0" 
-    allowfullscreen="allowfullscreen" 
-    allow="fullscreen">
-  </iframe>
-</section>
-          
-<script>
+  </div>
+
+  <script>
+    function toggleRayito(){
+      const win=document.getElementById('rayitoWindow');
+      win.style.display=win.style.display==='flex'?'none':'flex';
+    }
+  </script>
+</body>
+</html>
     // ======= UTILIDADES =======
     const $ = (sel, ctx=document) => ctx.querySelector(sel);
     const $$ = (sel, ctx=document) => Array.from(ctx.querySelectorAll(sel));
