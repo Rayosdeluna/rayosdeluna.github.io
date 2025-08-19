@@ -183,7 +183,7 @@
       <article class="card product" data-sku="aura">
          <img src="https://i.ibb.co/8LJCHYWW/3.png" alt="3" width="120" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
   
-        <h3>Colección Aura</h3>
+  <h3>Colección Aura</h3>
         <p>Un par de argollas únicas.</p>
         <div class="price">$<span class="price-val">$10.00</span></div>
         <div class="cta">
@@ -339,13 +339,13 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
+ <footer>
     <div style="max-width:1100px; margin:auto; display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap">
-      <p>© <span id="year"></span> Rayos de Luna · Joyas</p>
+      <p>© <span id="year"></span> Rayos de Luna · Bisutería</p>
       <p>Hecho con ♥ para brillar contigo</p>
     </div>
   </footer>
+
 
   <!-- RAYITO: asistente flotante -->
   <div class="rayito">
