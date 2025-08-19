@@ -370,13 +370,6 @@
     function toggleRayito(){
       const win=document.getElementById('rayitoWindow');
       win.style.display=win.style.display==='flex'?'none':'flex';
-    }
-  </script>
-</body>
-</html>
-    // ======= UTILIDADES =======
-    const $ = (sel, ctx=document) => ctx.querySelector(sel);
-    const $$ = (sel, ctx=document) => Array.from(ctx.querySelectorAll(sel));
-    const formatMoney = n => '$' + n.toFixed(2);
+  
 
    
