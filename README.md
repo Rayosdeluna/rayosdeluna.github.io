@@ -369,22 +369,6 @@
       <button class="btn" id="rayito-send" style="padding:8px 12px">Enviar</button>
     </div>
   </div>
-    <!-- Asistente Virtual Rayito -->
-<div id="asistente" onclick="abrirChat()">⚡</div>
-<div id="chatbox">
-<header>Rayito ⚡</header>
-<div>
-<p>¡Hola! Soy Rayito, tu asistente virtual 🌙<br> ¿En qué puedo ayudarte?</p>
-<ul>
-<li><a href="#" onclick="mostrar('productos')">Ver Combos</a></li>
-<li><a href="#" onclick="mostrar('faq')">Preguntas Frecuentes</a></li>
-<li><a href="https://wa.me/593995372875" target="_blank">WhatsApp</a></li>
-<li>Horario de atención: 9AM - 4PM</li>
-</ul>
-</div>
-</div>
-    <div class="rayito-input">
-      <input id="rayito-input" placeholder="Escribe aquí... (ej: combos, horario, pagar)"/>
       <button class="btn" id="rayito-send" style="padding:8px 12px">Enviar</button>
     </div>
 
