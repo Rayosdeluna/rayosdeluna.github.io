@@ -368,5 +368,11 @@
       <input id="rayito-input" placeholder="Escribe aquí...
       <button class="btn" id="rayito-send" style="padding:8px 12px">Enviar</button>
     </div>
-
-  
+ function rayitoResponder(text){
+      const body = $('#rayito-body');
+      const bubble = (msg, mine=false)=>{
+        const div = document.createElement('div');
+        div.className = 'rayito-msg';
+        div.style.background = mine ? '#eef2ff' : 'var(--brand-soft)';
+        div.textContent = msg; body.appendChild(div); body.scrollTop = body.scrollHeight;
+      };
