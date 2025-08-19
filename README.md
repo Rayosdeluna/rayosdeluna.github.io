@@ -3,7 +3,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Rayos de Luna | Bisutería</title>
-  <meta name="description" content="Bisutería y joyas hechas con amor en Ecuador. Entregas a domicilio. Combos y colección Aura. Pedidos con seguimiento." />
+  <meta name="description" content="Bisutería hechas con amor en Ecuador. Entregas a domicilio. Combos y colección Aura. Pedidos con seguimiento." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
