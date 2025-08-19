@@ -348,7 +348,7 @@
 
   <!-- ASISTENTE RAYITO -->
   <div class="rayito">
-    <button class="rayito-toggle" onclick="toggleRayito()">⚡Rayito</button>
+    <button class="rayito-toggle" onclick="toggleRayito()">⚡</button>
     <div class="rayito-window" id="rayitoWindow">
       <div class="rayito-header">
         <span>⚡</span>
@@ -365,10 +365,6 @@
         <div class="rayito-input">
           <input type="text" placeholder="Escribe tu mensaje..."/>
           <button>Enviar</button>
-  <script>
-    function toggleRayito(){
-      const win=document.getElementById('rayitoWindow');
-      win.style.display=win.style.display==='flex'?'none':'flex';
   
 <script>
     // ======= UTILIDADES =======
@@ -378,10 +374,10 @@
 
     // ======= CATÁLOGO (edita precios y nombres aquí) =======
     const CATALOGO = {
-      'combo-estrella': { nombre: 'Combo Estrella', precio: 12.00 },
-      'combo-doble':    { nombre: 'Combo Doble Estrella', precio: 18.00 },
-      'combo-estelar':  { nombre: 'Combo Estelar', precio: 20.00 },
-      'aura':           { nombre: 'Colección Aura (argollas únicas)', precio: 15.00 },
+      'combo-estrella': { nombre: 'Combo Estrella', precio: 10.00 },
+      'combo-doble':    { nombre: 'Combo Doble Estrella', precio: 15.00 },
+      'combo-estelar':  { nombre: 'Combo Estelar', precio: 13.00 },
+      'aura':           { nombre: 'Colección Aura (argollas únicas)', precio: 10.00 },
     };
 
     // Rellena precios en cards por si se cambian arriba
