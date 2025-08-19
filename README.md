@@ -347,15 +347,15 @@
    </footer>
 
   <!-- RAYITO: asistente flotante -->
-  <div class="rayito">
-    <button class="rayito-toggle" id="rayito-toggle">⚡ </button>
+  <div class="rayito.btn">
+    <button class="rayito-chat" id="rayito-chat">⚡ </button>
   </div>
   <div class="rayito-window" id="rayito-window" aria-hidden="true">
     <div class="rayito-header">
       <strong>Rayito</strong>
       <button id="rayito-close" class="btn" style="padding:6px 10px; background:rgba(255,255,255,.2); border:1px solid rgba(255,255,255,.5)">✕</button>
     </div>
-    <div class="rayito-chatbox" id="rayito-chatbox">
+    <div class="rayito-chat" id="rayito-chat">
       <div class="rayito-msg">¡Hola! Soy <strong>Rayito</strong> ⚡ ¿En qué puedo ayudarte?</div>
       <div class="rayito-actions">
         <a href="#productos">Ver combos</a>
