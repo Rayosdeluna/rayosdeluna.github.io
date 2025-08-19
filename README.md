@@ -365,8 +365,18 @@
     <div class="rayito-input">
       <input id="rayito-input" placeholder="Escribe aquí... (ej: combos, horario, pagar)"/>
       <button class="btn" id="rayito-send" style="padding:8px 12px">Enviar</button>
-        <button class="catálogo" id="Catálogo" style="padding:8px 12px">  <button class="btn" id="rayito-send" style="padding:8px 12px">Enviar</button></button>
-    </div>
+       <section id="catalogo">
+  <h2>Catálogo Rayos de Luna</h2>
+  <iframe 
+    src="https://www.canva.com/design/DAGvc_2MElU/qVUR8dLijXOCEZZoHOpr8/embed" 
+    width="100%" 
+    height="600" 
+    frameborder="0" 
+    allowfullscreen="allowfullscreen" 
+    allow="fullscreen">
+  </iframe>
+</section>
+          
 <script>
     // ======= UTILIDADES =======
     const $ = (sel, ctx=document) => ctx.querySelector(sel);
