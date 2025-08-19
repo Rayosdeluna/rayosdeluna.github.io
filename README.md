@@ -108,14 +108,14 @@
     <div class="card">
       <span class="badge">🇪🇨 Somos de Ecuador • Entregas a domicilio</span>
       <h2>Brilla con <span style="color:var(--brand)">Rayos de Luna</span></h2>
-      <p>Diseñamos bisutería y joyas con cariño para tu día a día. Explora nuestros <strong>Combos</strong> y la exclusiva <strong>Colección Aura</strong> ✨.</p>
+      <p>Diseñamos bisutería hecha con cariño para tu día a día. Explora nuestros <strong>Combos</strong> y la exclusiva <strong>Colección Aura</strong> ✨.</p>
       <div class="cta">
         <a class="btn" href="#productos">Ver combos</a>
         <a class="btn ghost" href="https://wa.me/593995372875?text=Hola%20Rayos%20de%20Luna%2C%20vengo%20desde%20la%20web%20y%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener">WhatsApp</a>
       </div>
     </div>
     <div class="card">
-      <img src="https://i.ibb.co/27MR6yxh/El-texto-del-p-rrafo-1.png" alt="El-texto-del-p-rrafo-1" border="0"></a>
+    <img src="https://i.ibb.co/27MR6yxh/El-texto-del-p-rrafo-1.png" alt="El-texto-del-p-rrafo-1" border="0">
     </div>
   </section>
   
