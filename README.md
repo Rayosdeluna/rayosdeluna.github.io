@@ -350,18 +350,18 @@
 
   <!-- ASISTENTE RAYITO -->
   <div class="rayito">
-    <button class="rayito-toggle" onclick="toggleRayito()">💫 Rayito</button>
+    <button class="rayito-toggle" onclick="toggleRayito()">⚡ Rayito</button>
     <div class="rayito-window" id="rayitoWindow">
       <div class="rayito-header">
-        <span>Rayito 💫</span>
+        <span>⚡</span>
         <button onclick="toggleRayito()">X</button>
       </div>
       <div class="rayito-body">
-        <div class="rayito-msg">¡Hola! Soy Rayito, ¿en qué puedo ayudarte hoy? 🌙</div>
+        <div class="rayito-msg">¡Hola! Soy Rayito ⚡, ¿en qué puedo ayudarte hoy? 🌙</div>
         <div class="rayito-actions">
           <a href="#productos">Ver Combos</a>
-          <a href="https://www.canva.com/design/DAGvc_2MElU/qVUR8dLijXOCEZZoHOpr8A/view?utm_content=DAGvc_2MElU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc23b1edaf1" target="_blank">Catálogo</a>
           <a href="https://wa.me/593995372875">WhatsApp</a>
+           <button onclick="mostrarHorario()">Horario de atención</button>
         </div>
         <div class="rayito-input">
           <input type="text" placeholder="Escribe tu mensaje..."/>
@@ -379,7 +379,6 @@
   </script>
 </body>
 </html>
-
     // ======= UTILIDADES =======
     const $ = (sel, ctx=document) => ctx.querySelector(sel);
     const $$ = (sel, ctx=document) => Array.from(ctx.querySelectorAll(sel));
