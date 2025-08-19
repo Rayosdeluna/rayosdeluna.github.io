@@ -369,6 +369,30 @@
   </div>
 
   <script>
+    <h1>Catálogo Rayos de Luna</h1>
+
+  <button onclick="generarPDF('Combo Estrella', 'combo1.jpg', '$25')">Combo Estrella</button>
+  <button onclick="generarPDF('Combo Doble Estrella', 'combo2.jpg', '$40')">Combo Doble Estrella</button>
+  <button onclick="generarPDF('Combo Estelar', 'combo3.jpg', '$60')">Combo Estelar</button>
+
+  <script>
+    async function generarPDF(nombre, imgSrc, precio) {
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF();
+
+      doc.setFontSize(20);
+      doc.text(nombre, 10, 20);
+
+      doc.setFontSize(16);
+      doc.text(`Precio: ${precio}`, 10, 30);
+
+      // Cargar imagen
+      const img = new Image();
+      img.src = imgSrc;
+      img.onload = function() {
+        // Ajusta tamaño y posición de la imagen en el PDF
+        doc.addImage(img, 'JPEG', 10, 40, 100, 100);
+        doc.save(`${nombre}.pdf`);
     // ======= UTILIDADES =======
     const $ = (sel, ctx=document) => ctx.querySelector(sel);
     const $$ = (sel, ctx=document) => Array.from(ctx.querySelectorAll(sel));
