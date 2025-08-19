@@ -350,14 +350,14 @@
 
   <!-- ASISTENTE RAYITO -->
   <div class="rayito">
-    <button class="rayito-toggle" onclick="toggleRayito()">⚡ Rayito</button>
+    <button class="rayito-toggle" onclick="toggleRayito()">⚡</button>
     <div class="rayito-window" id="rayitoWindow">
       <div class="rayito-header">
         <span>⚡</span>
         <button onclick="toggleRayito()">X</button>
       </div>
       <div class="rayito-body">
-        <div class="rayito-msg">¡Hola! Soy Rayito ⚡, ¿en qué puedo ayudarte hoy? 🌙</div>
+        <div class="rayito-msg">¡Hola! Soy Rayito ⚡, ¿en qué puedo ayudarte hoy? </div>
         <div class="rayito-actions">
           <a href="#productos">Ver Combos</a>
           <a href="https://wa.me/593995372875">WhatsApp</a>
@@ -366,9 +366,7 @@
         <div class="rayito-input">
           <input type="text" placeholder="Escribe tu mensaje..."/>
           <button>Enviar</button>
-        </div>
-      </div>
-    </div>
+          msg.innerText = '🕒 Horario de atención:\Lunes a Viernes: 9:00 AM - 4:00 PM';
   </div>
 
   <script>
