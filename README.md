@@ -348,7 +348,7 @@
 
   <!-- RAYITO: asistente flotante -->
   <div class="rayito">
-    <button class="rayito-toggle" id="rayito-toggle">⚡ Rayito</button>
+    <button class="rayito-toggle" id="rayito-toggle">⚡ </button>
   </div>
   <div class="rayito-window" id="rayito-window" aria-hidden="true">
     <div class="rayito-header">
