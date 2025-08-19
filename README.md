@@ -366,7 +366,7 @@
       <input id="rayito-input" placeholder="Escribe aquí... (ej: combos, horario, pagar)"/>
       <button class="btn" id="rayito-send" style="padding:8px 12px">Enviar</button>
        <section id="catalogo">
-  <h2>Catálogo Rayos de Luna</h2>
+  <h2>Catálogo</h2>
   <iframe 
     src="https://www.canva.com/design/DAGvc_2MElU/qVUR8dLijXOCEZZoHOpr8/embed" 
     width="100%" 
