@@ -189,7 +189,10 @@
       </article>
     </div>
   </section>
-
+<!-- BOTÓN CATALOGO -->
+    <div class="cta">
+      <a class="btn ghost" href="https://www.canva.com/design/DAGvc_2MElU/qVUR8dLijXOCEZZoHOpr8A/view?utm_content=DAGvc_2MElU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc23b1edaf1" target="_blank" rel="noopener">Ver catálogo completo</a>
+    </div>
   <!-- PEDIDOS -->
   <section id="pedidos">
     <h2>Pedidos</h2>
@@ -335,10 +338,7 @@
       </div>
     </div>
   </section>
-<!-- BOTÓN CATALOGO -->
-    <div class="cta">
-      <a class="btn ghost" href="https://www.canva.com/design/DAGvc_2MElU/qVUR8dLijXOCEZZoHOpr8A/view?utm_content=DAGvc_2MElU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc23b1edaf1" target="_blank" rel="noopener">Ver catálogo completo</a>
-    </div>
+
  <footer>
     <div style="max-width:1100px; margin:auto; display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap">
       <p>© <span id="year"></span> Rayos de Luna · Bisutería</p>
@@ -359,7 +359,9 @@
         <div class="rayito-actions">
           <a href="#productos">Ver Combos</a>
           <a href="https://wa.me/593995372875">WhatsApp</a>
-           <a href= "mostrarHorario(Lunes a Viernes: 9:00 AM - 4:00 PM)"Horario de atención"<a> button</a>
+       <p>Horario de atención:</p>
+  <button onclick="alert('Nuestro horario de atención es de 9am - 4pm')">Ver Horario</button>
+</div>
         <div class="rayito-input">
           <input type="text" placeholder="Escribe tu mensaje..."/>
           <button>Enviar</button>
