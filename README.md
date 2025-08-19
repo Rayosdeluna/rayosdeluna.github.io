@@ -348,7 +348,7 @@
 
   <!-- RAYITO: asistente flotante -->
   <div class="rayito">
-    <button class="rayito-toggle" id="rayito-toggle">⚡ Rayito</button>
+    <button class="rayito-toggle" id="rayito-toggle">⚡ </button>
   </div>
   <div class="rayito-window" id="rayito-window" aria-hidden="true">
     <div class="rayito-header">
@@ -365,7 +365,7 @@
       </div>
     </div>
     <div class="rayito-input">
-      <input id="rayito-input" placeholder="Escribe aquí... (ej: combos, horario, pagar)"/>
+      <input id="rayito-input" placeholder="Escribe aquí...
       <button class="btn" id="rayito-send" style="padding:8px 12px">Enviar</button>
     </div>
   </div>
