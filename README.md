@@ -115,11 +115,10 @@
       </div>
     </div>
     <div class="card">
-      <img alt="Joyas Rayos de Luna" src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=1200&auto=format&fit=crop"/>
+      <img alt="Bisitería Rayos de Luna" src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=1200&auto=format&fit=crop"/>
     </div>
   </section>
   
-</a>
   <!-- NOSOTROS -->
   <section id="nosotros">
     <h2>Nosotros</h2>
@@ -130,7 +129,7 @@
       </div>
       <div class="card">
         <h3>Misión</h3>
-        <p>Diseñar empaques y joyas que reflejen el valor y la identidad de nuestras clientas, ofreciendo experiencias de compra claras y confiables.</p>
+        <p>Diseñar empaques y piezas que reflejen el valor y la identidad de nuestras clientas, ofreciendo experiencias de compra claras y confiables.</p>
       </div>
       <div class="card">
         <h3>Visión</h3>
