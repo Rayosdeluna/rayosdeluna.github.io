@@ -370,6 +370,6 @@
     </div>
   </div>
       <button class="btn" id="rayito-send" style="padding:8px 12px">Enviar</button>
-    </div>
+    
 
   
