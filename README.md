@@ -347,8 +347,8 @@
    </footer>
 
   <!-- RAYITO: asistente flotante -->
-  <div class="rayito.btn">
-    <button class="rayito-chat" id="rayito-chat">⚡ </button>
+  <div class="rayito">
+    <button class="rayito" id="rayito">⚡ </button>
   </div>
   <div class="rayito-window" id="rayito-window" aria-hidden="true">
     <div class="rayito-header">
