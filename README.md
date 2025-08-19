@@ -150,13 +150,12 @@
   <!-- PRODUCTOS -->
   <section id="productos">
     <h2>Productos</h2>
-    <p style="margin-bottom:8px">Precios editables en el código (ver <code>CATALOGO</code> en JavaScript).</p>
     <div class="grid cols-3">
       <article class="card product" data-sku="combo-estrella">
         <a href="https://imgbb.com/"><img src="https://i.ibb.co/bgqCwhDs/combo-estrella.png" alt="combo-estrella" border="0"></a>
         <h3>Combo Estrella</h3>
         <p>Un par de argollas.</p>
-        <div class="price">$<span class="price-val">$10.00</span></div>
+        <div class="price">$<span class="price-val">10.00</span></div>
         <div class="cta">
           <button class="btn add-to-order" data-sku="combo-estrella">Comprar</button>
         </div>
@@ -165,7 +164,7 @@
        <img src="https://i.ibb.co/Xx0gjZgt/2.png" alt="2" width="120" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
         <h3>Combo Doble Estrella</h3>
         <p>Un par de argollas + una pulsera.</p>
-        <div class="price">$<span class="price-val">$15.00</span></div>
+        <div class="price">$<span class="price-val">15.00</span></div>
         <div class="cta">
           <button class="btn add-to-order" data-sku="combo-doble">Comprar</button>
         </div>
@@ -174,7 +173,7 @@
 <img src="https://i.ibb.co/1GvnrWB1/4.png" alt="4" width="120" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
         <h3>Combo Estelar</h3>
         <p>Juego de pulseras.</p>
-        <div class="price">$<span class="price-val">$13.00</span></div>
+        <div class="price">$<span class="price-val">13.00</span></div>
         <div class="cta">
           <button class="btn add-to-order" data-sku="combo-estelar">Comprar</button>
         </div>
@@ -184,7 +183,7 @@
   
   <h3>Colección Aura</h3>
         <p>Un par de argollas únicas.</p>
-        <div class="price">$<span class="price-val">$10.00</span></div>
+        <div class="price">$<span class="price-val">10.00</span></div>
         <div class="cta">
           <button class="btn add-to-order" data-sku="aura" title="Este botón te lleva a Pedidos con Aura seleccionado">Comprar Aura</button>
         </div>
