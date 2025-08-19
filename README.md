@@ -361,7 +361,7 @@
         <div class="rayito-actions">
           <a href="#productos">Ver Combos</a>
           <a href="https://wa.me/593995372875">WhatsApp</a>
-           <button onclick="mostrarHorario(Lunes a Viernes: 9:00 AM - 4:00 PM')">Horario de atención</button>
+           <button onclick="mostrarHorario(Lunes a Viernes: 9:00 AM - 4:00 PM)"Horario de atención"</button>
         </div>
         <div class="rayito-input">
           <input type="text" placeholder="Escribe tu mensaje..."/>
