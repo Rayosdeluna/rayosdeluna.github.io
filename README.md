@@ -367,26 +367,7 @@
       <button class="btn" id="rayito-send" style="padding:8px 12px">Enviar</button>
     </div>
   </div>
-
-  <script>
-    <h1>Catálogo Rayos de Luna</h1>
-
-  <button onclick="generarPDF('Combo Estrella', 'combo1.jpg', '$25')">Combo Estrella</button>
-  <button onclick="generarPDF('Combo Doble Estrella', 'combo2.jpg', '$40')">Combo Doble Estrella</button>
-  <button onclick="generarPDF('Combo Estelar', 'combo3.jpg', '$60')">Combo Estelar</button>
-
-  <script>
-    async function generarPDF(nombre, imgSrc, precio) {
-      const { jsPDF } = window.jspdf;
-      const doc = new jsPDF();
-
-      doc.setFontSize(20);
-      doc.text(nombre, 10, 20);
-
-      doc.setFontSize(16);
-      doc.text(`Precio: ${precio}`, 10, 30);
-
-      // Cargar imagen
+    // Cargar imagen
       const img = new Image();
       img.src = imgSrc;
       img.onload = function() {
@@ -398,8 +379,8 @@
     const $$ = (sel, ctx=document) => Array.from(ctx.querySelectorAll(sel));
     const formatMoney = n => '$' + n.toFixed(2);
 
-    // ======= CATÁLOGO (edita precios y nombres aquí) =======
-    const CATALOGO = {
+  // ======= CATÁLOGO (edita precios y nombres aquí) =======
+    const CATALOGO = { <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
       'combo-estrella': { nombre: 'Combo Estrella', precio: 10.00 },
       'combo-doble':    { nombre: 'Combo Doble Estrella', precio: 15.00 },
       'combo-estelar':  { nombre: 'Combo Estelar', precio: 13.00 },
