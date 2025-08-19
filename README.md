@@ -211,7 +211,7 @@
             <input required name="direccion" placeholder="Calle, número, referencia" />
           </div>
         </div>
-        <h3 style="margin:14px 0 8px">Selecciona tus productos</h3>
+         <h3 style="margin:14px 0 8px">Selecciona tus productos</h3>
         <table class="items-table" id="items-table">
           <thead>
             <tr><th>Producto</th><th>Precio</th><th>Cantidad</th><th>Subtotal</th></tr>
