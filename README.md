@@ -380,28 +380,31 @@
     const formatMoney = n => '$' + n.toFixed(2);
 
   // ======= CATÁLOGO (edita precios y nombres aquí) =======
-    const CATALOGO = { <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    const CATALOGO = {   <h1>¡Mira nuestro catálogo!</h1>
+  <p>Haz clic en el botón para ver nuestro catálogo en Canva:</p>
+  <a href="https://www.canva.com/design/DAGvc_2MElU/qVUR8dLijXOCEZZoHOpr8A/view?utm_content=DAGvc_2MElU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc23b1edaf1" target="_blank">
+    <button>Ver Catálogo</button>Q  
       'combo-estrella': { nombre: 'Combo Estrella', precio: 10.00 },
       'combo-doble':    { nombre: 'Combo Doble Estrella', precio: 15.00 },
       'combo-estelar':  { nombre: 'Combo Estelar', precio: 13.00 },
       'aura':           { nombre: 'Colección Aura', precio: 10.00 },
 
-    // Rellena precios en cards por si se cambian arriba
+   // Rellena precios en cards por si se cambian arriba
     $$('#productos .product').forEach(card => {
       const sku = card.dataset.sku; const p = CATALOGO[sku]?.precio ?? 0;
       const priceEl = card.querySelector('.price-val'); if(priceEl) priceEl.textContent = p.toFixed(2);
     });
 
-    // ======= PEDIDOS (tabla dinámica) =======
+  // ======= PEDIDOS (tabla dinámica) =======
     const itemsBody = $('#items-table tbody');
     const totalCell = $('#total-cell');
     const whatsappBtn = $('#whatsapp-confirm');
 
-    function crearFila(sku) {
+   function crearFila(sku) {
       const prod = CATALOGO[sku]; if(!prod) return;
       const tr = document.createElement('tr'); tr.dataset.sku = sku;
       tr.innerHTML = `
-        <td>${prod.nombre}</td>
+   <td>${prod.nombre}</td>
         <td>${formatMoney(prod.precio)}</td>
         <td>
           <input type="number" min="0" value="1" style="width:80px" aria-label="Cantidad" />
