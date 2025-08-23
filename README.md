@@ -345,34 +345,113 @@
       <p>Hecho con ♥ para brillar contigo</p>
     </div>
    </footer>
+<!-- RAYITO: asistente flotante -->
+<style>
+  .rayito { position: fixed; bottom: 20px; right: 20px; }
+  .rayito-toggle {
+    background: #ffd6e4; border: none; border-radius: 50%;
+    width: 60px; height: 60px; font-size: 24px; cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+  }
+  .rayito-window {
+    position: fixed; bottom: 90px; right: 20px; width: 300px; max-height: 400px;
+    background: white; border: 2px solid #ffd6e4; border-radius: 15px;
+    display: none; flex-direction: column; box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    overflow: hidden; font-family: Arial, sans-serif;
+  }
+  .rayito-header {
+    background: #ffd6e4; padding: 10px; font-weight: bold;
+    display: flex; justify-content: space-between; align-items: center;
+  }
+  .rayito-body { padding: 10px; overflow-y: auto; flex: 1; font-size: 14px; }
+  .rayito-msg { margin: 6px 0; padding: 8px; border-radius: 8px; background: #ffd6e4; }
+  .rayito-actions { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
+  .rayito-actions a, .rayito-actions button {
+    flex: 1 1 auto; text-align: center; padding: 6px; border: none;
+    border-radius: 6px; background: #ffd6e4; cursor: pointer;
+    text-decoration: none; color: black; font-size: 13px;
+  }
+  .rayito-input {
+    display: flex; border-top: 1px solid #ddd;
+  }
+  .rayito-input input {
+    flex: 1; border: none; padding: 8px; outline: none;
+  }
+  .rayito-input button {
+    background: #ffd6e4; border: none; cursor: pointer;
+  }
+  .msg-user { background:#eee; margin:6px 0; padding:8px; border-radius:8px; text-align:right; }
+</style>
 
-  <!-- RAYITO: asistente flotante -->
-  <div class="rayito">
-    <button class="rayito-toggle" id="rayito-toggle">⚡ </button>
+<div class="rayito">
+  <button class="rayito-toggle" id="rayito-toggle">⚡</button>
+</div>
+
+<div class="rayito-window" id="rayito-window" aria-hidden="true">
+  <div class="rayito-header">
+    <strong>Rayito</strong>
+    <button id="rayito-close">✕</button>
   </div>
-  <div class="rayito-window" id="rayito-window" aria-hidden="true">
-    <div class="rayito-header">
-      <strong>Rayito</strong>
-      <button id="rayito-close" class="btn" style="padding:6px 10px; background:rgba(255,255,255,.2); border:1px solid rgba(255,255,255,.5)">✕</button>
+  <div class="rayito-body" id="rayito-body">
+    <div class="rayito-msg">¡Hola! Soy <strong>Rayito</strong> ⚡ ¿En qué puedo ayudarte?</div>
+    <div class="rayito-actions">
+      <a href="#productos">Ver combos</a>
+      <button data-action="horario">Horarios</button>
+      <a href="#faq">FAQ</a>
+      <a href="https://wa.me/593995372875?text=Hola%20Rayitos%20de%20Luna%2C%20necesito%20ayuda%20con%20mi%20compra" target="_blank">WhatsApp</a>
     </div>
-    <div class="rayito-body" id="rayito-body">
-      <div class="rayito-msg">¡Hola! Soy <strong>Rayito</strong> ⚡ ¿En qué puedo ayudarte?</div>
-      <div class="rayito-actions">
-        <a href="#productos">Ver combos</a>
-        <button data-action="horario">Horarios</button>
-        <a href="#faq">FAQ</a>
-        <a href="https://wa.me/593995372875?text=Hola%20Rayitos%20de%20Luna%2C%20necesito%20ayuda%20con%20mi%20compra" target="_blank" rel="noopener">WhatsApp</a>
-      </div>
-    </div>
-    <div class="rayito-input">
-      <input id="rayito-input" placeholder="Escribe aquí...
-      <button class="btn" id="rayito-send" style="padding:8px 12px">Enviar</button>
-    </div>
- function rayitoResponder(text){
-      const body = $('#rayito-body');
-      const bubble = (msg, mine=false)=>{
-        const div = document.createElement('div');
-        div.className = 'rayito-msg';
-        div.style.background = mine ? '#eef2ff' : 'var(--brand-soft)';
-        div.textContent = msg; body.appendChild(div); body.scrollTop = body.scrollHeight;
-      };
+  </div>
+  <div class="rayito-input">
+    <input id="rayito-input" placeholder="Escribe aquí...">
+    <button id="rayito-send">Enviar</button>
+  </div>
+</div>
+
+<script>
+  const toggleBtn = document.getElementById("rayito-toggle");
+  const windowEl = document.getElementById("rayito-window");
+  const closeBtn = document.getElementById("rayito-close");
+  const bodyEl = document.getElementById("rayito-body");
+  const inputEl = document.getElementById("rayito-input");
+  const sendBtn = document.getElementById("rayito-send");
+
+  toggleBtn.addEventListener("click", ()=> {
+    windowEl.style.display = windowEl.style.display === "flex" ? "none" : "flex";
+    windowEl.style.flexDirection = "column";
+  });
+  closeBtn.addEventListener("click", ()=> windowEl.style.display = "none");
+
+  function addMsg(text, sender="bot"){
+    const msg = document.createElement("div");
+    msg.classList.add(sender==="user"?"msg-user":"rayito-msg");
+    msg.innerHTML = text;
+    bodyEl.appendChild(msg);
+    bodyEl.scrollTop = bodyEl.scrollHeight;
+  }
+
+  function botReply(text){
+    let response = "Lo siento, aún estoy aprendiendo ⚡";
+    if(text.includes("hola")) response = "¡Hola! Soy Rayito ⚡ ¿Quieres ver combos, horario o hacer un pedido?";
+    else if(text.includes("horario")) response = "Nuestro horario de atención es de 9am a 4pm 🕘";
+    else if(text.includes("pedido")) response = "Puedes hacer tu pedido directo en nuestro WhatsApp 📲";
+    else if(text.includes("catálogo") || text.includes("combo")) response = "Aquí tienes el catálogo 👉 <a href='#productos'>Ver combos</a>";
+    addMsg(response,"bot");
+  }
+
+  function sendUserMsg(){
+    const txt = inputEl.value.trim().toLowerCase();
+    if(!txt) return;
+    addMsg(inputEl.value,"user");
+    inputEl.value="";
+    setTimeout(()=> botReply(txt),600);
+  }
+
+  sendBtn.addEventListener("click", sendUserMsg);
+  inputEl.addEventListener("keypress", e=>{ if(e.key==="Enter") sendUserMsg(); });
+
+  // Botón "Horarios"
+  document.querySelector("[data-action='horario']").addEventListener("click", ()=> {
+    addMsg("Quiero saber el horario","user");
+    botReply("horario");
+  });
+</script>
