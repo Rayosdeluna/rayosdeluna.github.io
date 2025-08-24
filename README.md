@@ -92,23 +92,25 @@
 </head>
 <body>
   <header>
-  <nav class="menu">
-  <ul>
-    <li><a href="#inicio">Inicio</a></li>
-    <li><a href="#nosotros">Nosotros</a></li>
-    <li><a href="#productos">Productos</a></li>
-    <li><a href="#pedidos">Pedidos</a></li>
-    <li><a href="#politicas">Políticas</a></li>
-    <li><a href="#contacto">Contacto</a></li>
-    <li><a href="#faq">Preguntas Frecuentes</a></li>
-  </ul>
+  <h1>Rayos de Luna</h1>
+<p>Bisuteria que ilumina  que iluminan tu día</p>
+</header>
+<nav>
+<a href="index.html">Inicio</a>
+<a href="nosotros.html">Nosotros</a>
+<a href="productos.html">Productos</a>
+<a href="pedidos.html">Pedidos</a>
+<a href="politicas.html">Políticas</a>
+<a href="contacto.html">Contacto</a>
+<a href="faq.html">FAQ</a>
 </nav>
+<section>
   </header>
  <!-- INICIO -->
   <section id="inicio" class="hero">
     <div class="card">
       <span class="badge">🇪🇨 Somos de Ecuador • Entregas a domicilio</span>
-      <h2>Brilla con <span style="color:var(--brand)">Rayos de Luna</span></h2>
+      <h2>Brilla con <span style="color:var(--brand)">rayos de Luna</span></h2>
       <p>Diseñamos bisutería hecha con cariño para tu día a día. Explora nuestros <strong>Combos</strong> y la exclusiva <strong>Colección Aura</strong> ✨.</p>
       <div class="cta">
         <a class="btn" href="#productos">Ver combos</a>
