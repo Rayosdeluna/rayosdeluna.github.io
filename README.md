@@ -194,21 +194,20 @@
     <img src="<a href="https://imgbb.com/"><img src="ttps://i.ibb.co/4nFS1rgp/Logo-Servicios-Profesionales-Moderno-Ilustrado-Rosado.png" border="0"></a>
          alt="Stella Bags - Cartera tejida" 
          style="width:100%; height:auto; border-radius:10px; margin-bottom:15px;">
+ <article class="card product" data-sku="stella-bags">
+  <a href="https://imgbb.com/">
+    <img src="https://i.ibb.co/4nFS1rgp/Logo-Servicios-Profesionales-Moderno-Ilustrado-Rosado.png" 
+         alt="Stella Bags" 
+         width="120" 
+         style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
   </a>
-  <h2 style="color:#ff4d91;">Stella Bags</h2>
-  <p style="color:#555; font-size:14px;">
-    Carteras tejidas a mano con diseño elegante y único. Material resistente y asa cómoda.
-  </p>
-  <ul style="list-style:none; padding:0; font-size:13px; color:#555; margin-bottom:10px;">
-    <li>Tamaño: Mediana (25x18x10 cm)</li>
-    <li>Colores: Caramelo, Beige, Verde oscuro, Celeste</li>
-    <li>Cierre: Cremallera segura</li>
-  </ul>
-  <p style="font-weight:bold; color:#ff4d91; margin-bottom:15px;">Precio: Dependerá del modelo</p>
-  <button style="padding:10px 20px; background-color:#ffd6e4; color:#ff4d91; border:none; border-radius:5px; cursor:pointer;">
-    Comprar
-  </button>
-</div>
+  <h3>Stella Bags</h3>
+  <p>Carteras tejidas a mano con diseño único.</p>
+  <div class="price">Dependerá del modelo</div>
+  <div class="cta">
+    <button class="btn add-to-order" data-sku="stella-bags">Comprar</button>
+  </div>
+</article>
 <!-- BOTÓN CATALOGO -->
     <div class="cta">
       <a class="btn ghost" href="https://www.canva.com/design/DAGvc_2MElU/qVUR8dLijXOCEZZoHOpr8A/view?utm_content=DAGvc_2MElU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc23b1edaf1" target="_blank" rel="noopener">Ver catálogo completo</a>
