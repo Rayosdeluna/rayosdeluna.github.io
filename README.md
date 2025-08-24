@@ -185,25 +185,25 @@
         <div class="cta">
           <button class="btn add-to-order" data-sku="aura" title="Este botón te lleva a Pedidos con Aura seleccionado">Comprar Aura</button>
         </div>
-<!-- BOTÓN CATALOGO -->
-    <div class="cta">
-      <a class="btn ghost" href="https://www.canva.com/design/DAGvc_2MElU/qVUR8dLijXOCEZZoHOpr8A/view?utm_content=DAGvc_2MElU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc23b1edaf1" target="_blank" rel="noopener">Ver catálogo completo</a>
-    </div>
-       <article class="card product" data-sku="stella-bags">
+            <article class="card product" data-sku="stella-bags">
   <img src="https://i.ibb.co/4nFS1rgp/Logo-Servicios-Profesionales-Moderno-Ilustrado-Rosado.png" 
        alt="stella-bags" 
        width="120" 
        style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); display:flex; flex-direction:column; justify-content:center; align-items:center;">
   <h3>Stella Bags</h3>
-  <p>Carteras tejidas a mano.</p>
-  <div class="price">Dependerá del modelo</div>
+  <p>Carteras de ensueño.</p>
+  <div class="price">$20.00</div>
   <div class="cta">
     <button class="btn add-to-order" data-sku="stella-bags" 
             style="background-color:#F48B9A; color:white; border:none; border-radius:5px; padding:10px 20px; cursor:pointer;">
-      Comprar
+      Comprar Stella Bags
     </button>
   </div>
 </article>
+<!-- BOTÓN CATALOGO -->
+    <div class="cta">
+      <a class="btn ghost" href="https://www.canva.com/design/DAGvc_2MElU/qVUR8dLijXOCEZZoHOpr8A/view?utm_content=DAGvc_2MElU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc23b1edaf1" target="_blank" rel="noopener">Ver catálogo completo</a>
+    </div>
   <!-- PEDIDOS -->
   <section id="pedidos">
     <h2>Pedidos</h2>
