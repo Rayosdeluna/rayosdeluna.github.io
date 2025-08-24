@@ -194,14 +194,41 @@
     <button class="btn add-to-order" data-sku="stella-bags" title="Este botón te lleva a Pedidos con Stella Bags seleccionado">Comprar Stella Bags</button>
         </div>
 </article>
-        <!-- BOTÓN CATALOGO -->
-    <div class="cta">
-      <a class="btn ghost" href="https://www.canva.com/design/DAGvc_2MElU/qVUR8dLijXOCEZZoHOpr8A/view?utm_content=DAGvc_2MElU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc23b1edaf1" target="_blank" rel="noopener">Ver catálogo completo</a>
-    </div>
-      <!-- BOTÓN CATÁLOGO Stella Bags  -->
+       <!-- BOTÓN CATALOGO -->
 <div class="cta">
-      <a class="btn ghost" href="https://www.canva.com/design/DAGw2zJWdKY/gUHcSTCXBe0ttl_0_bYkag/view?utm_content=DAGw2zJWdKY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb9ec7dedc2" target="_blank" rel="noopener">Ver catálogo Stella Bags</a>
-    </div>
+  <a class="btn" href="https://www.canva.com/design/DAGvc_2MElU/qVUR8dLijXOCEZZoHOpr8A/view?utm_content=DAGvc_2MElU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc23b1edaf1" target="_blank" rel="noopener">Ver catálogo completo</a>
+</div>
+
+<!-- BOTÓN CATÁLOGO Stella Bags -->
+<div class="cta">
+  <a class="btn" href="https://www.canva.com/design/DAGw2zJWdKY/gUHcSTCXBe0ttl_0_bYkag/view?utm_content=DAGw2zJWdKY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb9ec7dedc2" target="_blank" rel="noopener">Ver catálogo Stella Bags</a>
+</div>
+
+<style>
+  .cta {
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #f48b9a;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+
+  .btn:hover {
+    background-color: #e67a88; /* un tono más oscuro para hover */
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  }
+</style>
   <!-- PEDIDOS -->
   <section id="pedidos">
     <h2>Pedidos</h2>
