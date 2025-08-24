@@ -458,3 +458,56 @@
     botReply("horario");
   });
 </script>
+<!-- Carrito -->
+  <div class="cart" id="cart">
+    <h2>Tu Carrito</h2>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-total" id="cart-total">Total: $0.00</div>
+    <button onclick="checkout()">Pagar por WhatsApp</button>
+  </div>
+
+  <script>
+    let cart = [];
+    let total = 0;
+
+    function toggleCart() {
+      document.getElementById("cart").classList.toggle("open");
+    }
+
+    function addToCart(product, price) {
+      cart.push({ product, price });
+      total += price;
+      updateCart();
+    }
+
+    function updateCart() {
+      const cartItems = document.getElementById("cart-items");
+      cartItems.innerHTML = "";
+      cart.forEach((item, index) => {
+        cartItems.innerHTML += `
+          <div class="cart-item">
+            <span>${item.product}</span>
+            <span>$${item.price.toFixed(2)}</span>
+          </div>`;
+      });
+      document.getElementById("cart-total").innerText = "Total: $" + total.toFixed(2);
+    }
+
+    function checkout() {
+      if(cart.length === 0) {
+        alert("Tu carrito está vacío.");
+        return;
+      }
+
+      let message = "¡Hola! Quiero hacer un pedido:%0A";
+      cart.forEach(item => {
+        message += `- ${item.product}: $${item.price}%0A`;
+      });
+      message += `Total: $${total.toFixed(2)}`;
+
+      let phone = "593999999999"; // 👉 Cambia por tu número de WhatsApp
+      window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
+    }
+  </script>
+</body>
+</html>
