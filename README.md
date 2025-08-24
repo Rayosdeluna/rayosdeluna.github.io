@@ -189,23 +189,21 @@
       </article>
     </div>
   </section>
-  <div class="producto" style="border:1px solid #ffd6e4; padding:20px; border-radius:10px; max-width:300px; text-align:center; font-family:Arial, sans-serif; background-color:#fff0f6;">
- <article class="card product" data-sku="stella-bags" style="text-align:center;">
+<article class="card product" data-sku="stella-bags" style="text-align:center;">
   <img src="https://i.ibb.co/4nFS1rgp/Logo-Servicios-Profesionales-Moderno-Ilustrado-Rosado.png" 
        alt="Stella Bags" 
        width="120" 
-       style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); display:block; margin:0 auto;">
-  <h3>Stella Bags</h3>
-  <p>Carteras tejidas a mano.</p>
-  <div class="price"><span class="price-val">Dependerá del modelo</span></div>
-  <div class="cta">
+       style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); display:block; margin:0 auto 10px auto;">
+  <h3 style="color:#333;">Stella Bags</h3>
+  <p style="color:#555; font-size:14px;">Carteras tejidas a mano.</p>
+  <div class="price" style="color:#333;"><span class="price-val">Dependerá del modelo</span></div>
+  <div class="cta" style="margin-top:10px;">
     <button class="btn add-to-order" data-sku="stella-bags" 
-            style="background-color:#ffd6e4; color:#ff4d91; border:none; border-radius:5px; padding:10px 20px; cursor:pointer;">
+            style="background-color:#F48B9A; color:white; border:none; border-radius:5px; padding:10px 20px; cursor:pointer;">
       Comprar
     </button>
   </div>
 </article>
-
 <!-- BOTÓN CATALOGO -->
     <div class="cta">
       <a class="btn ghost" href="https://www.canva.com/design/DAGvc_2MElU/qVUR8dLijXOCEZZoHOpr8A/view?utm_content=DAGvc_2MElU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc23b1edaf1" target="_blank" rel="noopener">Ver catálogo completo</a>
