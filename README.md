@@ -186,8 +186,8 @@
         <div class="cta">
           <button class="btn add-to-order" data-sku="aura" title="Este botón te lleva a Pedidos con Aura seleccionado">Comprar Aura</button>
         </div>
+         </section>
        <!-- Producto Stella Bags -->
-  <article class="card product" data-sku="Stella-Bags" style="text-align:center;">
     <img src="https://i.ibb.co/4nFS1rgp/Logo-Servicios-Profesionales-Moderno-Ilustrado-Rosado.png" 
          alt="Stella Bags" 
          width="120" 
