@@ -191,7 +191,7 @@
                   border:1px solid #F48B9A; border-radius:15px; padding:20px; box-shadow:0 4px 12px rgba(0,0,0,0.2); display:flex; flex-direction:column; justify-content:center; align-items:center;">
     <img src="https://i.ibb.co/4nFS1rgp/Logo-Servicios-Profesionales-Moderno-Ilustrado-Rosado.png" 
          alt="Stella Bags" 
-         width="100" 
+         width="120" 
          style="border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.2); margin-bottom:10px;">
     <h3>Stella Bags</h3>
     <p style="font-size:14px;">Carteras tejidas a mano.</p>
