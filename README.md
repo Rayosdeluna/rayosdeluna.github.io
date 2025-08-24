@@ -188,10 +188,11 @@
        </article>
       <article class="card product" data-sku="Stella Bags">
          <a href="https://imgbb.com/"><img src="https://i.ibb.co/4nFS1rgp/Logo-Servicios-Profesionales-Moderno-Ilustrado-Rosado.png" alt="Logo-Servicios-Profesionales-Moderno-Ilustrado-Rosado" alt="Stella-bags" width="120" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); display:flex; flex-direction:column; justify-content:center; align-items:center;"> 
-        <p> Carteras de ensueño.</p>
+        <p> style="color:#000000; Carteras de ensueño.</p> 
         <div class="price">$<span class="price-val">20.00</span></div>
         <div class="cta">
           <button class="btn add-to-order" data-sku="Stella Bags" title="Este botón te lleva a Pedidos con Stella Bags seleccionado">Comprar Stella Bags</button>
+        style="background-color:#F48B9A; color:white; border:none; border-radius:5px; padding:10px 20px; cursor:pointer;">
         </div>
 <!-- BOTÓN CATALOGO -->
     <div class="cta">
