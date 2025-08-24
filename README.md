@@ -186,7 +186,7 @@
           <button class="btn add-to-order" data-sku="aura" title="Este botón te lleva a Pedidos con Aura seleccionado">Comprar Aura</button>
         </div>
         </article>
-      <div class="productos-container" style="display:flex; justify-content:center; margin-top:20px;">
+     <div class="productos-container" style="display:flex; justify-content:center; margin-top:20px;">
   <article class="card product" data-sku="stella-bags" 
            style="text-align:center; width:220px; background-color:#fff0f6; 
                   border:1px solid #F48B9A; border-radius:15px; padding:15px; 
@@ -204,6 +204,7 @@
     </button>
   </article>
 </div>
+
 <!-- BOTÓN CATALOGO -->
     <div class="cta">
       <a class="btn ghost" href="https://www.canva.com/design/DAGvc_2MElU/qVUR8dLijXOCEZZoHOpr8A/view?utm_content=DAGvc_2MElU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc23b1edaf1" target="_blank" rel="noopener">Ver catálogo completo</a>
