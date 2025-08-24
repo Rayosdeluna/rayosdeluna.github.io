@@ -188,11 +188,11 @@
         </article>
   <article class="card product" data-sku="stella-bags" 
            style="text-align:center; width:250px; height:250px; background-color:#fff0f6; 
-                  border:1px solid #F48B9A; border-radius:15px; padding:20px; box-shadow:0 4px 12px rgba(0,0,0,0.2); display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                  border:1px solid #F48B9A; border-radius:10px; padding:20px; box-shadow:0 4px 8px rgba(0,0,0,0.2); display:flex; flex-direction:column; justify-content:center; align-items:center;">
     <img src="https://i.ibb.co/4nFS1rgp/Logo-Servicios-Profesionales-Moderno-Ilustrado-Rosado.png" 
          alt="Stella Bags" 
          width="120" 
-         style="border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.2); margin-bottom:10px display:flex; flex-direction:column; justify-content:center; align-items:center;">
+         style="border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.2); margin-bottom:10px;">
     <h3>Stella Bags</h3>
     <p style="font-size:14px;">Carteras tejidas de ensueño.</p>
     <div class="price" style="color:#333; margin-bottom:10px;"><span class="price-val">$20</span></div>
