@@ -92,16 +92,13 @@
 </head>
 <body>
   <header>
-        <h1>Rayos de Luna Bisutería</h1>
-      <div class="menu">
-        <a href="#inicio">Inicio</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#productos">Productos</a>
-        <a href="#pedidos">Pedidos</a>
-        <a href="#politicas">Política de privacidad</a>
-        <a href="#contacto">Contacto</a>
-        <a href="#faq">Preguntas frecuentes</a>
-      </div>
+       <section id="inicio">...</section>
+<section id="nosotros">...</section>
+<section id="productos">...</section>
+<section id="pedidos">...</section>
+<section id="politicas">...</section>
+<section id="contacto">...</section>
+<section id="faq">...</section>
   </header>
  <!-- INICIO -->
   <section id="inicio" class="hero">
