@@ -192,10 +192,10 @@
     <img src="https://i.ibb.co/4nFS1rgp/Logo-Servicios-Profesionales-Moderno-Ilustrado-Rosado.png" 
          alt="Stella Bags" 
          width="120" 
-         style="border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.2); margin-bottom:10px;">
+         style="border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.2); margin-bottom:10px display:flex; flex-direction:column; justify-content:center; align-items:center;">
     <h3>Stella Bags</h3>
-    <p style="font-size:14px;">Carteras tejidas a mano.</p>
-    <div class="price" style="color:#333; margin-bottom:10px;"><span class="price-val">Dependerá del modelo</span></div>
+    <p style="font-size:14px;">Carteras tejidas de ensueño.</p>
+    <div class="price" style="color:#333; margin-bottom:10px;"><span class="price-val">$20</span></div>
     <button class="btn add-to-order" data-sku="stella-bags" 
             style="background-color:#F48B9A; color:white; border:none; border-radius:5px; padding:8px 16px; cursor:pointer;">
       Comprar
