@@ -24,6 +24,59 @@
     body{font-family:Poppins, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji"; margin:0; color:var(--ink); background:linear-gradient(180deg, var(--brand-soft), #fff)}
     a{color:var(--brand); text-decoration:none}
     img{max-width:100%; display:block}
+  <!-- Carrito -->
+  <div class="cart" id="cart">
+    <h2>Tu Carrito</h2>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-total" id="cart-total">Total: $0.00</div>
+    <button onclick="checkout()">Pagar por WhatsApp</button>
+  </div>
+
+  <script>
+    let cart = [];
+    let total = 0;
+
+    function toggleCart() {
+      document.getElementById("cart").classList.toggle("open");
+    }
+
+    function addToCart(product, price) {
+      cart.push({ product, price });
+      total += price;
+      updateCart();
+    }
+
+    function updateCart() {
+      const cartItems = document.getElementById("cart-items");
+      cartItems.innerHTML = "";
+      cart.forEach((item, index) => {
+        cartItems.innerHTML += `
+          <div class="cart-item">
+            <span>${item.product}</span>
+            <span>$${item.price.toFixed(2)}</span>
+          </div>`;
+      });
+      document.getElementById("cart-total").innerText = "Total: $" + total.toFixed(2);
+    }
+
+    function checkout() {
+      if(cart.length === 0) {
+        alert("Tu carrito está vacío.");
+        return;
+      }
+      let message = "¡Hola! Quiero hacer un pedido:%0A";
+      cart.forEach(item => {
+        message += `- ${item.product}: $${item.price}%0A`;
+      });
+      message += `Total: $${total.toFixed(2)}`;
+
+      let phone = "0995372875"; // 👉 Cambia por tu número de WhatsApp
+      window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
+    }
+  </script>
+</body>
+</html>
+
 
     /* Header */
     header{position:sticky; top:0; z-index:50; backdrop-filter:saturate(1.2) blur(6px); background:rgba(255,255,255,.8); border-bottom:1px solid rgba(0,0,0,.05)}
