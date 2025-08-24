@@ -345,7 +345,6 @@
   </section>
 
  <footer>
-    <div
       <p>© <span id="year"></span> Rayos de Luna · Bisutería</p>
       <p>Hecho con ♥ para brillar contigo</p>
     </div>
