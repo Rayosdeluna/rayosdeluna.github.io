@@ -191,7 +191,7 @@
   </section>
   <div class="producto" style="border:1px solid #ffd6e4; padding:20px; border-radius:10px; max-width:300px; text-align:center; font-family:Arial, sans-serif; background-color:#fff0f6;">
   <a href="https://imgbb.com/">
-    <img src="<a href="https://imgbb.com/"><img src="https://i.ibb.co/4nFS1rgp/Logo-Servicios-Profesionales-Moderno-Ilustrado-Rosado.png" alt="Logo-Servicios-Profesionales-Moderno-Ilustrado-Rosado" border="0"></a>
+    <img src="<a href="https://imgbb.com/"><img src="ttps://i.ibb.co/4nFS1rgp/Logo-Servicios-Profesionales-Moderno-Ilustrado-Rosado.png" border="0"></a>
          alt="Stella Bags - Cartera tejida" 
          style="width:100%; height:auto; border-radius:10px; margin-bottom:15px;">
   </a>
