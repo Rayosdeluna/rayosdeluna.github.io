@@ -93,13 +93,13 @@
 <body>
   <header>
       <div class="menu">
-  <a href="inicio.html">Inicio</a>
-  <a href="nosotros.html">Nosotros</a>
-  <a href="productos.html">Productos</a>
-  <a href="pedidos.html">Pedidos</a>
-  <a href="politicas.html">Política de privacidad</a>
-  <a href="contacto.html">Contacto</a>
-  <a href="faq.html">Preguntas frecuentes</a>
+  <a href="inicio"
+  <a href="nosotros">
+  <a href="productos">
+  <a href="pedidos">
+  <a href="politicas">
+  <a href="contacto.">
+  <a href="faq">
 </div>
   </header>
  <!-- INICIO -->
