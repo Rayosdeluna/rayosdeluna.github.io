@@ -156,7 +156,7 @@
         <p>Un par de argollas.</p>
         <div class="price">$<span class="price-val">10.00</span></div>
         <div class="cta">
-          <button class="btn add-to-order" data-sku="combo-estrella">Comprar</button>
+          <button class="btn add-to-order" data-sku="combo-estrella">Comprar estrella</button>
         </div>
       </article>
       <article class="card product" data-sku="combo-doble estrella">
@@ -165,7 +165,7 @@
         <p>Un par de argollas + una pulsera.</p>
         <div class="price">$<span class="price-val">15.00</span></div>
         <div class="cta">
-          <button class="btn add-to-order" data-sku="combo-doble">Comprar</button>
+          <button class="btn add-to-order" data-sku="combo-doble">Comprar doble estrella</button>
         </div>
       </article>
       <article class="card product" data-sku="combo-estelar">
@@ -174,7 +174,7 @@
         <p>Juego de pulseras.</p>
         <div class="price">$<span class="price-val">13.00</span></div>
         <div class="cta">
-          <button class="btn add-to-order" data-sku="combo-estelar">Comprar</button>
+          <button class="btn add-to-order" data-sku="combo-estelar">Comprar Estelar</button>
         </div>
       </article>
       <article class="card product" data-sku="aura">
@@ -187,7 +187,7 @@
         </div>
        </article>
       <article class="card product" data-sku="Stella Bags">
-         <a href="https://imgbb.com/"><img src="https://i.ibb.co/4nFS1rgp/Logo-Servicios-Profesionales-Moderno-Ilustrado-Rosado.png" alt="Logo-Servicios-Profesionales-Moderno-Ilustrado-Rosado" alt="Stella bags" width="120" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); display:flex; flex-direction:column; justify-content:center; align-items:center;"> 
+         <a href="https://imgbb.com/"><img src="https://i.ibb.co/4nFS1rgp/Logo-Servicios-Profesionales-Moderno-Ilustrado-Rosado.png" alt="Logo-Servicios-Profesionales-Moderno-Ilustrado-Rosado" alt="Stella-bags" width="120" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); display:flex; flex-direction:column; justify-content:center; align-items:center;"> 
         <p> Carteras de ensueño.</p>
         <div class="price">$<span class="price-val">20.00</span></div>
         <div class="cta">
