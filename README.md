@@ -187,7 +187,7 @@
         </div>
        </article>
       <article class="card product" data-sku="Stella Bags">
-         <a href="https://imgbb.com/"><img src="https://i.ibb.co/4nFS1rgp/Logo-Servicios-Profesionales-Moderno-Ilustrado-Rosado.png" alt="Logo-Servicios-Profesionales-Moderno-Ilustrado-Rosado"  lt="3" width="120" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); display:flex; flex-direction:column; justify-content:center; align-items:center;"> 
+         <a href="https://imgbb.com/"><img src="https://i.ibb.co/4nFS1rgp/Logo-Servicios-Profesionales-Moderno-Ilustrado-Rosado.png" alt="Logo-Servicios-Profesionales-Moderno-Ilustrado-Rosado"  width="120" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); display:flex; flex-direction:column; justify-content:center; align-items:center;"> 
         <p> Carteras de ensueño.</p>
         <div class="price">$<span class="price-val">20.00</span></div>
         <div class="cta">
