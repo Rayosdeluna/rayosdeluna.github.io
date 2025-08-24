@@ -93,7 +93,7 @@
 <body>
   <header>
   <h1>Rayos de Luna</h1>
-  <p>Joyas que iluminan tu día</p>
+  <p>Bisutería que iluminan tu día</p>
 </header>
 <!-- MENÚ PRINCIPAL -->
 <nav>
