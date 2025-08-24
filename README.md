@@ -1,4 +1,4 @@
-<html index lang="es">
+<html  lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -92,14 +92,16 @@
 </head>
 <body>
   <header>
-   <nav>
-<a href="index.html">Inicio</a>
-<a href="nosotros.html">Nosotros</a>
-<a href="productos.html">Productos</a>
-<a href="pedidos.html">Pedidos</a>
-<a href="politicas.html">Políticas</a>
-<a href="contacto.html">Contacto</a>
-<a href="faq.html">FAQ</a>
+  <nav class="menu">
+  <ul>
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#productos">Productos</a></li>
+    <li><a href="#pedidos">Pedidos</a></li>
+    <li><a href="#politicas">Políticas</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+    <li><a href="#faq">Preguntas Frecuentes</a></li>
+  </ul>
 </nav>
   </header>
  <!-- INICIO -->
