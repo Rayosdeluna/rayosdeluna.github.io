@@ -346,7 +346,7 @@
   </section>
 
  <footer>
-    <div style="max-width:1100px; margin:auto; display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap">
+    <div
       <p>© <span id="year"></span> Rayos de Luna · Bisutería</p>
       <p>Hecho con ♥ para brillar contigo</p>
     </div>
