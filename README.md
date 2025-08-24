@@ -93,20 +93,7 @@
 </head>
 <body>
   <header>
-     
-  </script>
-</body>
- <h1>Rayos de Luna Bisutería</h1>
-  <div class="menu">
-    <a href="#inicio">Inicio</a>
-    <a href="#nosotros">Nosotros</a>
-    <a href="#productos">Productos</a>
-    <a href="#pedidos">Pedidos</a>
-    <a href="#politicas">Política de privacidad</a>
-    <a href="#contacto">Contacto</a>
-    <a href="#faq">Preguntas frecuentes</a>
-  </div>
-  </div>
+      </div>
     <button class="carrito-btn" onclick="toggleCarrito()">🛒 Carrito</button>
   </header>
 
@@ -164,6 +151,18 @@
   </script>
 </body>
 </html>
+  </script>
+</body>
+ <h1>Rayos de Luna Bisutería</h1>
+  <div class="menu">
+    <a href="#inicio">Inicio</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#productos">Productos</a>
+    <a href="#pedidos">Pedidos</a>
+    <a href="#politicas">Política de privacidad</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#faq">Preguntas frecuentes</a>
+  </div>
  <!-- INICIO -->
   <section id="inicio" class="hero">
     <div class="card">
