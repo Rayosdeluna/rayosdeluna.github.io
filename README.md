@@ -185,7 +185,11 @@
         <div class="cta">
           <button class="btn add-to-order" data-sku="aura" title="Este botón te lleva a Pedidos con Aura seleccionado">Comprar Aura</button>
         </div>
-     <article class="card product" data-sku="stella-bags">
+<!-- BOTÓN CATALOGO -->
+    <div class="cta">
+      <a class="btn ghost" href="https://www.canva.com/design/DAGvc_2MElU/qVUR8dLijXOCEZZoHOpr8A/view?utm_content=DAGvc_2MElU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc23b1edaf1" target="_blank" rel="noopener">Ver catálogo completo</a>
+    </div>
+       <article class="card product" data-sku="stella-bags">
   <img src="https://i.ibb.co/4nFS1rgp/Logo-Servicios-Profesionales-Moderno-Ilustrado-Rosado.png" 
        alt="stella-bags" 
        width="120" 
@@ -200,11 +204,6 @@
     </button>
   </div>
 </article>
-<!-- BOTÓN CATALOGO -->
-    <div class="cta">
-      <a class="btn ghost" href="https://www.canva.com/design/DAGvc_2MElU/qVUR8dLijXOCEZZoHOpr8A/view?utm_content=DAGvc_2MElU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc23b1edaf1" target="_blank" rel="noopener">Ver catálogo completo</a>
-    </div>
-      
   <!-- PEDIDOS -->
   <section id="pedidos">
     <h2>Pedidos</h2>
