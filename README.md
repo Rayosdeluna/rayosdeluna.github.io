@@ -194,7 +194,6 @@
   <div class="cta">
     <button class="btn add-to-order" data-sku="stella-bags" title="Este botón te lleva a Pedidos con Stella Bags seleccionado">Comprar Stella Bags</button>
         </div>
-            style="background-color:#F48B9A; color:white; border:none; border-radius:5px; padding:10px 20px; cursor:pointer;">
 </article>
         <!-- BOTÓN CATALOGO -->
     <div class="cta">
