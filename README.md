@@ -92,14 +92,15 @@
 </head>
 <body>
   <header>
-   <a href="index.html">Inicio</a>
+   <nav>
+<a href="index.html">Inicio</a>
 <a href="nosotros.html">Nosotros</a>
 <a href="productos.html">Productos</a>
 <a href="pedidos.html">Pedidos</a>
 <a href="politicas.html">Políticas</a>
 <a href="contacto.html">Contacto</a>
 <a href="faq.html">FAQ</a>
-</div>
+</nav>
   </header>
  <!-- INICIO -->
   <section id="inicio" class="hero">
