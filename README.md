@@ -116,7 +116,6 @@
     <img src="https://i.ibb.co/27MR6yxh/El-texto-del-p-rrafo-1.png" alt="El-texto-del-p-rrafo-1" border="0">
     </div>
   </section>
-  
   <!-- NOSOTROS -->
   <section id="nosotros">
     <h2>Nosotros</h2>
