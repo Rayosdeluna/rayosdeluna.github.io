@@ -198,12 +198,10 @@
     <div class="cta">
       <a class="btn ghost" href="https://www.canva.com/design/DAGvc_2MElU/qVUR8dLijXOCEZZoHOpr8A/view?utm_content=DAGvc_2MElU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc23b1edaf1" target="_blank" rel="noopener">Ver catálogo completo</a>
     </div>
-      <!-- Cajita para ver el catálogo -->
-<div style="border: 2px solid #f5a623; border-radius: 10px; padding: 20px; width: 300px; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 20px auto; font-family: Arial, sans-serif; background-color: #fff;">
-  <h3 style="color: #f5a623;">¡Descubre nuestro catálogo!</h3>
-  <p style="font-size: 14px; color: #f48b9a;">Haz clic en el botón para ver nuestras novedades y productos exclusivos.</p>
-  <a href="https://www.canva.com/design/DAGw2zJWdKY/gUHcSTCXBe0ttl_0_bYkag/view?utm_content=DAGw2zJWdKY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb9ec7dedc2" target="_blank" style="display: inline-block; padding: 10px 20px; background-color: #f48b9a; color: #fff; border-radius: 5px; text-decoration: none; font-weight: bold;">Ver Catálogo</a>
-</div>
+      <!-- BOTÓN CATÁLOGO Stella Bags  -->
+<div class="cta">
+      <a class="btn ghost" href="https://www.canva.com/design/DAGw2zJWdKY/gUHcSTCXBe0ttl_0_bYkag/view?utm_content=DAGw2zJWdKY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb9ec7dedc2" target="_blank" rel="noopener">Ver catálogo Stella Bags</a>
+    </div>
 
   <!-- PEDIDOS -->
   <section id="pedidos">
