@@ -193,7 +193,7 @@
     <h3>Stella Bags</h3>
     <p>Carteras tejidas elegantes.</p>
     <div class="price" style="color:#333;"><span class="price-val">$20</span></div>
-    <div class="cta" 
+    <div class="cta" <div class="cta" style="margin-top:10px;">
               style="background-color:#F48B9A; color:white; border:none; border-radius:5px; padding:10px 20px; cursor:pointer;">
         <div class="cta">
   <button class="btn add-to-order" data-sku="Stella Bags" title="Este botón te lleva a Pedidos con Stella Bags seleccionado">Comprar Stella Bags</button>
