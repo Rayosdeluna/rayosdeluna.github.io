@@ -92,19 +92,7 @@
 </head>
 <body>
   <header>
-  <h1>Rayos de Luna</h1>
-  <p>Bisutería que iluminan tu día</p>
-</header>
-<!-- MENÚ PRINCIPAL -->
-<nav>
-  <a href="#inicio">Inicio</a>
-  <a href="#nosotros">Nosotros</a>
-  <a href="#productos">Productos</a>
-  <a href="#pedidos">Pedidos</a>
-  <a href="#politicas">Políticas</a>
-  <a href="#contacto">Contacto</a>
-  <a href="#faq">FAQ</a>
-</nav>
+  <div class="menu"> <a href="#inicio">Inicio</a> <a href="#nosotros">Nosotros</a> <a href="#productos">Productos</a> <a href="#pedidos">Pedidos</a> <a href="#politicas">Política de privacidad</a> <a href="#contacto">Contacto</a> <a href="#faq">Preguntas frecuentes</a> </div>
   </header>
  <!-- INICIO -->
   <section id="inicio" class="hero">
