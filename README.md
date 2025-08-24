@@ -186,23 +186,7 @@
           <button class="btn add-to-order" data-sku="aura" title="Este botón te lleva a Pedidos con Aura seleccionado">Comprar Aura</button>
         </div>
        <div class="productos-container" style="display:flex; justify-content:center; margin-top:20px;">
-  <article class="card product" data-sku="stella-bags" 
-           style="text-align:center; width:220px; background-color:#fff0f6; 
-                  border:1px solid #F48B9A; border-radius:15px; padding:15px; 
-                  box-shadow:0 4px 12px rgba(0,0,0,0.2); display:flex; flex-direction:column; align-items:center;">
-    <img src="https://i.ibb.co/4nFS1rgp/Logo-Servicios-Profesionales-Moderno-Ilustrado-Rosado.png" 
-         alt="Stella Bags" 
-         width="120" 
-         style="border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.2); margin-bottom:15px;">
-    <h3>Stella Bags</h3>
-    <p style="font-size:14px;">Carteras tejidas a mano.</p>
-    <div class="price" style="color:#333; margin-bottom:15px;"><span class="price-val">Dependerá del modelo</span></div>
-    <button class="btn add-to-order" data-sku="stella-bags" 
-            style="background-color:#F48B9A; color:white; border:none; border-radius:5px; padding:10px 20px; cursor:pointer;">
-      Comprar
-    </button>
-  </article>
-</div>
+  
 <div class="productos-container" style="display:flex; justify-content:center; margin-top:20px;">
   <article class="card product" data-sku="stella-bags" 
            style="text-align:center; width:220px; background-color:#fff0f6; 
