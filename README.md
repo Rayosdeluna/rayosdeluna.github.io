@@ -206,17 +206,10 @@
          width="120" 
          style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); display:block; margin:0 auto 10px auto;">
     <h3>Stella Bags</h3>
-    <p>Carteras tejidas a mano.</p>
-    <div class="price" style="color:#333;"><span class="price-val">Dependerá del modelo</span></div>
+    <p>Carteras tejidas para cada ocación.</p>
+    <div class="price" style="color:#333;"><span class="price-val">$20</span></div>
     <div class="cta" style="margin-top:10px;">
-      <button class="btn add-to-order" data-sku="stella-bags" 
               style="background-color:#F48B9A; color:white; border:none; border-radius:5px; padding:10px 20px; cursor:pointer;">
-        Comprar
-      </button>
-    </div>
-  </article>
-</div>
-
   <button class="btn add-to-order" data-sku="Stella Bags" title="Este botón te lleva a Pedidos con Stella Bags seleccionado">Comprar Stella Bags</button>
 </div>
 <!-- BOTÓN CATALOGO -->
