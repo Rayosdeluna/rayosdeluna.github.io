@@ -194,13 +194,14 @@
   <p>Carteras de ensueño.</p>
   <div class="price">$20.00</div>
   <div class="cta">
-    <button class="btn add-to-order" data-sku="stella-bags" 
+    <button class="btn add-to-order" data-sku="stella-bags" title="Este botón te lleva a Pedidos con Stella Bags seleccionado">Comprar Stella Bags</button>
+        </div>
             style="background-color:#F48B9A; color:white; border:none; border-radius:5px; padding:10px 20px; cursor:pointer;">
       Comprar Stella Bags
     </button>
   </div>
 </article>
-<!-- BOTÓN CATALOGO -->
+        <!-- BOTÓN CATALOGO -->
     <div class="cta">
       <a class="btn ghost" href="https://www.canva.com/design/DAGvc_2MElU/qVUR8dLijXOCEZZoHOpr8A/view?utm_content=DAGvc_2MElU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc23b1edaf1" target="_blank" rel="noopener">Ver catálogo completo</a>
     </div>
