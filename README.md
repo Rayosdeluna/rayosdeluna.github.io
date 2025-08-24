@@ -185,11 +185,10 @@
         <div class="cta">
           <button class="btn add-to-order" data-sku="aura" title="Este botón te lleva a Pedidos con Aura seleccionado">Comprar Aura</button>
         </div>
-        </article>
-     <div class="productos-container" style="display:flex; justify-content:center; margin-top:20px;">
+       <div class="productos-container" style="display:flex; justify-content:center; margin-top:20px;">
   <article class="card product" data-sku="stella-bags" 
-           style="text-align:center; width:250px; background-color:#fff0f6; 
-                  border:1px solid #F48B9A; border-radius:15px; padding:20px; 
+           style="text-align:center; width:220px; background-color:#ffffff; 
+                  border:1px solid #F48B9A; border-radius:15px; padding:15px; 
                   box-shadow:0 4px 12px rgba(0,0,0,0.2); display:flex; flex-direction:column; align-items:center;">
     <img src="https://i.ibb.co/4nFS1rgp/Logo-Servicios-Profesionales-Moderno-Ilustrado-Rosado.png" 
          alt="Stella Bags" 
