@@ -151,7 +151,7 @@
     <h2>Productos</h2>
     <div class="grid cols-3">
       <article class="card product" data-sku="combo-estrella">
-       <img src="https://i.ibb.co/bgqCwhDs/combo-estrella.png" alt="combo-estrella" width="120" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"> 
+       <img src="https://i.ibb.co/bgqCwhDs/combo-estrella.png" alt="combo-estrella" width="120" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);  display:flex; flex-direction:column; justify-content:center; align-items:center;">
         <h3>Combo Estrella</h3>
         <p>Un par de argollas.</p>
         <div class="price">$<span class="price-val">10.00</span></div>
@@ -160,7 +160,7 @@
         </div>
       </article>
       <article class="card product" data-sku="combo-doble estrella">
-       <img src="https://i.ibb.co/Xx0gjZgt/2.png" alt="2" width="120" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+       <img src="https://i.ibb.co/Xx0gjZgt/2.png" alt="2" width="120" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);  display:flex; flex-direction:column; justify-content:center; align-items:center;">
         <h3>Combo Doble Estrella</h3>
         <p>Un par de argollas + una pulsera.</p>
         <div class="price">$<span class="price-val">15.00</span></div>
@@ -169,7 +169,7 @@
         </div>
       </article>
       <article class="card product" data-sku="combo-estelar">
-<img src="https://i.ibb.co/1GvnrWB1/4.png" alt="4" width="120" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+<img src="https://i.ibb.co/1GvnrWB1/4.png" alt="4" width="120" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);  display:flex; flex-direction:column; justify-content:center; align-items:center;">
         <h3>Combo Estelar</h3>
         <p>Juego de pulseras.</p>
         <div class="price">$<span class="price-val">13.00</span></div>
@@ -178,8 +178,7 @@
         </div>
       </article>
       <article class="card product" data-sku="aura">
-         <img src="https://i.ibb.co/8LJCHYWW/3.png" alt="3" width="120" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-  
+         <img src="https://i.ibb.co/8LJCHYWW/3.png" alt="3" width="120" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); display:flex; flex-direction:column; justify-content:center; align-items:center;">
   <h3>Colección Aura</h3>
         <p>Un par de argollas únicas.</p>
         <div class="price">$<span class="price-val">10.00</span></div>
