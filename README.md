@@ -202,7 +202,6 @@
 <div class="cta">
       <a class="btn ghost" href="https://www.canva.com/design/DAGw2zJWdKY/gUHcSTCXBe0ttl_0_bYkag/view?utm_content=DAGw2zJWdKY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb9ec7dedc2" target="_blank" rel="noopener">Ver catálogo Stella Bags</a>
     </div>
-
   <!-- PEDIDOS -->
   <section id="pedidos">
     <h2>Pedidos</h2>
