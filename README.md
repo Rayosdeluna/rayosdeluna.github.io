@@ -88,20 +88,42 @@
     .rayito-actions a, .rayito-actions button{padding:8px 10px; border-radius:999px; border:1px solid rgba(0,0,0,.08); background:#fff; cursor:pointer}
     .rayito-input{display:flex; gap:6px; padding:10px; border-top:1px solid rgba(0,0,0,.06)}
     .rayito-input input{flex:1}
-     .carrito-btn {
-      cursor: pointer;
-      font-size: 20px;
-      background: white;
-      border: none;
-      padding: 8px 12px;
-      border-radius: 6px;
-      color: #f48b9a;
-      font-weight: bold;
+    
   </style>
 </head>
 <body>
   <header>
-     <!-- Carrito lateral -->
+     
+  </script>
+</body>
+ <h1>Rayos de Luna Bisutería</h1>
+  <div class="menu">
+    <a href="#inicio">Inicio</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#productos">Productos</a>
+    <a href="#pedidos">Pedidos</a>
+    <a href="#politicas">Política de privacidad</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#faq">Preguntas frecuentes</a>
+  </div>
+  </div>
+    <button class="carrito-btn" onclick="toggleCarrito()">🛒 Carrito</button>
+  </header>
+
+  <section class="productos">
+    <div class="producto">
+      <h3>Pulsera Rosa</h3>
+      <p>$5</p>
+      <button onclick="añadirCarrito('Pulsera Rosa', 5)">Añadir al Carrito</button>
+    </div>
+    <div class="producto">
+      <h3>Collar Melón</h3>
+      <p>$8</p>
+      <button onclick="añadirCarrito('Collar Melón', 8)">Añadir al Carrito</button>
+    </div>
+  </section>
+
+  <!-- Carrito lateral -->
   <div id="carrito" class="carrito">
     <button class="cerrar" onclick="toggleCarrito()">X</button>
     <h2>🛒 Tu Carrito</h2>
@@ -141,17 +163,7 @@
     }
   </script>
 </body>
- <h1>Rayos de Luna Bisutería</h1>
-  <div class="menu">
-    <a href="#inicio">Inicio</a>
-    <a href="#nosotros">Nosotros</a>
-    <a href="#productos">Productos</a>
-    <a href="#pedidos">Pedidos</a>
-    <a href="#politicas">Política de privacidad</a>
-    <a href="#contacto">Contacto</a>
-    <a href="#faq">Preguntas frecuentes</a>
-  </div>
-  </header>
+</html>
  <!-- INICIO -->
   <section id="inicio" class="hero">
     <div class="card">
