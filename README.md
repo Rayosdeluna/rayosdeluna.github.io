@@ -1,4 +1,4 @@
-<html  lang="es">
+ quiero que este quede igual solo que le añadas el carrito de compara y que el botón en los productos sea de añadir al carrito  y que me redirija a una pestaña de abrir y cerrar que me indique cuantos productos son el precio y el total y que después de confirmar se pague mediante transferencia o efectivo y que se de un seguimiento al pedido que este en fases                                                                                                                                                               <html  lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -116,6 +116,7 @@
     <img src="https://i.ibb.co/27MR6yxh/El-texto-del-p-rrafo-1.png" alt="El-texto-del-p-rrafo-1" border="0">
     </div>
   </section>
+  
   <!-- NOSOTROS -->
   <section id="nosotros">
     <h2>Nosotros</h2>
@@ -456,4 +457,4 @@
     addMsg("Quiero saber el horario","user");
     botReply("horario");
   });
-</script>
+</script>                                                                                                     
