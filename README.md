@@ -187,17 +187,7 @@
           <button class="btn add-to-order" data-sku="aura" title="Este botón te lleva a Pedidos con Aura seleccionado">Comprar Aura</button>
         </div>
         </article>
-      <div class="productos-container" style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center;">
-  <!-- Producto Aura -->
-  <article class="card product" data-sku="aura" style="text-align:center;">
-    <img src="https://i.ibb.co/8LJCHYWW/3.png" alt="Aura" width="120" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); display:block; margin:0 auto 10px auto;">
-    <h3>Aura</h3>
-    <p>Descripción de Aura.</p>
-    <div class="price">$<span class="price-val">13.00</span></div>
-    <div class="cta">
-      <button class="btn add-to-order" data-sku="aura" style="background-color:#F48B9A; color:white; border:none; border-radius:5px; padding:10px 20px; cursor:pointer;">Comprar</button>
-    </div>
-  </article>
+      <div class="productos-container" style="display:flex; gap:20px; flex-wrap:wrap; justify-content:center;"
 
   <!-- Producto Stella Bags -->
   <article class="card product" data-sku="stella-bags" style="text-align:center;">
@@ -210,8 +200,6 @@
     <div class="price" style="color:#333;"><span class="price-val">$20</span></div>
     <div class="cta" style="margin-top:10px;">
               style="background-color:#F48B9A; color:white; border:none; border-radius:5px; padding:10px 20px; cursor:pointer;">
-  <button class="btn add-to-order" data-sku="Stella Bags" title="Este botón te lleva a Pedidos con Stella Bags seleccionado">Comprar Stella Bags</button>
-</div>
 <!-- BOTÓN CATALOGO -->
     <div class="cta">
       <a class="btn ghost" href="https://www.canva.com/design/DAGvc_2MElU/qVUR8dLijXOCEZZoHOpr8A/view?utm_content=DAGvc_2MElU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc23b1edaf1" target="_blank" rel="noopener">Ver catálogo completo</a>
