@@ -204,7 +204,6 @@
     </button>
   </article>
 </div>
-
 <!-- BOTÓN CATALOGO -->
     <div class="cta">
       <a class="btn ghost" href="https://www.canva.com/design/DAGvc_2MElU/qVUR8dLijXOCEZZoHOpr8A/view?utm_content=DAGvc_2MElU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc23b1edaf1" target="_blank" rel="noopener">Ver catálogo completo</a>
