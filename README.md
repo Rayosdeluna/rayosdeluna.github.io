@@ -88,69 +88,7 @@
     .rayito-actions a, .rayito-actions button{padding:8px 10px; border-radius:999px; border:1px solid rgba(0,0,0,.08); background:#fff; cursor:pointer}
     .rayito-input{display:flex; gap:6px; padding:10px; border-top:1px solid rgba(0,0,0,.06)}
     .rayito-input input{flex:1}
-    
-  </style>
-</head>
-<body>
-  <header>
-      </div>
-    <button class="carrito-btn" onclick="toggleCarrito()">🛒 Carrito</button>
-  </header>
-
-  <section class="productos">
-    <div class="producto">
-      <h3>Pulsera Rosa</h3>
-      <p>$5</p>
-      <button onclick="añadirCarrito('Pulsera Rosa', 5)">Añadir al Carrito</button>
-    </div>
-    <div class="producto">
-      <h3>Collar Melón</h3>
-      <p>$8</p>
-      <button onclick="añadirCarrito('Collar Melón', 8)">Añadir al Carrito</button>
-    </div>
-  </section>
-
-  <!-- Carrito lateral -->
-  <div id="carrito" class="carrito">
-    <button class="cerrar" onclick="toggleCarrito()">X</button>
-    <h2>🛒 Tu Carrito</h2>
-    <ul id="lista-carrito"></ul>
-    <p class="total">Total: $<span id="total">0</span></p>
-    <a id="pagar" href="#" class="pagar-btn" target="_blank">Pagar por WhatsApp</a>
-  </div>
-
-  <script>
-    let carrito = [];
-    let total = 0;
-
-    function añadirCarrito(nombre, precio) {
-      carrito.push({ nombre, precio });
-      total += precio;
-      actualizarCarrito();
-    }
-
-    function actualizarCarrito() {
-      let lista = document.getElementById("lista-carrito");
-      lista.innerHTML = "";
-      carrito.forEach((item, index) => {
-        lista.innerHTML += `<li>${item.nombre} - $${item.precio}</li>`;
-      });
-      document.getElementById("total").textContent = total;
-
-      let mensaje = "Hola, quiero confirmar mi pedido:%0A";
-      carrito.forEach(item => {
-        mensaje += `- ${item.nombre} $${item.precio}%0A`;
-      });
-      mensaje += `%0ATotal: $${total}`;
-      document.getElementById("pagar").href = `https://wa.me/593999999999?text=${mensaje}`;
-    }
-
-    function toggleCarrito() {
-      document.getElementById("carrito").classList.toggle("abierto");
-    }
-  </script>
-</body>
-</html>
+  
   </script>
 </body>
  <h1>Rayos de Luna Bisutería</h1>
