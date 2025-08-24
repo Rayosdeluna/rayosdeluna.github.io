@@ -343,13 +343,9 @@
       </div>
     </div>
   </section>
-
- <footer>
-   <div>
-      <p>© <span id="year"></span> Rayos de Luna · Bisutería</p>
-      <p>Hecho con ♥ para brillar contigo</p>
-    </div>
-   </footer>
+<footer>
+  <p>&copy; 2025 Rayos de Luna | Bisutería Ecuador</p>
+</footer>
 <!-- RAYITO: asistente flotante -->
 <style>
   .rayito { position: fixed; bottom: 20px; right: 20px; }
@@ -388,7 +384,7 @@
   .msg-user { background:#eee; margin:6px 0; padding:8px; border-radius:8px; text-align:right; }
 </style>
 
-<div class="rayito">
+<div class="⚡">
   <button class="rayito-toggle" id="rayito-toggle">⚡</button>
 </div>
 
