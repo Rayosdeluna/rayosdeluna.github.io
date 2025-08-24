@@ -190,22 +190,19 @@
     </div>
   </section>
   <div class="producto" style="border:1px solid #ffd6e4; padding:20px; border-radius:10px; max-width:300px; text-align:center; font-family:Arial, sans-serif; background-color:#fff0f6;">
-  <a href="https://imgbb.com/">
-    <img src="<a href="https://imgbb.com/"><img src="ttps://i.ibb.co/4nFS1rgp/Logo-Servicios-Profesionales-Moderno-Ilustrado-Rosado.png" border="0"></a>
-         alt="Stella Bags - Cartera tejida" 
-         style="width:100%; height:auto; border-radius:10px; margin-bottom:15px;">
- <article class="card product" data-sku="stella-bags">
-  <a href="https://imgbb.com/">
-    <img src="https://i.ibb.co/4nFS1rgp/Logo-Servicios-Profesionales-Moderno-Ilustrado-Rosado.png" 
-         alt="Stella Bags" 
-         width="120" 
-         style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-  </a>
+  <article class="card product" data-sku="stella-bags">
+  <img src="https://i.ibb.co/4nFS1rgp/Logo-Servicios-Profesionales-Moderno-Ilustrado-Rosado.png" 
+       alt="Stella Bags" 
+       width="120" 
+       style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
   <h3>Stella Bags</h3>
-  <p>Carteras tejidas a mano con diseño único.</p>
-  <div class="price">Dependerá del modelo</div>
+  <p>Carteras tejidas a mano.</p>
+  <div class="price"><span class="price-val">Dependerá del modelo</span></div>
   <div class="cta">
-    <button class="btn add-to-order" data-sku="stella-bags">Comprar</button>
+    <button class="btn add-to-order" data-sku="stella-bags" 
+            style="background-color:#ffd6e4; color:#ff4d91; border:none; border-radius:5px; padding:10px 20px; cursor:pointer;">
+      Comprar
+    </button>
   </div>
 </article>
 <!-- BOTÓN CATALOGO -->
