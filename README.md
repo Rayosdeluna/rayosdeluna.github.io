@@ -93,18 +93,18 @@
 <body>
   <header>
   <h1>Rayos de Luna</h1>
-<p>Bisuteria que ilumina  que iluminan tu día</p>
+  <p>Joyas que iluminan tu día</p>
 </header>
+<!-- MENÚ PRINCIPAL -->
 <nav>
-<a href="index.html">Inicio</a>
-<a href="nosotros.html">Nosotros</a>
-<a href="productos.html">Productos</a>
-<a href="pedidos.html">Pedidos</a>
-<a href="politicas.html">Políticas</a>
-<a href="contacto.html">Contacto</a>
-<a href="faq.html">FAQ</a>
+  <a href="#inicio">Inicio</a>
+  <a href="#nosotros">Nosotros</a>
+  <a href="#productos">Productos</a>
+  <a href="#pedidos">Pedidos</a>
+  <a href="#politicas">Políticas</a>
+  <a href="#contacto">Contacto</a>
+  <a href="#faq">FAQ</a>
 </nav>
-<section>
   </header>
  <!-- INICIO -->
   <section id="inicio" class="hero">
