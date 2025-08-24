@@ -185,11 +185,9 @@
         <div class="cta">
           <button class="btn add-to-order" data-sku="aura" title="Este botón te lleva a Pedidos con Aura seleccionado">Comprar Aura</button>
         </div>
+     </article>
             <article class="card product" data-sku="stella-bags">
-  <img src="https://i.ibb.co/4nFS1rgp/Logo-Servicios-Profesionales-Moderno-Ilustrado-Rosado.png" 
-       alt="stella-bags" 
-       width="120" 
-       style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); display:flex; flex-direction:column; justify-content:center; align-items:center;">
+  <img src="https://i.ibb.co/4nFS1rgp/Logo-Servicios-Profesionales-Moderno-Ilustrado-Rosado.png" alt="stella-bags"  width="120" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); display:flex; flex-direction:column; justify-content:center; align-items:center;">
   <h3>Stella Bags</h3>
   <p>Carteras de ensueño.</p>
   <div class="price">$20.00</div>
