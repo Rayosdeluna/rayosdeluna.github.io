@@ -92,14 +92,13 @@
 </head>
 <body>
   <header>
-      <div class="menu">
-  <a href="inicio"
-  <a href="nosotros">
-  <a href="productos">
-  <a href="pedidos">
-  <a href="politicas">
-  <a href="contacto.">
-  <a href="faq">
+   <a href="index.html">Inicio</a>
+<a href="nosotros.html">Nosotros</a>
+<a href="productos.html">Productos</a>
+<a href="pedidos.html">Pedidos</a>
+<a href="politicas.html">Políticas</a>
+<a href="contacto.html">Contacto</a>
+<a href="faq.html">FAQ</a>
 </div>
   </header>
  <!-- INICIO -->
@@ -346,10 +345,9 @@
         <p>Sí, realizamos entregas a domicilio dentro de Ecuador.</p>
       </div>
     </div>
-  </section>
-<footer>
-  <p>&copy; 2025 Rayos de Luna | Bisutería Ecuador</p>
-</footer>
+ <footer>
+    <p>&copy; 2025 Rayos de Luna | Todos los derechos reservados</p>
+  </footer>
 <!-- RAYITO: asistente flotante -->
 <style>
   .rayito { position: fixed; bottom: 20px; right: 20px; }
