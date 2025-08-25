@@ -238,17 +238,17 @@
     </div>
   </section>
 <div class="catalogos">
-  <a href="https://www.canva.com/design/DAGvc_2MElU/qVUR8dLijXOCEZZoHOpr8A/view?utm_content=DAGvc_2MElU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc23b1edaf1" target="_blank" class="btn">Catálogo de Combos</a>
-  <a href="https://www.canva.com/design/DAGw2zJWdKY/gUHcSTCXBe0ttl_0_bYkag/view?utm_content=DAGw2zJWdKY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb9ec7dedc2" target="_blank" class="btn">Catálogo de Stella Bags</a>
+  <a href="https://www.canva.com/design/DAGvc_2MElU/qVUR8dLijXOCEZZoHOpr8A/view" target="_blank" class="btn">Catálogo de Combos</a>
+  <a href="https://www.canva.com/design/DAGw2zJWdKY/gUHcSTCXBe0ttl_0_bYkag/view" target="_blank" class="btn">Catálogo de Stella Bags</a>
 </div>
 
 <style>
 .catalogos {
-  text-align: center; /* centra los botones */
+  text-align: center;
   margin: 20px 0;
 }
 .btn {
-  background-color: #f48b9a; /* color melón */
+  background-color: #f48b9a;
   color: white;
   padding: 12px 25px;
   text-decoration: none;
@@ -260,7 +260,7 @@
   transition: background-color 0.3s;
 }
 .btn:hover {
-  background-color: #ff6b8a; /* efecto al pasar el mouse */
+  background-color: #ff6b8a;
 }
 </style>
 
@@ -337,7 +337,23 @@ En el caso de carteras tejidas, solo se aceptan cambios por defectos de fabricac
     <button onclick="confirmarPedido()">Confirmar en WhatsApp</button>
      <button onclick="eliminarProducto(this)">Eliminar</button>
   </div>
+<script>
+function eliminarProducto(boton) {
+  // Elimina el producto del DOM
+  boton.parentElement.remove();
+  actualizarTotal();
+}
 
+function actualizarTotal() {
+  let total = 0;
+  const productos = document.querySelectorAll('#carrito .producto');
+  productos.forEach(prod => {
+    const precio = parseFloat(prod.children[1].textContent.replace('$',''));
+    total += precio;
+  });
+  document.getElementById('total').textContent = total;
+}
+</script>
 <script>
   let carrito = [];
   let carritoAbierto = false;
