@@ -166,16 +166,14 @@
     <a onclick="mostrarSeccion('politicas')">Políticas</a>
     <a onclick="mostrarSeccion('contacto')">Contacto</a>
     <a onclick="mostrarSeccion('faq')">Preguntas Frecuentes</a>
-  </nav>
-  div id="carrito" onclick="toggleCarrito()">🛒 (<span id="cantidad">0</span>)</div>
+   </nav>
+  <div id="carrito" onclick="toggleCarrito()">🛒 Carrito (<span id="cantidad">0</span>)</div>
 </header>
-
 <div id="carrito-detalle">
   <h3>Tu Carrito</h3>
   <ul id="lista-carrito"></ul>
   <p>Total: $<span id="total">0</span></p>
   <button onclick="confirmarPedido()">Confirmar Pedido</button>
-</div>
 </div>
   <!-- Inicio -->
   <section id="inicio" class="active">
