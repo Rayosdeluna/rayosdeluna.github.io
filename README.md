@@ -178,7 +178,7 @@
       <p>Aquí cada detalle está pensado para ti. Encuentra productos únicos, de la mejor calidad y a precios que se ajustan a lo que buscas.</p>
       <p>💖 Compra fácil, segura y sin complicaciones, desde la comodidad de tu casa.</p>
       <p>👉 Solo elige tu favorito, haz tu pedido ¡y nosotros lo llevamos directo a tu puerta! 🚚✨</p>
-      <a href="https://ibb.co/G1YkRG5"><img src="https://i.ibb.co/G1YkRG5/El-texto-del-p-rrafo-1.png" alt="El-texto-del-p-rrafo-1" border="0"></a>
+     <a href="https://imgbb.com/"><img src="https://i.ibb.co/hnQHVrm/El-texto-del-p-rrafo-1.png" alt="El-texto-del-p-rrafo-1" border="0"></a>
     </div>
   </section>
 
@@ -213,19 +213,19 @@
         <button onclick="agregarAlCarrito('Combo Estrella', 10.00)">Añadir al carrito</button>
       </div>
       <div class="producto">
-        <a href="https://ibb.co/Qv0jhTrb"><img src="https://i.ibb.co/Qv0jhTrb/2.png" alt="2" border="0"></a>
+    <a href="https://ibb.co/Qv0jhTrb"><img src="https://i.ibb.co/Qv0jhTrb/2.png" alt="combo-doble-estrella" border="0"></a>
         <h3>Combo Doble Estrella</h3>
         <p>$15.00</p>
         <button onclick="agregarAlCarrito('Combo Doble Estrella', 15.00)">Añadir al carrito</button>
       </div>
       <div class="producto">
-        <a href="https://ibb.co/CFsk15H"><img src="https://i.ibb.co/CFsk15H/4.png" alt="4" border="0"></a>
+        <a href="https://ibb.co/CFsk15H"><img src="https://i.ibb.co/CFsk15H/4.png" alt="combo-estelar" border="0"></a>
         <h3>Combo Estelar</h3>
         <p>$13.00</p>
         <button onclick="agregarAlCarrito('Combo Estelar', 13.00)">Añadir al carrito</button>
       </div>
       <div class="producto">
-        <a href="https://ibb.co/TxvNXqz0"><img src="https://i.ibb.co/TxvNXqz0/3.png" alt="3" border="0"></a>
+        <a href="https://ibb.co/TxvNXqz0"><img src="https://i.ibb.co/TxvNXqz0/3.png" alt="colección-Aura" border="0"></a>
         <h3>Colección Aura</h3>
         <p>$10.00</p>
         <button onclick="agregarAlCarrito('Colección Aura', 10.00)">Añadir al carrito</button>
