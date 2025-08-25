@@ -7,7 +7,7 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f48b9a;
+      background: #fff;
       color: #333;
     }
     header {
