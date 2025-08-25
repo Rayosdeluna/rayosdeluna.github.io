@@ -52,7 +52,7 @@
       display: block;
     }
     .rectangulo {
-      background: #fff;
+      background: #ffd6e4;
       border: 2px solid #ffd6e4;
       border-radius: 12px;
       padding: 20px;
