@@ -65,7 +65,7 @@
   <header>
     <div class="container nav">
       <div class="brand">
-        <img src="logo.png" alt="Rayos de Luna" />
+        <img src="https://ibb.co/vC6yGSm3" alt="Rayos de Luna" />
         <div>
           <h1>Rayos de Luna</h1>
           <p>Diseñamos joyas con cuidado y amor</p>
@@ -88,9 +88,6 @@
           <h2 class="title">Brilla con la magia lunar</h2>
           <p class="subtitle">Piezas delicadas, materiales de calidad y diseño atemporal. Cada detalle pensado para iluminar tu estilo.</p>
           <div class="tags">
-            <span class="tag">Hipoalergénico</span>
-            <span class="tag">Hecho con amor</span>
-            <span class="tag">Garantía 30 días</span>
           </div>
           <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
             <a class="btn btn-primary" href="#catalogo">Ver catálogo</a>
