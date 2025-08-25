@@ -299,56 +299,75 @@ En el caso de carteras tejidas, solo se aceptan cambios por defectos de fabricac
        <p>¿Cómo puedo hacer un pedido? A través de nuestra página web, el carrito de compras o escribiéndonos por WhatsApp para confirmar tu orden..</p>
     </div>
   </section>
-<h2>Carrito</h2>
-<table>
-  <thead>
-    <tr>
-      <th>Número de Pedido</th>
-      <th>Producto</th>
-      <th>Cantidad</th>
-      <th>Precio</th>
-      <th>Eliminar</th>
-    </tr>
-  </thead>
-  <tbody id="carrito"></tbody>
+<h2>Carrito (<span id="cantidad">0</span> items) <button onclick="toggleCarrito()">Ver/ocultar</button></h2>
+
+<div id="carrito-detalle">
+  <ul id="lista-carrito"></ul>
+  <p>Total: $<span id="total">0</span></p>
+  <button onclick="confirmarPedido()">Confirmar Pedido</button>
+</div>
+
+<h2>Tabla de Pedidos</h2>
+<table id="tabla-pedidos">
+  <tr>
+    <th>Producto</th>
+    <th>Número de Pedido</th>
+    <th>Estado</th>
+  </tr>
 </table>
 
-<h3>Total: $<span id="total">0.00</span></h3>
-
 <script>
-function generarNumeroPedido() {
-  return Math.floor(Math.random() * 9000) + 1000; // 1000 a 9999
+// Carrito
+let carrito = [];
+let numeroPedido = 1;
+
+function agregarAlCarrito(nombre, precio){
+  carrito.push({nombre, precio});
+  actualizarCarrito();
 }
 
-function agregarAlCarrito(producto, precio) {
-  let numeroPedido = generarNumeroPedido();
-  let carrito = document.getElementById('carrito');
-  
-  let fila = document.createElement('tr');
-  fila.innerHTML = `
-    <td>${numeroPedido}</td>
-    <td>${producto}</td>
-    <td>1</td>
-    <td>${precio}</td>
-    <td><button onclick="eliminarFila(this)">❌</button></td>
-  `;
-  
-  carrito.appendChild(fila);
-  actualizarTotal();
-}
-
-function eliminarFila(boton) {
-  boton.parentElement.parentElement.remove();
-  actualizarTotal();
-}
-
-function actualizarTotal() {
-  let filas = document.querySelectorAll('#carrito tr');
+function actualizarCarrito(){
+  const lista = document.getElementById('lista-carrito');
+  lista.innerHTML = '';
   let total = 0;
-  filas.forEach(fila => {
-    total += parseFloat(fila.cells[3].innerText);
+  carrito.forEach(item => {
+    const li = document.createElement('li');
+    li.textContent = `${item.nombre} - $${item.precio}`;
+    lista.appendChild(li);
+    total += item.precio;
   });
-  document.getElementById('total').innerText = total.toFixed(2);
+  document.getElementById('cantidad').textContent = carrito.length;
+  document.getElementById('total').textContent = total;
+}
+
+function toggleCarrito(){
+  const detalle = document.getElementById('carrito-detalle');
+  detalle.style.display = detalle.style.display === 'block' ? 'none' : 'block';
+}
+
+function confirmarPedido(){
+  if(carrito.length === 0){ 
+    alert("El carrito está vacío."); 
+    return;
+  }
+  let mensaje = "Hola, quiero confirmar mi pedido:\n";
+  let tabla = document.getElementById("tabla-pedidos");
+  carrito.forEach(item => {
+    mensaje += `${item.nombre} - $${item.precio}\n`;
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>${item.nombre}</td>
+      <td>${numeroPedido}</td>
+      <td>Pendiente</td>
+    `;
+    tabla.appendChild(tr);
+    numeroPedido++;
+  });
+  mensaje += `Total: $${carrito.reduce((a,b)=>a+b.precio,0)}`;
+  window.open(`https://wa.me/593999999999?text=${encodeURIComponent(mensaje)}`,'_blank');
+  carrito = [];
+  actualizarCarrito();
+  toggleCarrito();
 }
 </script>
 
