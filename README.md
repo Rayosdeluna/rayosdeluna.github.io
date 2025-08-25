@@ -1,13 +1,13 @@
-     <!DOCTYPE html>
+
 <html lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rayos de Luna | Joyas</title>
+  <title>Rayos de Luna | Bisutería</title>
   <meta name="description" content="Rayos de Luna – Diseñamos joyas con cuidado y amor." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link href="<a href="https://ibb.co/vC6yGSm3"><img src="https://i.ibb.co/vC6yGSm3/logo-Rayos-de-luna.png" alt="logo-Rayos-de-luna" border="0"></a>" rel="stylesheet">
   <style>
     :root{
       --pink:#f48b9a;
