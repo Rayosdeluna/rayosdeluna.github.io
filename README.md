@@ -366,7 +366,6 @@ function confirmarPedido(){
   actualizarCarrito();
   toggleCarrito()
 </script>
-
 <!-- RAYITO: asistente flotante -->
 <style>
   .rayito { position: fixed; bottom: 20px; right: 20px; }
