@@ -164,9 +164,9 @@
       <a href="#pedidos">Pedidos</a>
       <a href="#politicas">Políticas</a>
       <a href="#contacto">Contacto</a>
-      <a href="#faq">Preguntas Frecuentes</a>
+      <a href="#faq">FAQ</a>
     </nav>
-    <button id="carrito-btn">🛒 Carrito (<span id="carrito-count">0</span>)</button>
+    <button id="carrito-btn">🛒  (<span id="carrito-count">0</span>)</button>
   </header>
 
   <!-- Inicio -->
