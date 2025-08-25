@@ -398,7 +398,7 @@ function actualizarTotal() {
     let telefono = document.getElementById("telefono").value;
 
     let mensaje = `Nuevo pedido:\n👤 Nombre: ${nombre}\n📦 Número de pedido: ${numeroPedido}\n📞 Teléfono: ${telefono}`;
-    let url = `https://wa.me/593999999999?text=${encodeURIComponent(mensaje)}`;
+    let url = `https://wa.me/0995372875?text=${encodeURIComponent(mensaje)}`;
     window.open(url, "_blank");
   }
 
