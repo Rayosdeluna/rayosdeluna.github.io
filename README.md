@@ -167,7 +167,7 @@
     <a onclick="mostrarSeccion('contacto')">Contacto</a>
     <a onclick="mostrarSeccion('faq')">Preguntas Frecuentes</a>
   </nav>
-  <div id="carrito" onclick="toggleCarrito()">🛒 Carrito (<span id="cantidad">0</span>)</div>
+  div id="carrito" onclick="toggleCarrito()">🛒 Carrito (<span id="cantidad">0</span>)</div>
 </header>
 
 <div id="carrito-detalle">
@@ -175,6 +175,7 @@
   <ul id="lista-carrito"></ul>
   <p>Total: $<span id="total">0</span></p>
   <button onclick="confirmarPedido()">Confirmar Pedido</button>
+</div>
 </div>
   <!-- Inicio -->
   <section id="inicio" class="active">
