@@ -102,8 +102,7 @@
         </div>
       </div>
     </section>
-
-    <!-- COMBOS -->
+  <!-- COMBOS -->
     <section id="combos" class="section">
       <div class="container">
         <h2>Combos</h2>
@@ -141,8 +140,7 @@
         </div>
       </div>
     </section>
-
-    <!-- COLECCIÓN AURA -->
+  <!-- COLECCIÓN AURA -->
     <section id="aura" class="section" style="background:white">
       <div class="container">
         <h2>Colección Aura</h2>
@@ -171,8 +169,7 @@
         <p style="margin-top:10px;color:var(--muted);font-size:14px">Puedes duplicar estas tarjetas para añadir más piezas.</p>
       </div>
     </section>
-
-    <!-- CATÁLOGO GENERAL -->
+ <!-- CATÁLOGO GENERAL -->
     <section id="catalogo" class="section">
       <div class="container">
         <h2>Catálogo</h2>
@@ -211,7 +208,6 @@
         </div>
       </div>
     </section>
-
     <!-- ABOUT -->
     <section class="section" style="background:white">
       <div class="container about">
@@ -225,7 +221,7 @@
           </ul>
         </div>
         <div class="hero-card">
-          <img src="about.jpg" alt="Rayos de Luna – Taller" />
+          <img src="about.jpg" alt="Rayos de Luna – bisutería que encanta" />
         </div>
       </div>
     </section>
