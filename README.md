@@ -157,6 +157,7 @@
 
   <header>
     <a href="https://ibb.co/vC6yGSm3"><img src="https://i.ibb.co/vC6yGSm3/logo-Rayos-de-luna.png" alt="logo-Rayos-de-luna" border="0"></a>
+   <nav>
     <a href="#inicio" class="active">Inicio</a>
     <a href="#nosotros">Nosotros</a>
     <a href="#productos">Productos</a>
@@ -164,9 +165,9 @@
     <a href="#politicas">Políticas</a>
     <a href="#contacto">Contacto</a>
     <a href="#faq">FAQ</a>
-    <button id="carrito-btn">🛒  (<span id="carrito-count">0</span>)</button>
-  </header>
-
+  </nav>
+  <button id="carrito-btn">🛒 (<span id="carrito-count">0</span>)</button>
+</header>
   <!-- Inicio -->
   <section id="inicio" class="active">
     <div class="rectangulo">
