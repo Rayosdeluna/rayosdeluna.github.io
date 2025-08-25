@@ -138,7 +138,7 @@
     }
     .nosotros-box {
       background: #f48b9a;
-      border: 2px solid #ffd6e4;
+      border: 2px solid #f48b9a;
       border-radius: 12px;
       padding: 15px;
       text-align: center;
@@ -148,7 +148,7 @@
       width: 100%;
       padding: 8px;
       margin: 8px 0;
-      border: 1px solid #ffd6e4;
+      border: 1px solid #f48b9a;
       border-radius: 8px;
     }
   </style>
