@@ -254,12 +254,9 @@
     <h2>Seguimiento y Registro de Pedido</h2>
     <form id="pedido-form">
       <input type="text" id="nombre" placeholder="Nombre completo" required>
-      <input type="text" id="numPedido" placeholder="Número de pedido" required>
+      <input type="text" id="dirección" placeholder="dirección del domicilio" required>
       <input type="tel" id="telefono" placeholder="Número de teléfono" required>
       <button type="submit">Registrar Pedido</button>
-    </form>
-    <table id="tablaPedidos">
-      <tr><th>Número de Pedido</th><th>Nombre</th><th>Teléfono</th><th>Fase</th></tr>
     </table>
   </section>
 
