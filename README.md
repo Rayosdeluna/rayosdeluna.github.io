@@ -1,227 +1,211 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rayos de Luna | Joyas</title>
-  <meta name="description" content="Rayos de Luna – Diseñamos joyas con cuidado y amor." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --pink:#f48b9a;
-      --blush:#ffd6e4;
-      --ink:#1f2937;
-      --muted:#6b7280;
-      --radius:18px;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;color:var(--ink);background:var(--blush);} 
-    img{max-width:100%;display:block}
-    a{color:inherit;text-decoration:none}
-    .container{max-width:1100px;margin:0 auto;padding:0 20px}
-    header{position:sticky;top:0;z-index:50;background:rgba(255,214,228,.85);backdrop-filter:saturate(1.2) blur(6px);border-bottom:1px solid rgba(244,139,154,.35)}
-    .nav{display:flex;align-items:center;gap:16px;padding:14px 0}
-    .brand{display:flex;align-items:center;gap:12px}
-    .brand img{width:44px;height:44px;border-radius:50%;border:1px solid var(--pink);object-fit:cover}
-    .brand h1{font-size:18px;margin:0;font-weight:600;letter-spacing:.3px}
-    .brand p{margin:0;color:var(--muted);font-size:12px;margin-top:-2px}
-    .navlinks{margin-left:auto;display:flex;gap:14px}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 16px;border-radius:999px;border:1px solid rgba(244,139,154,.5);background:white;cursor:pointer;font-weight:600}
-    .btn-primary{background:var(--pink);color:white;border-color:var(--pink)}
-    .btn-outline{background:white;color:var(--pink)}
-    .btn-link{border:none;background:transparent;color:var(--ink);padding:8px}
-    .hero{padding:56px 0}
-    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
-    .title{font-family:"Playfair Display",serif;font-weight:600;font-size:46px;line-height:1.1;margin:0}
-    .subtitle{color:var(--muted);margin:12px 0 18px}
-    .tags{display:flex;gap:10px;flex-wrap:wrap}
-    .tag{background:rgba(244,139,154,.12);color:#a31f3b;border:1px solid rgba(244,139,154,.35);padding:6px 10px;border-radius:999px;font-size:12px}
-    .hero-card{position:relative;border-radius:var(--radius);overflow:hidden;border:1px solid rgba(244,139,154,.35);box-shadow:0 10px 30px rgba(244,139,154,.2)}
-    .hero-card img{height:100%;width:100%;object-fit:cover}
-    .section{padding:36px 0}
-    .section h2{font-size:28px;margin:0 0 14px;color:var(--pink)}
-    .grid{display:grid;gap:18px}
-    .grid-3{grid-template-columns:repeat(3,1fr)}
-    .grid-2{grid-template-columns:repeat(2,1fr)}
-    @media(max-width:920px){.hero-grid{grid-template-columns:1fr}.grid-3{grid-template-columns:repeat(2,1fr)}}
-    @media(max-width:640px){.grid-3,.grid-2{grid-template-columns:1fr}.title{font-size:34px}}
-    .card{border:1px solid rgba(244,139,154,.35);border-radius:var(--radius);background:white;overflow:hidden;display:flex;flex-direction:column}
-    .card-img{aspect-ratio:1/1;object-fit:cover;background:#fff4f7}
-    .card-body{padding:14px}
-    .card h3{margin:0 0 6px;font-size:18px;color:var(--pink)}
-    .card p{margin:0;color:var(--muted);font-size:14px}
-    .card .price{margin-top:8px;font-weight:700;font-size:18px;color:var(--ink)}
-    .card .actions{margin-top:12px;display:flex;gap:10px}
-    .about{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
-    @media(max-width:920px){.about{grid-template-columns:1fr}}
-    footer{padding:28px 0;color:var(--muted)}
-    .wa-float{position:fixed;right:16px;bottom:16px;background:var(--pink);color:white;border-radius:999px;padding:12px 16px;box-shadow:0 8px 30px rgba(244,139,154,.55);display:flex;align-items:center;gap:10px;font-weight:700;z-index:60}
-    .wa-float svg{width:18px;height:18px;fill:white}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rayos de Luna | Joyas</title>
+<style>
+:root {
+  --pink:#f48b9a;
+  --blush:#ffd6e4;
+  --ink:#1f2937;
+  --muted:#6b7280;
+  --radius:16px;
+}
+* {box-sizing:border-box;}
+body {margin:0;font-family:Poppins,sans-serif;background:var(--blush);color:var(--ink);}
+header {background:rgba(255,214,228,.95);position:sticky;top:0;z-index:50;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+header nav a {margin:0 10px;text-decoration:none;color:var(--ink);font-weight:600;cursor:pointer;}
+header nav a.active {color:white;background:var(--pink);padding:6px 12px;border-radius:12px;}
+#cart {background:var(--pink);color:white;padding:6px 12px;border-radius:12px;cursor:pointer;margin-left:10px;}
+.container {max-width:1100px;margin:0 auto;padding:20px;}
+section {display:none;padding:40px 0;}
+section.active {display:block;}
+h2 {color:var(--pink);}
+.grid {display:grid;gap:20px;}
+.grid-3 {grid-template-columns:repeat(3,1fr);}
+.card {background:white;padding:12px;border-radius:var(--radius);text-align:center;position:relative;}
+.card img {width:100%;border-radius:var(--radius);}
+.btn {padding:8px 14px;border:none;border-radius:12px;cursor:pointer;font-weight:600;}
+.btn-primary {background:var(--pink);color:white;}
+.btn-outline {background:white;color:var(--pink);border:1px solid var(--pink);}
+#cartWindow {position:absolute;top:50px;right:20px;width:300px;background:white;border-radius:16px;padding:12px;display:none;box-shadow:0 4px 12px rgba(0,0,0,0.2);z-index:70;}
+#cartWindow h3 {margin-top:0;color:var(--pink);}
+#cartItems {max-height:200px;overflow-y:auto;margin-bottom:10px;}
+.cart-item {display:flex;justify-content:space-between;margin-bottom:6px;font-size:14px;}
+.cart-total {font-weight:700;}
+</style>
 </head>
 <body>
-  <header>
-    <div class="container nav">
-      <div class="brand">
-       <a href="https://ibb.co/vC6yGSm3"><img src="https://i.ibb.co/vC6yGSm3/logo-Rayos-de-luna.png" alt="logo-Rayos-de-luna" border="0">
-        <div>
-          <h1>Rayos de Luna</h1>
-          <p>Diseñamos joyas con cuidado y amor</p>
-        </div>
-      </div>
-      <nav class="navlinks">
-        <a class="btn-link" href="#combos">Combos</a>
-        <a class="btn-link" href="#aura">Colección Aura</a>
-        <a class="btn-link" href="#catalogo">Catálogo</a>
-        <a class="btn btn-outline" id="btnHeaderWA" href="#">WhatsApp</a>
-      </nav>
-    </div>
-  </header>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <h2 class="title">Brilla con la magia lunar</h2>
-          <p class="subtitle">Piezas delicadas, materiales de calidad y diseño atemporal. Cada detalle pensado para iluminar tu estilo.</p>
-          <div class="tags">
-          </div>
-          <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
-            <a class="btn btn-primary" href="#catalogo">Ver catálogo</a>
-            <a class="btn btn-outline" id="btnHeroWA" href="#">Pedir por WhatsApp</a>
-          </div>
-        </div>
-        <div class="hero-card">
-          <img src="<a href="https://ibb.co/vC6yGSm3"><img src="https://i.ibb.co/vC6yGSm3/logo-Rayos-de-luna.png" alt="logo-Rayos-de-luna" border="0"></a>" alt="Joyas Rayos de Luna" />
-        </div>
-      </div>
-    </section>
-  <!-- COMBOS -->
-    <section id="combos" class="section">
-      <div class="container">
-        <h2>Combos</h2>
-        <div class="grid grid-3">
-          <article class="card">
-            <img class="card-img" src="combo-estrellas.jpg" alt="Combo Estrellas" />
-            <div class="card-body">
-              <h3>Combo Estrellas</h3>
-              <p>Un par de argollas medianas/pequeñas.</p>
-              <div class="actions">
-                <a class="btn btn-primary" data-product="Combo Estrellas" href="#">Consultar por WhatsApp</a>
-              </div>
-            </div>
-          </article>
-          <article class="card">
-            <img class="card-img" src="combo-doble-estrella.jpg" alt="Combo Doble Estrella" />
-            <div class="card-body">
-              <h3>Combo Doble Estrella</h3>
-              <p>Un par de argollas + una pulsera.</p>
-              <div class="actions">
-                <a class="btn btn-primary" data-product="Combo Doble Estrella" href="#">Consultar por WhatsApp</a>
-              </div>
-            </div>
-          </article>
-          <article class="card">
-            <img class="card-img" src="combo-estelar.jpg" alt="Combo Estelar" />
-            <div class="card-body">
-              <h3>Combo Estelar</h3>
-              <p>Dos pulseras a juego.</p>
-              <div class="actions">
-                <a class="btn btn-primary" data-product="Combo Estelar" href="#">Consultar por WhatsApp</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-  <!-- COLECCIÓN AURA -->
-    <section id="aura" class="section" style="background:white">
-      <div class="container">
-        <h2>Colección Aura</h2>
-        <div class="grid grid-2">
-          <article class="card">
-            <img class="card-img" src="aura-1.jpg" alt="Colección Aura" />
-            <div class="card-body">
-              <h3>Pieza Aura 01</h3>
-              <p>Describe brevemente la pieza.</p>
-              <div class="actions">
-                <a class="btn btn-primary" data-product="Colección Aura – Pieza 01" href="#">Consultar por WhatsApp</a>
-              </div>
-            </div>
-          </article>
-          <article class="card">
-            <img class="card-img" src="aura-2.jpg" alt="Colección Aura" />
-            <div class="card-body">
-              <h3>Pieza Aura 02</h3>
-              <p>Describe brevemente la pieza.</p>
-              <div class="actions">
-                <a class="btn btn-primary" data-product="Colección Aura – Pieza 02" href="#">Consultar por WhatsApp</a>
-              </div>
-            </div>
-          </article>
-        </div>
-        <p style="margin-top:10px;color:var(--muted);font-size:14px">Puedes duplicar estas tarjetas para añadir más piezas.</p>
-      </div>
-    </section>
- <!-- CATÁLOGO GENERAL -->
-    <section id="catalogo" class="section">
-      <div class="container">
-        <h2>Catálogo</h2>
-        <p class="subtitle" style="margin-top:-2px">Sube aquí tus fotos de productos. Solo reemplaza las imágenes y los textos.</p>
-        <div class="grid grid-3" id="catalogoGrid">
-          <article class="card">
-            <img class="card-img" src="producto-1.jpg" alt="Nombre del producto" />
-            <div class="card-body">
-              <h3>Nombre del producto</h3>
-              <p>Descripción corta.</p>
-              <div class="actions">
-                <a class="btn btn-outline" data-product="Producto 1" href="#">Preguntar por WhatsApp</a>
-              </div>
-            </div>
-          </article>
-          <article class="card">
-            <img class="card-img" src="producto-2.jpg" alt="Nombre del producto" />
-            <div class="card-body">
-              <h3>Nombre del producto</h3>
-              <p>Descripción corta.</p>
-              <div class="actions">
-                <a class="btn btn-outline" data-product="Producto 2" href="#">Preguntar por WhatsApp</a>
-              </div>
-            </div>
-          </article>
-          <article class="card">
-            <img class="card-img" src="producto-3.jpg" alt="Nombre del producto" />
-            <div class="card-body">
-              <h3>Nombre del producto</h3>
-              <p>Descripción corta.</p>
-              <div class="actions">
-                <a class="btn btn-outline" data-product="Producto 3" href="#">Preguntar por WhatsApp</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-    <!-- ABOUT -->
-    <section class="section" style="background:white">
-      <div class="container about">
-        <div>
-          <h2>Nuestra esencia</h2>
-          <p class="subtitle">Rayos de Luna nace para celebrar la feminidad y el brillo interior. Trabajamos con materiales hipoalergénicos y acabados de alta calidad para acompañarte todos los días.</p>
-          <ul style="margin:0;padding-left:18px;color:var(--muted)">
-            <li>Combos exclusivos y colección Aura</li>
-            <li>Empaques listos para regalo</li>
-            <li>Atención por WhatsApp y envío a todo Ecuador</li>
-          </ul>
-        </div>
-        <div class="hero-card">
-          <img src="about.jpg" alt="Rayos de Luna – bisutería que encanta" />
-        </div>
-      </div>
-    </section>
-  </main>
+<header>
+  <h1>Rayos de Luna</h1>
+  <nav>
+    <a class="active" data-tab="inicio">Inicio</a>
+    <a data-tab="nosotros">Nosotros</a>
+    <a data-tab="productos">Productos</a>
+    <a data-tab="pedidos">Pedidos</a>
+    <a data-tab="politicas">Políticas</a>
+    <a data-tab="contactos">Contactos</a>
+    <a data-tab="faq">FAQ</a>
+    <span id="cart">🛒  (<span id="cartCount">0</span>)</span>
+  </nav>
+</header>
+
+<div class="container">
+
+<!-- Inicio -->
+<section id="inicio" class="active">
+<h2>Bienvenidos a Rayos de Luna</h2>
+<p>Ofrecemos piezass únicas y exclusivas para destacar tu estilo.</p>
+<p>Aquí cada detalle está pensado para ti. Encuentra productos únicos, de la mejor calidad y a precios que se ajustan a lo que buscas.</p>
+<p>💖 Compra fácil, segura y sin complicaciones, desde la comodidad de tu casa.</p>
+<p>👉 Solo elige tu favorito, haz tu pedido ¡y nosotros lo llevamos directo a tu puerta! 🚚✨</p>
+</section>
+
+<!-- Nosotros -->
+<section id="nosotros">
+<h2>Nosotros</h2>
+<p>Quiénes somos?
+Somos Rayos de Luna , una marca ecuatoriana enfocada en piezas modernas, delicadas y accesibles. Entregamos a domicilio y confirmamos cada pedido por WhatsApp para tu tranquilidad.
+
+Misión
+Diseñar empaques y joyas que reflejen el valor y la identidad de nuestras clientes, ofreciendo experiencias de compra claras y confiables.
+
+Visión
+Ser la marca de referencia en bisutería de calidad en Ecuador, con servicio cercano y entregas puntuales.
+
+Valores
+Calidad y detalle
+Transparencia y confianza
+Respeto por tus datos</p>
+  <p>Rayos de Luna celebra la feminidad y el brillo interior. Trabajamos con materiales hipoalergénicos y acabados de alta calidad.</p>
+</section>
+
+<!-- Productos -->
+<section id="productos">
+<h2>Productos</h2>
+<div class="grid grid-3" id="productGrid">
+  <div class="card">
+    <img src="producto1.jpg" alt="Producto 1">
+    <h3>Producto 1</h3>
+    <p>$25</p>
+    <button class="btn btn-primary" data-name="Producto 1" data-price="25">Añadir al carrito</button>
+  </div>
+  <div class="card">
+    <img src="producto2.jpg" alt="Producto 2">
+    <h3>Producto 2</h3>
+    <p>$30</p>
+    <button class="btn btn-primary" data-name="Producto 2" data-price="30">Añadir al carrito</button>
+  </div>
+  <div class="card">
+    <img src="producto3.jpg" alt="Producto 3">
+    <h3>Producto 3</h3>
+    <p>$20</p>
+    <button class="btn btn-primary" data-name="Producto 3" data-price="20">Añadir al carrito</button>
+  </div>
+  <div class="card">
+    <img src="producto4.jpg" alt="Producto 4">
+    <h3>Producto 4</h3>
+    <p>$18</p>
+    <button class="btn btn-primary" data-name="Producto 4" data-price="18">Añadir al carrito</button>
+  </div>
+  <div class="card">
+    <img src="producto5.jpg" alt="Producto 5">
+    <h3>Producto 5</h3>
+    <p>$22</p>
+    <button class="btn btn-primary" data-name="Producto 5" data-price="22">Añadir al carrito</button>
+  </div>
+</div>
+</section>
+
+<!-- Pedidos -->
+<section id="pedidos">
+<h2>Pedidos</h2>
+<div id="cartItemsContainer">
+<p>Aquí aparecerán tus productos añadidos al carrito y el seguimiento del pedido.</p>
+<div id="cartItems"></div>
+<p class="cart-total">Total: $<span id="cartTotal">0</span></p>
+</div>
+</section>
+
+<!-- Políticas -->
+<section id="politicas">
+<h2>Políticas de privacidad</h2>
+<p>Aquí puedes colocar tus políticas.</p>
+</section>
+
+<!-- Contactos -->
+<section id="contactos">
+<h2>Contactos</h2>
+<p>WhatsApp: <a href="https://wa.me/1234567890">Enviar mensaje</a></p>
+<p>Email: contacto@rayosdeluna.com</p>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+<h2>Preguntas frecuentes</h2>
+<p>Aquí puedes colocar las preguntas frecuentes.</p>
+</section>
+
+</div>
+
+<!-- Carrito ventana -->
+<div id="cartWindow">
+<h3>Carrito</h3>
+<div id="cartItems"></div>
+<p class="cart-total">Total: $<span id="cartTotalWindow">0</span></p>
+</div>
+
+<script>
+// Cambiar de pestañas
+const tabs = document.querySelectorAll('header nav a');
+const sections = document.querySelectorAll('section');
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    tabs.forEach(t=>t.classList.remove('active'));
+    tab.classList.add('active');
+    const target = tab.getAttribute('data-tab');
+    sections.forEach(sec => sec.id===target?sec.classList.add('active'):sec.classList.remove('active'));
+  });
+});
+
+// Carrito
+let cart = [];
+const cartBtn = document.getElementById('cart');
+const cartWindow = document.getElementById('cartWindow');
+const cartItemsDiv = document.getElementById('cartItems');
+const cartCount = document.getElementById('cartCount');
+const cartTotalWindow = document.getElementById('cartTotalWindow');
+
+document.querySelectorAll('.btn-primary').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const name = btn.getAttribute('data-name');
+    const price = parseFloat(btn.getAttribute('data-price'));
+    const existing = cart.find(p=>p.name===name);
+    if(existing){existing.qty+=1;} else {cart.push({name,price,qty:1});}
+    updateCart();
+  });
+});
+
+cartBtn.addEventListener('click',()=>{cartWindow.style.display = cartWindow.style.display==='block'?'none':'block';});
+
+function updateCart(){
+  cartItemsDiv.innerHTML='';
+  let total=0;
+  cart.forEach(item=>{
+    total+=item.price*item.qty;
+    cartItemsDiv.innerHTML+=`<div class="cart-item">${item.name} x ${item.qty} = $${item.price*item.qty}</div>`;
+  });
+  cartCount.textContent=cart.reduce((a,b)=>a+b.qty,0);
+  cartTotalWindow.textContent=total;
+  document.getElementById('cartTotal').textContent=total;
+}
+</script>
+
+</body>
+</html>
+
 <!-- RAYITO: asistente flotante -->
 <style>
   .rayito { position: fixed; bottom: 20px; right: 20px; }
