@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rayos de Luna | Joyas Exclusivas</title>
+  <title>Rayos de Luna | Piezas Exclusivas</title>
   <style>
     body {
       margin: 0;
@@ -12,7 +11,7 @@
       color: #333;
     }
     header {
-      background: #fff;
+      background: #f48b9a;
       padding: 15px 20px;
       display: flex;
       justify-content: space-between;
