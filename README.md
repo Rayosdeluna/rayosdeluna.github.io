@@ -302,13 +302,11 @@ En el caso de carteras tejidas, solo se aceptan cambios por defectos de fabricac
     <ul id="carrito-list"></ul>
     <p>Total: $<span id="carrito-total">0</span></p>
     <button onclick="confirmarPedido()">Confirmar en WhatsApp</button>
-     <button onclick="eliminarProducto(this)">Eliminar</button>
-  </div>
-<script>
-function eliminarProducto(boton) {
-  // Elimina el producto del DOM
-  boton.parentElement.remove();
-  actualizarTotal();
+   function eliminarProducto(index) {
+  carrito.splice(index, 1); // elimina solo del carrito
+  mostrarCarrito();         // actualiza el carrito inmediatamente
+}
+</script>
 }
 
 function actualizarTotal() {
