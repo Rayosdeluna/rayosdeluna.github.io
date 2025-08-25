@@ -256,21 +256,7 @@
     </table>
   </section>
 
-<style>
-.btn {
-  background-color: #f48b9a; /* color melón */
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 8px;
-  margin: 5px;
-  display: inline-block;
-  font-weight: bold;
-}
-.btn:hover {
-  background-color: #ff6b8a;
-}
-</style>
+<
   <!-- Políticas -->
   <section id="politicas">
     <div class="rectangulo">
