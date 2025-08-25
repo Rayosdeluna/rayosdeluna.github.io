@@ -249,8 +249,6 @@
     Ver catálogo Stella Bags
   </button>
 </a>
-
-
   <!-- Pedidos -->
   <section id="pedidos">
     <h2>Seguimiento y Registro de Pedido</h2>
