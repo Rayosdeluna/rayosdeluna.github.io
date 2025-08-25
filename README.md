@@ -157,7 +157,6 @@
 
   <header>
     <a href="https://ibb.co/vC6yGSm3"><img src="https://i.ibb.co/vC6yGSm3/logo-Rayos-de-luna.png" alt="logo-Rayos-de-luna" border="0"></a>
-   <h1>Rayos de Luna</h1>
   <nav>
     <a onclick="mostrarSeccion('inicio')">Inicio</a>
     <a onclick="mostrarSeccion('nosotros')">Nosotros</a>
@@ -168,6 +167,8 @@
     <a onclick="mostrarSeccion('faq')">Preguntas Frecuentes</a>
    </nav>
   <div id="carrito" onclick="toggleCarrito()">🛒 Carrito (<span id="cantidad">0</span>)</div>
+    <button onclick="CARRITO()">Confirmar CARRITO 🛒</button>
+    <button onclick="confirmarPedido()">Confirmar Pedido</button>
 </header>
 <div id="carrito-detalle">
   <h3>Tu Carrito</h3>
