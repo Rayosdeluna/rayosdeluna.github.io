@@ -237,13 +237,19 @@
       </div>
     </div>
   </section>
-<!-- Botones de Catálogo debajo de los productos -->
-<div class="catalogos">
-  <a href="https://www.canva.com/design/DAGvc_2MElU/qVUR8dLijXOCEZZoHOpr8A/view" target="_blank" class="btn">Catálogo de Combos</a>
-  <a href="https://www.canva.com/design/DAGw2zJWdKY/gUHcSTCXBe0ttl_0_bYkag/view" target="_blank" class="btn">Catálogo de Stella Bags</a>
-</div>
+<!-- Botón para catálogo Combos -->
+<a href="https://www.canva.com/design/DAGvc_2MElU/qVUR8dLijXOCEZZoHOpr8A/view?utm_content=DAGvc_2MElU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc23b1edaf1" target="_blank">
+  <button style="background-color:#f48b9a; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">
+    Ver catálogo Combos
+  </button>
+</a>
+<!-- Botón para catálogo Stella Bags -->
+<a href="https://www.canva.com/design/DAGw2zJWdKY/gUHcSTCXBe0ttl_0_bYkag/view?utm_content=DAGw2zJWdKY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb9ec7dedc2" target="_blank">
+  <button style="background-color:#f48b9a; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">
+    Ver catálogo Stella Bags
+  </button>
+</a>
 
-<script>
 
   <!-- Pedidos -->
   <section id="pedidos">
@@ -296,77 +302,59 @@ En el caso de carteras tejidas, solo se aceptan cambios por defectos de fabricac
     </div>
   </section>
 
-  <!-- Carrito -->
-  <div id="carrito">
-    <h3>Carrito</h3>
-    <ul id="carrito-list"></ul>
-    <p>Total: $<span id="carrito-total">0</span></p>
-    <button onclick="confirmarPedido()">Confirmar en WhatsApp</button>}
-  <button onclick="eliminarProducto(this)">Eliminar</button>
-   function eliminarProducto(index) {
-  carrito.splice(index, 1); // elimina solo del carrito
-  mostrarCarrito();         // actualiza el carrito inmediatamente
+// Carrito
+let carrito=[];
+let numeroPedido=1;
+
+function agregarAlCarrito(nombre, precio){
+  carrito.push({nombre, precio});
+  actualizarCarrito();
+}
+
+function actualizarCarrito(){
+  const lista=document.getElementById('lista-carrito');
+  lista.innerHTML='';
+  let total=0;
+  carrito.forEach(item=>{
+    const li=document.createElement('li');
+    li.textContent=`${item.nombre} - $${item.precio}`;
+    lista.appendChild(li);
+    total+=item.precio;
+  });
+  document.getElementById('cantidad').textContent=carrito.length;
+  document.getElementById('total').textContent=total;
+}
+
+function toggleCarrito(){
+  const detalle=document.getElementById('carrito-detalle');
+  detalle.style.display = detalle.style.display==='block' ? 'none':'block';
+}
+
+function confirmarPedido(){
+  if(carrito.length===0){ alert("El carrito está vacío."); return;}
+  let mensaje="Hola, quiero confirmar mi pedido:\n";
+  let tabla=document.getElementById("tabla-pedidos");
+  carrito.forEach(item=>{
+    mensaje+=`${item.nombre} - $${item.precio}\n`;
+    const tr=document.createElement("tr");
+    tr.innerHTML=`
+      <td>${item.nombre}</td>
+      <td>${numeroPedido}</td>
+      <td>Pendiente</td>
+    `;
+    tabla.appendChild(tr);
+    numeroPedido++;
+  });
+  mensaje+=`Total: $${carrito.reduce((a,b)=>a+b.precio,0)}`;
+  window.open(`https://wa.me/593999999999?text=${encodeURIComponent(mensaje)}`,'_blank');
+  carrito=[];
+  actualizarCarrito();
+  toggleCarrito();
 }
 </script>
-}
 
-function actualizarTotal() {
-  let total = 0;
-  const productos = document.querySelectorAll('#carrito .producto');
-  productos.forEach(prod => {
-    const precio = parseFloat(prod.children[1].textContent.replace('$',''));
-    total += precio;
-  });
-  document.getElementById('total').textContent = total;
-}
-</script>
-<script>
-  let carrito = [];
-  let carritoAbierto = false;
-
-  function agregarAlCarrito(nombre, precio) {
-    carrito.push({ nombre, precio });
-    actualizarCarrito();
-  }
-
-  function actualizarCarrito() {
-    document.getElementById("carrito-count").textContent = carrito.length;
-    let lista = document.getElementById("carrito-list");
-    lista.innerHTML = "";
-    let total = 0;
-    carrito.forEach(item => {
-      let li = document.createElement("li");
-      li.textContent = `${item.nombre} - $${item.precio}`;
-      lista.appendChild(li);
-      total += item.precio;
-    });
-    document.getElementById("carrito-total").textContent = total;
-  }
-
-  document.getElementById("carrito-btn").addEventListener("click", () => {
-    carritoAbierto = !carritoAbierto;
-    document.getElementById("carrito").style.display = carritoAbierto ? "block" : "none";
-  });
-
-  function confirmarPedido() {
-    let mensaje = "Hola, mi pedido está por confirmar: ";
-    carrito.forEach(item => {
-      mensaje += `\n- ${item.nombre} $${item.precio}`;
-    });
-    mensaje += `\nTotal: $${document.getElementById("carrito-total").textContent}`;
-    let url = `https://wa.me/0995372875?text=${encodeURIComponent(mensaje)}`;
-    window.open(url, "_blank");
-  }
-
-  function finalizarPedido() {
-    let nombre = document.getElementById("nombre").value;
-    let numeroPedido = document.getElementById("numeroPedido").value;
-    let telefono = document.getElementById("telefono").value;
-
-    let mensaje = `Nuevo pedido:\n👤 Nombre: ${nombre}\n📦 Número de pedido: ${numeroPedido}\n📞 Teléfono: ${telefono}`;
-    let url = `https://wa.me/0995372875?text=${encodeURIComponent(mensaje)}`;
-    window.open(url, "_blank");
-  }
+</body>
+</html>
 
   // Navegación entre secciones
   document.querySelectorAll("nav a").forEach(enlace => {
