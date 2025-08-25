@@ -301,7 +301,8 @@ En el caso de carteras tejidas, solo se aceptan cambios por defectos de fabricac
     <h3>Carrito</h3>
     <ul id="carrito-list"></ul>
     <p>Total: $<span id="carrito-total">0</span></p>
-    <button onclick="confirmarPedido()">Confirmar en WhatsApp</button>
+    <button onclick="confirmarPedido()">Confirmar en WhatsApp</button>}
+  <button onclick="eliminarProducto(this)">Eliminar</button>
    function eliminarProducto(index) {
   carrito.splice(index, 1); // elimina solo del carrito
   mostrarCarrito();         // actualiza el carrito inmediatamente
@@ -353,7 +354,7 @@ function actualizarTotal() {
       mensaje += `\n- ${item.nombre} $${item.precio}`;
     });
     mensaje += `\nTotal: $${document.getElementById("carrito-total").textContent}`;
-    let url = `https://wa.me/593999999999?text=${encodeURIComponent(mensaje)}`;
+    let url = `https://wa.me/0995372875?text=${encodeURIComponent(mensaje)}`;
     window.open(url, "_blank");
   }
 
