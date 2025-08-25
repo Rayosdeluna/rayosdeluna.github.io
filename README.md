@@ -8,10 +8,10 @@
       margin: 0;
       font-family: Arial, sans-serif;
       background: #f48b9a;
-      color: ##f48b9a;
+      color: #333;
     }
     header {
-      background: #fff;
+      background: #f48b9a;
       padding: 15px 20px;
       display: flex;
       justify-content: space-between;
