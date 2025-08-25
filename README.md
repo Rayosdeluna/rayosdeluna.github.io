@@ -178,7 +178,7 @@
       <p>Aquí cada detalle está pensado para ti. Encuentra productos únicos, de la mejor calidad y a precios que se ajustan a lo que buscas.</p>
       <p>💖 Compra fácil, segura y sin complicaciones, desde la comodidad de tu casa.</p>
       <p>👉 Solo elige tu favorito, haz tu pedido ¡y nosotros lo llevamos directo a tu puerta! 🚚✨</p>
-      <img src="https://i.ibb.co/HD1bwv3t/tu-imagen.jpg" alt="Diseños de Argollas" style="max-width:200px;border-radius:12px;margin-top:10px;">
+      <a href="https://ibb.co/G1YkRG5"><img src="https://i.ibb.co/G1YkRG5/El-texto-del-p-rrafo-1.png" alt="El-texto-del-p-rrafo-1" border="0"></a>
     </div>
   </section>
 
