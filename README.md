@@ -237,10 +237,13 @@
       </div>
     </div>
   </section>
+<!-- Botones de Catálogo debajo de los productos -->
 <div class="catalogos">
   <a href="https://www.canva.com/design/DAGvc_2MElU/qVUR8dLijXOCEZZoHOpr8A/view" target="_blank" class="btn">Catálogo de Combos</a>
   <a href="https://www.canva.com/design/DAGw2zJWdKY/gUHcSTCXBe0ttl_0_bYkag/view" target="_blank" class="btn">Catálogo de Stella Bags</a>
 </div>
+
+<script>
 
   <!-- Pedidos -->
   <section id="pedidos">
