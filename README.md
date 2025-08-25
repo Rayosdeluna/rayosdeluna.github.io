@@ -237,6 +237,32 @@
       </div>
     </div>
   </section>
+<div class="catalogos">
+  <a href="https://www.canva.com/design/DAGvc_2MElU/qVUR8dLijXOCEZZoHOpr8A/view?utm_content=DAGvc_2MElU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc23b1edaf1" target="_blank" class="btn">Catálogo de Combos</a>
+  <a href="https://www.canva.com/design/DAGw2zJWdKY/gUHcSTCXBe0ttl_0_bYkag/view?utm_content=DAGw2zJWdKY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb9ec7dedc2" target="_blank" class="btn">Catálogo de Stella Bags</a>
+</div>
+
+<style>
+.catalogos {
+  text-align: center; /* centra los botones */
+  margin: 20px 0;
+}
+.btn {
+  background-color: #f48b9a; /* color melón */
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  margin: 10px;
+  display: inline-block;
+  font-weight: bold;
+  font-family: sans-serif;
+  transition: background-color 0.3s;
+}
+.btn:hover {
+  background-color: #ff6b8a; /* efecto al pasar el mouse */
+}
+</style>
 
   <!-- Pedidos -->
   <section id="pedidos">
@@ -251,10 +277,6 @@
       <tr><th>Número de Pedido</th><th>Nombre</th><th>Teléfono</th><th>Fase</th></tr>
     </table>
   </section>
-<div class="catalogos">
-  <a href="https://www.canva.com/design/DAGvc_2MElU/qVUR8dLijXOCEZZoHOpr8A/view?utm_content=DAGvc_2MElU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc23b1edaf1" target="_blank" class="btn">Catálogo de Combos</a>
-  <a href="https://www.canva.com/design/DAGw2zJWdKY/gUHcSTCXBe0ttl_0_bYkag/view?utm_content=DAGw2zJWdKY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb9ec7dedc2" target="_blank" class="btn">Catálogo de Stella Bags</a>
-</div>
 
 <style>
 .btn {
