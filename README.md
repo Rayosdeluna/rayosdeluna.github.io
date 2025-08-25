@@ -125,7 +125,7 @@
       margin-top: 15px;
     }
     table, th, td {
-      border: 1px solid #ffd6e4;
+      border: 1px solid #f48b9a;
     }
     th, td {
       padding: 10px;
