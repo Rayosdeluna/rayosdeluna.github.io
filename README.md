@@ -34,7 +34,7 @@
       transition: background 0.3s;
     }
     nav a:hover, nav a.active {
-      background: #ffd6e4;
+      background: ##f48b9a;
     }
     #carrito-btn {
       background: #ffd6e4;
