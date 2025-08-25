@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -7,6 +6,7 @@
 <style>
 :root {
   --pink:#f48b9a;
+  white;color:var(--ink);}
   --blush:#ffd6e4;
   --ink:#1f2937;
   --muted:#6b7280;
