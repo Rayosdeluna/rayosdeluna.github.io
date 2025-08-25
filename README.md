@@ -157,17 +157,25 @@
 
   <header>
     <a href="https://ibb.co/vC6yGSm3"><img src="https://i.ibb.co/vC6yGSm3/logo-Rayos-de-luna.png" alt="logo-Rayos-de-luna" border="0"></a>
-   <nav>
-    <a href="#inicio" class="active">Inicio</a>
-    <a href="#nosotros">Nosotros</a>
-    <a href="#productos">Productos</a>
-    <a href="#pedidos">Pedidos</a>
-    <a href="#politicas">Políticas</a>
-    <a href="#contacto">Contacto</a>
-    <a href="#faq">FAQ</a>
+   <h1>Rayos de Luna</h1>
+  <nav>
+    <a onclick="mostrarSeccion('inicio')">Inicio</a>
+    <a onclick="mostrarSeccion('nosotros')">Nosotros</a>
+    <a onclick="mostrarSeccion('productos')">Productos</a>
+    <a onclick="mostrarSeccion('pedidos')">Pedidos</a>
+    <a onclick="mostrarSeccion('politicas')">Políticas</a>
+    <a onclick="mostrarSeccion('contacto')">Contacto</a>
+    <a onclick="mostrarSeccion('faq')">Preguntas Frecuentes</a>
   </nav>
-  <button id="carrito-btn">🛒 (<span id="carrito-count">0</span>)</button>
+  <div id="carrito" onclick="toggleCarrito()">🛒 Carrito (<span id="cantidad">0</span>)</div>
 </header>
+
+<div id="carrito-detalle">
+  <h3>Tu Carrito</h3>
+  <ul id="lista-carrito"></ul>
+  <p>Total: $<span id="total">0</span></p>
+  <button onclick="confirmarPedido()">Confirmar Pedido</button>
+</div>
   <!-- Inicio -->
   <section id="inicio" class="active">
     <div class="rectangulo">
@@ -292,30 +300,21 @@ En el caso de carteras tejidas, solo se aceptan cambios por defectos de fabricac
       <p>🚚 ¿Hacen envíos? Sí, realizamos envíos a nivel nacional en un plazo de 2 a 5 días laborables.</p>
       <p>💳 ¿Qué métodos de pago aceptan? Transferencia y efectivo contra entrega.</p>
        <p>¿Cómo puedo hacer un pedido? A través de nuestra página web, el carrito de compras o escribiéndonos por WhatsApp para confirmar tu orden..</p>
-       <p>¿Cómo puedo hacer un pedido? A través de nuestra página web, el carrito de compras o escribiéndonos por WhatsApp para confirmar tu orden..</p>
     </div>
   </section>
-<h2>Carrito (<span id="cantidad">0</span> items) <button onclick="toggleCarrito()">Ver/ocultar</button></h2>
-
-<div id="carrito-detalle">
-  <ul id="lista-carrito"></ul>
-  <p>Total: $<span id="total">0</span></p>
-  <button onclick="confirmarPedido()">Confirmar Pedido</button>
-</div>
-
-<h2>Tabla de Pedidos</h2>
-<table id="tabla-pedidos">
-  <tr>
-    <th>Producto</th>
-    <th>Número de Pedido</th>
-    <th>Estado</th>
-  </tr>
-</table>
 
 <script>
-// Carrito
 let carrito = [];
-let numeroPedido = 1;
+
+function mostrarSeccion(id){
+  document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+
+function toggleCarrito(){
+  const detalle = document.getElementById('carrito-detalle');
+  detalle.style.display = detalle.style.display === 'block' ? 'none' : 'block';
+}
 
 function agregarAlCarrito(nombre, precio){
   carrito.push({nombre, precio});
@@ -332,64 +331,45 @@ function actualizarCarrito(){
     lista.appendChild(li);
     total += item.precio;
   });
-  document.getElementById('cantidad').textContent = carrito.length;
   document.getElementById('total').textContent = total;
-}
-
-function toggleCarrito(){
-  const detalle = document.getElementById('carrito-detalle');
-  detalle.style.display = detalle.style.display === 'block' ? 'none' : 'block';
+  document.getElementById('cantidad').textContent = carrito.length;
 }
 
 function confirmarPedido(){
-  if(carrito.length === 0){ 
-    alert("El carrito está vacío."); 
-    return;
-  }
-  let mensaje = "Hola, quiero confirmar mi pedido:\n";
-  let tabla = document.getElementById("tabla-pedidos");
-  carrito.forEach(item => {
-    mensaje += `${item.nombre} - $${item.precio}\n`;
-    const tr = document.createElement("tr");
-    tr.innerHTML = `
-      <td>${item.nombre}</td>
-      <td>${numeroPedido}</td>
-      <td>Pendiente</td>
-    `;
-    tabla.appendChild(tr);
-    numeroPedido++;
-  });
-  mensaje += `Total: $${carrito.reduce((a,b)=>a+b.precio,0)}`;
-  window.open(`https://wa.me/593999999999?text=${encodeURIComponent(mensaje)}`,'_blank');
-  carrito = [];
-  actualizarCarrito();
-  toggleCarrito()
+  let mensaje = 'Hola, quiero confirmar mi pedido:\\n';
+  carrito.forEach(item => { mensaje += `${item.nombre} - $${item.precio}\\n`; });
+  const url = `https://wa.me/593999999999?text=${encodeURIComponent(mensaje)}`;
+  window.open(url,'_blank');
+}
 </script>
+
+</body>
+</html>
 <!-- RAYITO: asistente flotante -->
 <style>
   .rayito { position: fixed; bottom: 20px; right: 20px; }
   .rayito-toggle {
-    background: #ffd6e4; border: none; border-radius: 50%;
+    background: #ffb6b9; border: none; border-radius: 50%;
     width: 60px; height: 60px; font-size: 24px; cursor: pointer;
     box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
   }
   .rayito-window {
     position: fixed; bottom: 90px; right: 20px; width: 300px; max-height: 400px;
-    background: white; border: 2px solid #ffd6e4; border-radius: 15px;
+    background: white; border: 2px solid #ffb6b9; border-radius: 15px;
     display: none; flex-direction: column; box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
     overflow: hidden; font-family: Arial, sans-serif;
   }
   .rayito-header {
-    background: #ffd6e4; padding: 10px; font-weight: bold;
+    background: #ffb6b9; padding: 10px; font-weight: bold;
     display: flex; justify-content: space-between; align-items: center;
   }
   .rayito-body { padding: 10px; overflow-y: auto; flex: 1; font-size: 14px; }
-  .rayito-msg { margin: 6px 0; padding: 8px; border-radius: 8px; background: #ffd6e4; }
+  .rayito-msg { margin: 6px 0; padding: 8px; border-radius: 8px; background: #ffb6b9; color: white; }
   .rayito-actions { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
   .rayito-actions a, .rayito-actions button {
     flex: 1 1 auto; text-align: center; padding: 6px; border: none;
-    border-radius: 6px; background: #ffd6e4; cursor: pointer;
-    text-decoration: none; color: black; font-size: 13px;
+    border-radius: 6px; background: #ffb6b9; cursor: pointer;
+    text-decoration: none; color: white; font-size: 13px;
   }
   .rayito-input {
     display: flex; border-top: 1px solid #ddd;
@@ -398,7 +378,7 @@ function confirmarPedido(){
     flex: 1; border: none; padding: 8px; outline: none;
   }
   .rayito-input button {
-    background: #ffd6e4; border: none; cursor: pointer;
+    background: #ffb6b9; border: none; cursor: pointer;
   }
   .msg-user { background:#eee; margin:6px 0; padding:8px; border-radius:8px; text-align:right; }
 </style>
@@ -475,7 +455,3 @@ function confirmarPedido(){
     botReply("horario");
   });
 </script>
-
-
-  
-
