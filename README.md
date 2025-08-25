@@ -113,7 +113,7 @@
       width: 100%;
       padding: 10px;
       margin-top: 10px;
-      background: #ffd6e4;
+      background: #f48b9a;
       border: none;
       border-radius: 8px;
       cursor: pointer;
