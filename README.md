@@ -167,7 +167,7 @@
     <a onclick="mostrarSeccion('contacto')">Contacto</a>
     <a onclick="mostrarSeccion('faq')">Preguntas Frecuentes</a>
   </nav>
-  div id="carrito" onclick="toggleCarrito(🛒)">🛒 (<span id="cantidad">0</span>)</div>
+  div id="carrito" onclick="toggleCarrito()">🛒 (<span id="cantidad">0</span>)</div>
 </header>
 
 <div id="carrito-detalle">
