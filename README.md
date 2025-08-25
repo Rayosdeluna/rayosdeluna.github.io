@@ -11,7 +11,7 @@
       color: #333;
     }
     header {
-      background: #f48b9a;
+      background: #fff;
       padding: 15px 20px;
       display: flex;
       justify-content: space-between;
