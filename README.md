@@ -65,7 +65,7 @@
   <header>
     <div class="container nav">
       <div class="brand">
-        <img src="https://ibb.co/vC6yGSm3" alt="Rayos de Luna" />
+        <img src="https://ibb.co/G1YkRG5" alt="Rayos de Luna" />
         <div>
           <h1>Rayos de Luna</h1>
           <p>Diseñamos joyas con cuidado y amor</p>
