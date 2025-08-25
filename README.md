@@ -5,8 +5,7 @@
 <title>Rayos de Luna | Joyas</title>
 <style>
 :root {
-  --pink:#f48b9a;
-  white;color:var(--ink);}
+  --pink:#f48b9a
   --blush:#ffd6e4;
   --ink:#1f2937;
   --muted:#6b7280;
@@ -202,8 +201,59 @@ function updateCart(){
   cartTotalWindow.textContent=total;
   document.getElementById('cartTotal').textContent=total;
 }
-</script>
+</body>
+</html>
+// Navegación activa
+document.querySelectorAll('.navlinks a').forEach(link=>{
+  link.addEventListener('click',e=>{
+    document.querySelectorAll('.navlinks a').forEach(l=>l.classList.remove('active'));
+    e.target.classList.add('active');
+  });
+});
 
+// Carrito
+let cart=[];
+const cartBtn = document.getElementById('cart');
+const cartWindow = document.getElementById('cartWindow');
+const cartItemsDiv = document.getElementById('cartItems');
+const cartCount = document.getElementById('cartCount');
+const cartTotalWindow = document.getElementById('cartTotalWindow');
+const checkoutBtn = document.getElementById('checkoutBtn');
+
+document.querySelectorAll('.add-to-cart').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const name = btn.getAttribute('data-name');
+    const price = parseFloat(btn.getAttribute('data-price'));
+    const existing = cart.find(p=>p.name===name);
+    if(existing){existing.qty+=1;} else {cart.push({name,price,qty:1});}
+    updateCart();
+  });
+});
+
+cartBtn.addEventListener('click',()=>{cartWindow.style.display = cartWindow.style.display==='block'?'none':'block';});
+
+// Botón WhatsApp
+checkoutBtn.addEventListener('click', ()=>{
+  if(cart.length===0){alert('No hay productos en el carrito'); return;}
+  let mensaje="Hola, este es mi pedido por confirmar:%0A";
+  cart.forEach(item=>{
+    mensaje+=`- ${item.name} x ${item.qty} = $${item.price*item.qty}%0A`;
+  });
+  mensaje+=`Total: $${cart.reduce((a,b)=>a+b.price*b.qty,0)}`;
+  window.open(`https://wa.me/1234567890?text=${mensaje}`, '_blank');
+});
+
+function updateCart(){
+  cartItemsDiv.innerHTML='';
+  let total=0;
+  cart.forEach(item=>{
+    total+=item.price*item.qty;
+    cartItemsDiv.innerHTML+=`<div class="cart-item">${item.name} x ${item.qty} = $${item.price*item.qty}</div>`;
+  });
+  cartCount.textContent=cart.reduce((a,b)=>a+b.qty,0);
+  cartTotalWindow.textContent=total;
+}
+</script>
 </body>
 </html>
 
