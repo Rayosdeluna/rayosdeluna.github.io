@@ -137,7 +137,7 @@
       gap: 20px;
     }
     .nosotros-box {
-      background: #ffd6e4;
+      background: #f48b9a;
       border: 2px solid #ffd6e4;
       border-radius: 12px;
       padding: 15px;
