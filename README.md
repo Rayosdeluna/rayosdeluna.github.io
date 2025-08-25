@@ -66,31 +66,32 @@ h2 {color:var(--pink);}
 <!-- Nosotros -->
 <section id="nosotros">
 <h2>Nosotros</h2>
-<p>Quiénes somos?
-Somos Rayos de Luna , una marca ecuatoriana enfocada en piezas modernas, delicadas y accesibles. Entregamos a domicilio y confirmamos cada pedido por WhatsApp para tu tranquilidad.
+<p>Quiénes somos?</p>
+<p>Somos Rayos de Luna , una marca ecuatoriana enfocada en piezas modernas, delicadas y accesibles. Entregamos a domicilio y confirmamos cada pedido por WhatsApp para tu tranquilidad.</p>
 
-Misión
-Diseñar empaques y joyas que reflejen el valor y la identidad de nuestras clientes, ofreciendo experiencias de compra claras y confiables.
+<p>Misión
+<p>Diseñar empaques y joyas que reflejen el valor y la identidad de nuestras clientes, ofreciendo experiencias de compra claras y confiables.</p>
 
-Visión
-Ser la marca de referencia en bisutería de calidad en Ecuador, con servicio cercano y entregas puntuales.
+<p>Visión
+<p>Ser la marca de referencia en bisutería de calidad en Ecuador, con servicio cercano y entregas puntuales.</p>
 
-Valores
-Calidad y detalle
-Transparencia y confianza
-Respeto por tus datos</p>
-  <p>Rayos de Luna celebra la feminidad y el brillo interior. Trabajamos con materiales hipoalergénicos y acabados de alta calidad.</p>
+<p>Valores</p>
+<p>Calidad y detalle</p>
+<p>Transparencia y confianza</p>
+<p>Respeto por tus datos</p>
+<p>Rayos de Luna celebra la feminidad y el brillo interior. Trabajamos con materiales hipoalergénicos y acabados de alta calidad.</p>
 </section>
 
 <!-- Productos -->
-<section id="productos">
-<h2>Productos</h2>
+
+<section id="Combo estrella">
+<h2>Combo estrella</h2>
 <div class="grid grid-3" id="productGrid">
   <div class="card">
-    <img src="producto1.jpg" alt="Producto 1">
+    <a href="https://ibb.co/VcJX7Bbp"><img src="https://i.ibb.co/VcJX7Bbp/combo-estrella.png" alt="combo-estrella" border="0"></a>
     <h3>Producto 1</h3>
-    <p>$25</p>
-    <button class="btn btn-primary" data-name="Producto 1" data-price="25">Añadir al carrito</button>
+    <p>$10.00</p>
+    <button class="btn btn-primary" data-name="Producto 1" data-price="10.00">Añadir al carrito</button>
   </div>
   <div class="card">
     <img src="producto2.jpg" alt="Producto 2">
