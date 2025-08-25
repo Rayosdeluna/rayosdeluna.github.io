@@ -7,8 +7,7 @@
   <meta name="description" content="Rayos de Luna – Diseñamos joyas con cuidado y amor." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="<a href="https://ibb.co/vC6yGSm3"><img src="https://i.ibb.co/vC6yGSm3/logo-Rayos-de-luna.png" alt="logo-Rayos-de-luna" border="0"></a>" rel="stylesheet">
-  <style>
+ 
     :root{
       --pink:#f48b9a;
       --blush:#ffd6e4;
@@ -231,30 +230,127 @@
     </section>
   </main>
 
-  <footer>
-    <div class="container" style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap">
-      <span>© <span id="year"></span> Rayos de Luna</span>
-      <a id="btnFooterWA" href="#">Escríbenos por WhatsApp</a>
-    </div>
-  </footer>
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rayos de Luna | Asistente Rayito</title>
+  <style>
+    /* Estilos del botón flotante */
+    .chat-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #f48b9a;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }
+    .chat-btn:hover {
+      background-color: #e07282;
+    }
 
-  <!-- Botón flotante WhatsApp -->
-  <a id="btnFloatWA" class="wa-float" href="#" aria-label="">
-    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M19.11 17.51c-.29-.14-1.69-.83-1.95-.93-.26-.1-.45-.14-.64.14-.19.29-.74.93-.9 1.12-.17.19-.33.22-.62.08-.29-.14-1.21-.45-2.3-1.43-.85-.76-1.42-1.69-1.59-1.98-.17-.29-.02-.45.13-.59.13-.13.29-.33.43-.5.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.14-.64-1.55-.88-2.12-.23-.56-.47-.48-.64-.49l-.55-.01c-.19 0-.5.07-.76.36-.26.29-1 1-1 2.43s1.02 2.82 1.17 3.02c.14.19 2 3.05 4.84 4.28.68.29 1.21.46 1.62.59.68.22 1.31.19 1.8.12.55-.08 1.69-.69 1.93-1.36.24-.67.24-1.25.17-1.36-.07-.11-.26-.18-.55-.32zM16.03 4C9.93 4 5 8.93 5 15.02c0 2.28.62 4.39 1.7 6.2L5 28l6.95-1.82c1.73.95 3.72 1.48 5.84 1.48 6.1 0 11.03-4.93 11.03-11.02C28.83 8.93 22.12 4 16.03 4z"/></svg>
-    WhatsApp
-  </a>
+    /* Ventana de chat */
+    .chat-window {
+      position: fixed;
+      bottom: 90px;
+      right: 20px;
+      width: 300px;
+      max-height: 400px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+      display: none;
+      flex-direction: column;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+    .chat-header {
+      background: #f48b9a;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+    .chat-body {
+      flex: 1;
+      padding: 10px;
+      overflow-y: auto;
+      font-size: 14px;
+    }
+    .chat-footer {
+      display: flex;
+      border-top: 1px solid #ddd;
+    }
+    .chat-footer input {
+      flex: 1;
+      padding: 8px;
+      border: none;
+      outline: none;
+    }
+    .chat-footer button {
+      background: #f48b9a;
+      border: none;
+      color: white;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Botón flotante Rayito -->
+  <button class="chat-btn" id="chatBtn">⚡</button>
 
-  <!-- Asistente virtual Rayito interactivo -->
-  <div id="rayito" style="position:fixed;bottom:90px;right:16px;width:300px;max-width:90%;background:white;border-radius:18px;box-shadow:0 8px 30px rgba(0,0,0,.15);overflow:hidden;font-family:Poppins,system-ui;-webkit-font-smoothing:antialiased;display:none;z-index:70;">
-    <div style="background:var(--pink);color:white;padding:12px 16px;font-weight:600;display:flex;justify-content:space-between;align-items:center;">
-      <span>Rayito ✨</span>
-      <button id="closeRayito" style="background:transparent;border:none;color:white;font-size:18px;cursor:pointer;">×</button>
+  <!-- Ventana de chat -->
+  <div class="chat-window" id="chatWindow">
+    <div class="chat-header">Rayito ⚡</div>
+    <div class="chat-body" id="chatBody">
+      <p><b>Rayito:</b> ¡Hola! Soy tu asistente virtual ⚡✨.  
+      ¿Quieres ayuda con tus pedidos o productos?</p>
     </div>
-    <div style="padding:12px;font-size:14px;color:var(--ink);">
-      <p>¡Hola! Soy Rayito, tu asistente virtual. 😊</p>
-      <p>Selecciona una opción para que te muestre información rápida y te conecte por WhatsApp:</p>
-      <div style="display:flex;flex-direction:column;gap:8px;margin-top:8px;">
-        <button class="rayito-option" data-msg="Quiero información sobre los *Combos* de Rayos de Luna.">Combos</button>
-        <button class="rayito-option" data-msg="Quiero información sobre la *Colección Aura* de Rayos de Luna.">Colección Aura</
-                                                                                         
-                                                                                              
+    <div class="chat-footer">
+      <input type="text" id="chatInput" placeholder="Escribe tu mensaje...">
+      <button id="sendBtn">Enviar</button>
+    </div>
+  </div>
+
+  <script>
+    const chatBtn = document.getElementById("chatBtn");
+    const chatWindow = document.getElementById("chatWindow");
+    const sendBtn = document.getElementById("sendBtn");
+    const chatInput = document.getElementById("chatInput");
+    const chatBody = document.getElementById("chatBody");
+
+    // Abrir / cerrar chat
+    chatBtn.addEventListener("click", () => {
+      chatWindow.style.display = (chatWindow.style.display === "flex") ? "none" : "flex";
+    });
+
+    // Enviar mensajes
+    sendBtn.addEventListener("click", () => {
+      const message = chatInput.value.trim();
+      if(message){
+        chatBody.innerHTML += `<p><b>Tú:</b> ${message}</p>`;
+        chatInput.value = "";
+
+        // Respuesta automática de Rayito ⚡
+        setTimeout(() => {
+          chatBody.innerHTML += `<p><b>Rayito:</b> Gracias por tu mensaje 🌙✨. En breve te atenderé.</p>`;
+          chatBody.scrollTop = chatBody.scrollHeight;
+        }, 800);
+      }
+    });
+  </script>
+</body>
+</html>
