@@ -1,306 +1,236 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rayos de Luna | Bisutería</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rayos de Luna | Joyas</title>
+  <meta name="description" content="Rayos de Luna – Diseñamos joyas con cuidado y amor." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #fff0f3;
-      color: #333;
+    :root{
+      --pink:#f48b9a;
+      --blush:#ffd6e4;
+      --ink:#1f2937;
+      --muted:#6b7280;
+      --radius:18px;
     }
-    header {
-      background: #f48b9a;
-      padding: 15px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: white;
-    }
-    header h1 {
-      margin: 0;
-    }
-    nav {
-      display: flex;
-      gap: 15px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    section {
-      display: none;
-      padding: 40px;
-    }
-    section.active {
-      display: block;
-    }
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background: white;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .card img {
-      max-width: 100%;
-      border-radius: 8px;
-    }
-    button {
-      margin-top: 10px;
-      padding: 8px 15px;
-      border: none;
-      border-radius: 5px;
-      background: #f48b9a;
-      color: white;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #e76a7d;
-    }
-    /* Carrito */
-    .cart-icon {
-      cursor: pointer;
-      font-size: 20px;
-      position: relative;
-    }
-    .cart-count {
-      position: absolute;
-      top: -8px;
-      right: -8px;
-      background: white;
-      color: #f48b9a;
-      border-radius: 50%;
-      padding: 2px 6px;
-      font-size: 12px;
-      font-weight: bold;
-    }
-    .cart-panel {
-      position: fixed;
-      top: 0;
-      right: -350px;
-      width: 300px;
-      height: 100%;
-      background: white;
-      box-shadow: -2px 0 8px rgba(0,0,0,0.2);
-      padding: 20px;
-      transition: right 0.3s ease;
-      overflow-y: auto;
-      z-index: 1000;
-    }
-    .cart-panel.active {
-      right: 0;
-    }
-    .cart-item {
-      border-bottom: 1px solid #ddd;
-      padding: 10px 0;
-    }
-    .cart-total {
-      font-weight: bold;
-      margin-top: 15px;
-    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;color:var(--ink);background:var(--blush);} 
+    img{max-width:100%;display:block}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    header{position:sticky;top:0;z-index:50;background:rgba(255,214,228,.85);backdrop-filter:saturate(1.2) blur(6px);border-bottom:1px solid rgba(244,139,154,.35)}
+    .nav{display:flex;align-items:center;gap:16px;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{width:44px;height:44px;border-radius:50%;border:1px solid var(--pink);object-fit:cover}
+    .brand h1{font-size:18px;margin:0;font-weight:600;letter-spacing:.3px}
+    .brand p{margin:0;color:var(--muted);font-size:12px;margin-top:-2px}
+    .navlinks{margin-left:auto;display:flex;gap:14px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px 16px;border-radius:999px;border:1px solid rgba(244,139,154,.5);background:white;cursor:pointer;font-weight:600}
+    .btn-primary{background:var(--pink);color:white;border-color:var(--pink)}
+    .btn-outline{background:white;color:var(--pink)}
+    .btn-link{border:none;background:transparent;color:var(--ink);padding:8px}
+    .hero{padding:56px 0}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
+    .title{font-family:"Playfair Display",serif;font-weight:600;font-size:46px;line-height:1.1;margin:0}
+    .subtitle{color:var(--muted);margin:12px 0 18px}
+    .tags{display:flex;gap:10px;flex-wrap:wrap}
+    .tag{background:rgba(244,139,154,.12);color:#a31f3b;border:1px solid rgba(244,139,154,.35);padding:6px 10px;border-radius:999px;font-size:12px}
+    .hero-card{position:relative;border-radius:var(--radius);overflow:hidden;border:1px solid rgba(244,139,154,.35);box-shadow:0 10px 30px rgba(244,139,154,.2)}
+    .hero-card img{height:100%;width:100%;object-fit:cover}
+    .section{padding:36px 0}
+    .section h2{font-size:28px;margin:0 0 14px;color:var(--pink)}
+    .grid{display:grid;gap:18px}
+    .grid-3{grid-template-columns:repeat(3,1fr)}
+    .grid-2{grid-template-columns:repeat(2,1fr)}
+    @media(max-width:920px){.hero-grid{grid-template-columns:1fr}.grid-3{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:640px){.grid-3,.grid-2{grid-template-columns:1fr}.title{font-size:34px}}
+    .card{border:1px solid rgba(244,139,154,.35);border-radius:var(--radius);background:white;overflow:hidden;display:flex;flex-direction:column}
+    .card-img{aspect-ratio:1/1;object-fit:cover;background:#fff4f7}
+    .card-body{padding:14px}
+    .card h3{margin:0 0 6px;font-size:18px;color:var(--pink)}
+    .card p{margin:0;color:var(--muted);font-size:14px}
+    .card .price{margin-top:8px;font-weight:700;font-size:18px;color:var(--ink)}
+    .card .actions{margin-top:12px;display:flex;gap:10px}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
+    @media(max-width:920px){.about{grid-template-columns:1fr}}
+    footer{padding:28px 0;color:var(--muted)}
+    .wa-float{position:fixed;right:16px;bottom:16px;background:var(--pink);color:white;border-radius:999px;padding:12px 16px;box-shadow:0 8px 30px rgba(244,139,154,.55);display:flex;align-items:center;gap:10px;font-weight:700;z-index:60}
+    .wa-float svg{width:18px;height:18px;fill:white}
   </style>
 </head>
 <body>
   <header>
-    <h1>Rayos de Luna</h1>
-    <nav>
-      <a href="#inicio" onclick="showSection('inicio')">Inicio</a>
-      <a href="#nosotros" onclick="showSection('nosotros')">Nosotros</a>
-      <a href="#productos" onclick="showSection('productos')">Productos</a>
-      <a href="#pedidos" onclick="showSection('pedidos')">Pedidos</a>
-      <a href="#politicas" onclick="showSection('politicas')">Políticas</a>
-      <a href="#contacto" onclick="showSection('contacto')">Contacto</a>
-      <a href="#faq" onclick="showSection('faq')">FAQ</a>
-    </nav>
-    <div class="cart-icon" onclick="toggleCart()">🛒<span class="cart-count" id="cart-count">0</span></div>
+    <div class="container nav">
+      <div class="brand">
+        <img src="logo.png" alt="Rayos de Luna" />
+        <div>
+          <h1>Rayos de Luna</h1>
+          <p>Diseñamos joyas con cuidado y amor</p>
+        </div>
+      </div>
+      <nav class="navlinks">
+        <a class="btn-link" href="#combos">Combos</a>
+        <a class="btn-link" href="#aura">Colección Aura</a>
+        <a class="btn-link" href="#catalogo">Catálogo</a>
+        <a class="btn btn-outline" id="btnHeaderWA" href="#">WhatsApp</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- Secciones -->
-  <section id="inicio" class="active">
-    <h2>Bienvenidos a Rayos de Luna</h2>
-    <p>Bisutería hecha con amor y detalle para resaltar tu estilo único.</p>
-  </section>
-
-  <section id="nosotros">
-    <h2>Nosotros</h2>
-    <p>Somos un emprendimiento dedicado a la creación de bisutería artesanal con diseños exclusivos.</p>
-  </section>
-
-  <section id="productos">
-    <h2>Nuestros Productos</h2>
-    <div class="products">
-      <div class="card">
-        <img src="https://i.ibb.co/1GvnrWB1/4.png" alt="Combo Estelar">
-        <h3>Combo Estelar</h3>
-        <p>$15.00</p>
-        <button onclick="addToCart('Combo Estelar', 15)">Añadir al carrito</button>
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h2 class="title">Brilla con la magia lunar</h2>
+          <p class="subtitle">Piezas delicadas, materiales de calidad y diseño atemporal. Cada detalle pensado para iluminar tu estilo.</p>
+          <div class="tags">
+            <span class="tag">Hipoalergénico</span>
+            <span class="tag">Hecho con amor</span>
+            <span class="tag">Garantía 30 días</span>
+          </div>
+          <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn btn-primary" href="#catalogo">Ver catálogo</a>
+            <a class="btn btn-outline" id="btnHeroWA" href="#">Pedir por WhatsApp</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="hero.jpg" alt="Joyas Rayos de Luna" />
+        </div>
       </div>
-      <div class="card">
-        <img src="https://i.ibb.co/HD1bwv3t/tu-imagen.jpg" alt="Colección Aura">
-        <h3>Colección Aura</h3>
-        <p>$20.00</p>
-        <button onclick="addToCart('Colección Aura', 20)">Añadir al carrito</button>
+    </section>
+
+    <!-- COMBOS -->
+    <section id="combos" class="section">
+      <div class="container">
+        <h2>Combos</h2>
+        <div class="grid grid-3">
+          <article class="card">
+            <img class="card-img" src="combo-estrellas.jpg" alt="Combo Estrellas" />
+            <div class="card-body">
+              <h3>Combo Estrellas</h3>
+              <p>Un par de argollas medianas/pequeñas.</p>
+              <div class="actions">
+                <a class="btn btn-primary" data-product="Combo Estrellas" href="#">Consultar por WhatsApp</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-img" src="combo-doble-estrella.jpg" alt="Combo Doble Estrella" />
+            <div class="card-body">
+              <h3>Combo Doble Estrella</h3>
+              <p>Un par de argollas + una pulsera.</p>
+              <div class="actions">
+                <a class="btn btn-primary" data-product="Combo Doble Estrella" href="#">Consultar por WhatsApp</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-img" src="combo-estelar.jpg" alt="Combo Estelar" />
+            <div class="card-body">
+              <h3>Combo Estelar</h3>
+              <p>Dos pulseras a juego.</p>
+              <div class="actions">
+                <a class="btn btn-primary" data-product="Combo Estelar" href="#">Consultar por WhatsApp</a>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="pedidos">
-    <h2>Pedidos</h2>
-    <p>Haz tus pedidos y te contactaremos para la entrega.</p>
-  </section>
+    <!-- COLECCIÓN AURA -->
+    <section id="aura" class="section" style="background:white">
+      <div class="container">
+        <h2>Colección Aura</h2>
+        <div class="grid grid-2">
+          <article class="card">
+            <img class="card-img" src="aura-1.jpg" alt="Colección Aura" />
+            <div class="card-body">
+              <h3>Pieza Aura 01</h3>
+              <p>Describe brevemente la pieza.</p>
+              <div class="actions">
+                <a class="btn btn-primary" data-product="Colección Aura – Pieza 01" href="#">Consultar por WhatsApp</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-img" src="aura-2.jpg" alt="Colección Aura" />
+            <div class="card-body">
+              <h3>Pieza Aura 02</h3>
+              <p>Describe brevemente la pieza.</p>
+              <div class="actions">
+                <a class="btn btn-primary" data-product="Colección Aura – Pieza 02" href="#">Consultar por WhatsApp</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p style="margin-top:10px;color:var(--muted);font-size:14px">Puedes duplicar estas tarjetas para añadir más piezas.</p>
+      </div>
+    </section>
 
-  <section id="politicas">
-    <h2>Políticas de Privacidad</h2>
-    <p>Respetamos tu privacidad y protegemos tus datos.</p>
-  </section>
+    <!-- CATÁLOGO GENERAL -->
+    <section id="catalogo" class="section">
+      <div class="container">
+        <h2>Catálogo</h2>
+        <p class="subtitle" style="margin-top:-2px">Sube aquí tus fotos de productos. Solo reemplaza las imágenes y los textos.</p>
+        <div class="grid grid-3" id="catalogoGrid">
+          <article class="card">
+            <img class="card-img" src="producto-1.jpg" alt="Nombre del producto" />
+            <div class="card-body">
+              <h3>Nombre del producto</h3>
+              <p>Descripción corta.</p>
+              <div class="actions">
+                <a class="btn btn-outline" data-product="Producto 1" href="#">Preguntar por WhatsApp</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-img" src="producto-2.jpg" alt="Nombre del producto" />
+            <div class="card-body">
+              <h3>Nombre del producto</h3>
+              <p>Descripción corta.</p>
+              <div class="actions">
+                <a class="btn btn-outline" data-product="Producto 2" href="#">Preguntar por WhatsApp</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img class="card-img" src="producto-3.jpg" alt="Nombre del producto" />
+            <div class="card-body">
+              <h3>Nombre del producto</h3>
+              <p>Descripción corta.</p>
+              <div class="actions">
+                <a class="btn btn-outline" data-product="Producto 3" href="#">Preguntar por WhatsApp</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>Escríbenos a nuestro WhatsApp para más información.</p>
-  </section>
-
-  <section id="faq">
-    <h2>Preguntas Frecuentes</h2>
-    <p>Encuentra aquí respuestas a tus dudas más comunes.</p>
-  </section>
-
-  <!-- Carrito -->
-  <div class="cart-panel" id="cart-panel">
-    <h2>Tu Carrito</h2>
-    <div id="cart-items"></div>
-    <p class="cart-total">Total: $<span id="cart-total">0.00</span></p>
-    <button onclick="checkout()">Confirmar Pedido</button>
-  </div>
-
-  <script>
-    let cart = [];
-
-    function showSection(id) {
-      document.querySelectorAll("section").forEach(s => s.classList.remove("active"));
-      document.getElementById(id).classList.add("active");
-    }
-
-    function toggleCart() {
-      document.getElementById("cart-panel").classList.toggle("active");
-    }
-
-    function addToCart(product, price) {
-      cart.push({ product, price });
-      updateCart();
-    }
-
-    function updateCart() {
-      const cartItems = document.getElementById("cart-items");
-      cartItems.innerHTML = "";
-      let total = 0;
-      cart.forEach(item => {
-        total += item.price;
-        cartItems.innerHTML += `<div class="cart-item">${item.product} - $${item.price.toFixed(2)}</div>`;
-      });
-      document.getElementById("cart-total").textContent = total.toFixed(2);
-      document.getElementById("cart-count").textContent = cart.length;
-    }
-
-    function checkout() {
-      let message = "Hola, quiero confirmar mi pedido:\n";
-      cart.forEach(item => {
-        message += `- ${item.product}: $${item.price.toFixed(2)}\n`;
-      });
-      message += `Total: $${document.getElementById("cart-total").textContent}`;
-      window.open(`https://wa.me/593995372875?text=${encodeURIComponent(message)}`, "_blank");
-    }
-  </script>
-</body>
-</html>
-
-
-
-
- 
-  
-  <title>Rayos de Luna | Asistente Rayito</title>
-  <style>
-    /* Estilos del botón flotante */
-    .chat-btn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #f48b9a;
-      color: white;
-      border: none;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 28px;
-      cursor: pointer;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      transition: all 0.3s ease;
-    }
-    .chat-btn:hover {
-      background-color: #e07282;
-    }
-
-    /* Ventana de chat */
-    .chat-window {
-      position: fixed;
-      bottom: 90px;
-      right: 20px;
-      width: 300px;
-      max-height: 400px;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
-      display: none;
-      flex-direction: column;
-      overflow: hidden;
-      font-family: Arial, sans-serif;
-    }
-    .chat-header {
-      background: #f48b9a;
-      color: white;
-      padding: 10px;
-      text-align: center;
-      font-weight: bold;
-    }
-    .chat-body {
-      flex: 1;
-      padding: 10px;
-      overflow-y: auto;
-      font-size: 14px;
-    }
-    .chat-footer {
-      display: flex;
-      border-top: 1px solid #ddd;
-    }
-    .chat-footer input {
-      flex: 1;
-      padding: 8px;
-      border: none;
-      outline: none;
-    }
-    .chat-footer button {
-      background: #f48b9a;
-      border: none;
-      color: white;
-      padding: 8px 12px;
-      cursor: pointer;
-    }
-  <!-- RAYITO: asistente flotante -->
+    <!-- ABOUT -->
+    <section class="section" style="background:white">
+      <div class="container about">
+        <div>
+          <h2>Nuestra esencia</h2>
+          <p class="subtitle">Rayos de Luna nace para celebrar la feminidad y el brillo interior. Trabajamos con materiales hipoalergénicos y acabados de alta calidad para acompañarte todos los días.</p>
+          <ul style="margin:0;padding-left:18px;color:var(--muted)">
+            <li>Combos exclusivos y colección Aura</li>
+            <li>Empaques listos para regalo</li>
+            <li>Atención por WhatsApp y envío a todo Ecuador</li>
+          </ul>
+        </div>
+        <div class="hero-card">
+          <img src="about.jpg" alt="Rayos de Luna – Taller" />
+        </div>
+      </div>
+    </section>
+  </main>
+<!-- RAYITO: asistente flotante -->
 <style>
   .rayito { position: fixed; bottom: 20px; right: 20px; }
   .rayito-toggle {
@@ -410,6 +340,7 @@
     botReply("horario");
   });
 </script>
+
 
   
 
