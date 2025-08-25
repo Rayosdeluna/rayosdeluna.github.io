@@ -364,12 +364,8 @@ function confirmarPedido(){
   window.open(`https://wa.me/593999999999?text=${encodeURIComponent(mensaje)}`,'_blank');
   carrito = [];
   actualizarCarrito();
-  toggleCarrito();
-}
+  toggleCarrito()
 </script>
-
-</body>
-</html>
 
 <!-- RAYITO: asistente flotante -->
 <style>
