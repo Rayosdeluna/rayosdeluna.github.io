@@ -98,7 +98,7 @@
           </div>
         </div>
         <div class="hero-card">
-          <img src="hero.jpg" alt="Joyas Rayos de Luna" />
+          <img src="<a href="https://ibb.co/vC6yGSm3"><img src="https://i.ibb.co/vC6yGSm3/logo-Rayos-de-luna.png" alt="logo-Rayos-de-luna" border="0"></a>" alt="Joyas Rayos de Luna" />
         </div>
       </div>
     </section>
