@@ -1,218 +1,365 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rayos de Luna | Joyas</title>
-<style>
-:root {
-  --pink:#f48b9a
-    background: #ffb6b9
-  --blush:#ffd6e4;
-  --ink:#1f2937;
-  --muted:#6b7280;
-  --radius:16px;
-}
-* {box-sizing:border-box;}
-body {margin:0;font-family:Poppins,sans-serif;background:var(--blush);color:var(--ink);}
-header {background:rgba(255,214,228,.95);position:sticky;top:0;z-index:50;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 2px 5px rgba(0,0,0,0.1);}
-header nav a {margin:0 10px;text-decoration:none;color:var(--ink);font-weight:600;cursor:pointer;}
-header nav a.active {color:white;background:var(--pink);padding:6px 12px;border-radius:12px;}
-#cart {background:var(--pink);color:white;padding:6px 12px;border-radius:12px;cursor:pointer;margin-left:10px;}
-.container {max-width:1100px;margin:0 auto;padding:20px;}
-section {display:none;padding:40px 0;}
-section.active {display:block;}
-h2 {color:var(--pink);}
-.grid {display:grid;gap:20px;}
-.grid-3 {grid-template-columns:repeat(3,1fr);}
-.card {background:white;padding:12px;border-radius:var(--radius);text-align:center;position:relative;}
-.card img {width:100%;border-radius:var(--radius);}
-.btn {padding:8px 14px;border:none;border-radius:12px;cursor:pointer;font-weight:600;}
-.btn-primary {background:var(--pink);color:white;}
-.btn-outline {background:white;color:var(--pink);border:1px solid var(--pink);}
-#cartWindow {position:absolute;top:50px;right:20px;width:300px;background:white;border-radius:16px;padding:12px;display:none;box-shadow:0 4px 12px rgba(0,0,0,0.2);z-index:70;}
-#cartWindow h3 {margin-top:0;color:var(--pink);}
-#cartItems {max-height:200px;overflow-y:auto;margin-bottom:10px;}
-.cart-item {display:flex;justify-content:space-between;margin-bottom:6px;font-size:14px;}
-.cart-total {font-weight:700;}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rayos de Luna | Joyas Exclusivas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #333;
+    }
+    header {
+      background: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #ffd6e4;
+    }
+    header img {
+      height: 60px;
+    }
+    nav {
+      display: flex;
+      gap: 15px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    nav a:hover, nav a.active {
+      background: #ffd6e4;
+    }
+    #carrito-btn {
+      background: #ffd6e4;
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    section {
+      display: none;
+      padding: 30px;
+    }
+    section.active {
+      display: block;
+    }
+    .rectangulo {
+      background: #fff;
+      border: 2px solid #ffd6e4;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 15px 0;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    }
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .producto {
+      background: #fff;
+      border: 1px solid #ffd6e4;
+      border-radius: 12px;
+      padding: 15px;
+      text-align: center;
+    }
+    .producto img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .producto button {
+      margin-top: 10px;
+      padding: 8px 12px;
+      background: #ffd6e4;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    #carrito {
+      position: fixed;
+      top: 80px;
+      right: 20px;
+      width: 300px;
+      background: #fff;
+      border: 2px solid #ffd6e4;
+      border-radius: 12px;
+      padding: 15px;
+      display: none;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+    #carrito h3 {
+      margin-top: 0;
+      color: #333;
+    }
+    #carrito ul {
+      list-style: none;
+      padding: 0;
+    }
+    #carrito li {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+    #carrito button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background: #ffd6e4;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    table, th, td {
+      border: 1px solid #ffd6e4;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+    .nosotros-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .nosotros-box {
+      background: #fff;
+      border: 2px solid #ffd6e4;
+      border-radius: 12px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    }
+    form input {
+      width: 100%;
+      padding: 8px;
+      margin: 8px 0;
+      border: 1px solid #ffd6e4;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
 
-<header>
-  <h1>Rayos de Luna</h1>
-  <nav>
-    <a class="active" data-tab="inicio">Inicio</a>
-    <a data-tab="nosotros">Nosotros</a>
-    <a data-tab="productos">Productos</a>
-    <a data-tab="pedidos">Pedidos</a>
-    <a data-tab="politicas">Políticas</a>
-    <a data-tab="contactos">Contactos</a>
-    <a data-tab="faq">FAQ</a>
-    <span id="cart">🛒  (<span id="cartCount">0</span>)</span>
-  </nav>
-</header>
+  <header>
+    <a href="https://ibb.co/vC6yGSm3"><img src="https://i.ibb.co/vC6yGSm3/logo-Rayos-de-luna.png" alt="logo-Rayos-de-luna" border="0"></a>
+    <nav>
+      <a href="#inicio" class="active">Inicio</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#productos">Productos</a>
+      <a href="#pedidos">Pedidos</a>
+      <a href="#politicas">Políticas</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#faq">Preguntas Frecuentes</a>
+    </nav>
+    <button id="carrito-btn">🛒 Carrito (<span id="carrito-count">0</span>)</button>
+  </header>
 
-<div class="container">
+  <!-- Inicio -->
+  <section id="inicio" class="active">
+    <div class="rectangulo">
+      <h2>Bienvenidos a Rayos de Luna</h2>
+      <p>Ofrecemos joyas únicas y exclusivas para destacar tu estilo.</p>
+      <p>Aquí cada detalle está pensado para ti. Encuentra productos únicos, de la mejor calidad y a precios que se ajustan a lo que buscas.</p>
+      <p>💖 Compra fácil, segura y sin complicaciones, desde la comodidad de tu casa.</p>
+      <p>👉 Solo elige tu favorito, haz tu pedido ¡y nosotros lo llevamos directo a tu puerta! 🚚✨</p>
+      <img src="https://i.ibb.co/HD1bwv3t/tu-imagen.jpg" alt="Diseños de Argollas" style="max-width:200px;border-radius:12px;margin-top:10px;">
+    </div>
+  </section>
 
-<!-- Inicio -->
-<section id="inicio" class="active">
-<h2>Bienvenidos a Rayos de Luna</h2>
-<p>Ofrecemos piezass únicas y exclusivas para destacar tu estilo.</p>
-<p>Aquí cada detalle está pensado para ti. Encuentra productos únicos, de la mejor calidad y a precios que se ajustan a lo que buscas.</p>
-<p>💖 Compra fácil, segura y sin complicaciones, desde la comodidad de tu casa.</p>
-<p>👉 Solo elige tu favorito, haz tu pedido ¡y nosotros lo llevamos directo a tu puerta! 🚚✨</p>
-</section>
+  <!-- Nosotros -->
+  <section id="nosotros">
+    <h2>Nosotros</h2>
+    <div class="nosotros-grid">
+      <div class="nosotros-box">
+        <h3>Quiénes Somos</h3>
+        <p>Somos una marca que busca resaltar la belleza y autenticidad a través de joyas exclusivas.</p>
+      </div>
+      <div class="nosotros-box">
+        <h3>Misión y Visión</h3>
+        <p><b>Misión:</b> Brindar productos de calidad que transmitan elegancia y personalidad.</p>
+        <p><b>Visión:</b> Ser reconocidos como líderes en joyería artesanal a nivel nacional.</p>
+      </div>
+      <div class="nosotros-box">
+        <h3>Valores</h3>
+        <p>Compromiso, pasión, exclusividad y confianza en cada pieza.</p>
+      </div>
+    </div>
+  </section>
 
-<!-- Nosotros -->
-<section id="nosotros">
-<h2>Nosotros</h2>
-<p>Quiénes somos?</p>
-<p>Somos Rayos de Luna , una marca ecuatoriana enfocada en piezas modernas, delicadas y accesibles. Entregamos a domicilio y confirmamos cada pedido por WhatsApp para tu tranquilidad.</p>
+  <!-- Productos -->
+  <section id="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="productos">
+      <div class="producto">
+        <a href="https://ibb.co/VcJX7Bbp"><img src="https://i.ibb.co/VcJX7Bbp/combo-estrella.png" alt="combo-estrella" border="0"></a>
+        <h3>Combo Estrella</h3>
+        <p>$10.00</p>
+        <button onclick="agregarAlCarrito('Combo Estrella', 10.00)">Añadir al carrito</button>
+      </div>
+      <div class="producto">
+        <a href="https://ibb.co/Qv0jhTrb"><img src="https://i.ibb.co/Qv0jhTrb/2.png" alt="2" border="0"></a>
+        <h3>Combo Doble Estrella</h3>
+        <p>$15.00</p>
+        <button onclick="agregarAlCarrito('Combo Doble Estrella', 15.00)">Añadir al carrito</button>
+      </div>
+      <div class="producto">
+        <a href="https://ibb.co/CFsk15H"><img src="https://i.ibb.co/CFsk15H/4.png" alt="4" border="0"></a>
+        <h3>Combo Estelar</h3>
+        <p>$13.00</p>
+        <button onclick="agregarAlCarrito('Combo Estelar', 13.00)">Añadir al carrito</button>
+      </div>
+      <div class="producto">
+        <a href="https://ibb.co/TxvNXqz0"><img src="https://i.ibb.co/TxvNXqz0/3.png" alt="3" border="0"></a>
+        <h3>Colección Aura</h3>
+        <p>$10.00</p>
+        <button onclick="agregarAlCarrito('Colección Aura', 10.00)">Añadir al carrito</button>
+      </div>
+      <div class="producto">
+        <a href="https://ibb.co/Mxg1B057"><img src="https://i.ibb.co/Mxg1B057/Logo-Servicios-Profesionales-Moderno-Ilustrado-Rosado.png" alt="Logo-Servicios-Profesionales-Moderno-Ilustrado-Rosado" border="0"></a>
+        <h3>Stella Bags</h3>
+        <p>$20.00</p>
+        <button onclick="agregarAlCarrito('Stella Bags', 20.00)">Añadir al carrito</button>
+      </div>
+    </div>
+  </section>
 
-<p>Misión
-<p>Diseñar empaques y joyas que reflejen el valor y la identidad de nuestras clientes, ofreciendo experiencias de compra claras y confiables.</p>
+  <!-- Pedidos -->
+  <section id="pedidos">
+    <h2>Seguimiento y Registro de Pedido</h2>
+    <form id="pedido-form">
+      <input type="text" id="nombre" placeholder="Nombre completo" required>
+      <input type="text" id="numPedido" placeholder="Número de pedido" required>
+      <input type="tel" id="telefono" placeholder="Número de teléfono" required>
+      <button type="submit">Registrar Pedido</button>
+    </form>
+    <table id="tablaPedidos">
+      <tr><th>Número de Pedido</th><th>Nombre</th><th>Teléfono</th><th>Fase</th></tr>
+    </table>
+  </section>
 
-<p>Visión
-<p>Ser la marca de referencia en bisutería de calidad en Ecuador, con servicio cercano y entregas puntuales.</p>
+  <!-- Políticas -->
+  <section id="politicas">
+    <div class="rectangulo">
+      <h2>Políticas de Privacidad</h2>
+      <p>Tu información personal será usada solo para procesar pedidos y comunicación. Nunca compartimos datos con terceros.</p>
+       <h2>Políticas de compra, pago y envío</h2>
+      <p>Confirmamos pedidos por WhatsApp o correo. Aceptamos pago por transferencia, depósito o efectivo (según disponibilidad). Los envíos se realizan a nivel nacional en 2 a 5 días laborables; el costo corre por cuenta del cliente.</p>
+      <h2>Políticas de combios y devoluciones</h2>
+      <p>Por higiene y exclusividad, no se aceptan devoluciones en argollas.
 
-<p>Valores</p>
-<p>Calidad y detalle</p>
-<p>Transparencia y confianza</p>
-<p>Respeto por tus datos</p>
-<p>Rayos de Luna celebra la feminidad y el brillo interior. Trabajamos con materiales hipoalergénicos y acabados de alta calidad.</p>
-</section>
+En el caso de carteras tejidas, solo se aceptan cambios por defectos de fabricación, reportados dentro de las 24 horas posteriores a la entrega. El producto debe estar en su empaque original y sin señales de uso. No aplican cambios por mal uso, desgaste, golpes, manchas o falta de cuidado.</p>
+    </div>
+  </section>
 
-<!-- Productos -->
+  <!-- Contacto -->
+  <section id="contacto">
+    <div class="rectangulo">
+      <h2>Contacto</h2>
+      <p>Tel: 0995372875</p>
+      <p>Email: rayo_de_luna_13@hotmail.com</p>
+         <p>Instagram: @rayo_de_luna_13</p>
+    </div>
+  </section>
 
-<section id="Combo estrella">
-<h2>Combo estrella</h2>
-<div class="grid grid-3" id="productGrid">
-  <div class="card">
-    <a href="https://ibb.co/VcJX7Bbp"><img src="https://i.ibb.co/VcJX7Bbp/combo-estrella.png" alt="combo-estrella" border="0"></a>
-    <h3>Producto 1</h3>
-    <p>$10.00</p>
-    <button class="btn btn-primary" data-name="Producto 1" data-price="10.00">Añadir al carrito</button>
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="rectangulo">
+      <h2>Preguntas Frecuentes</h2>
+       <p>¿Qué combos tienen disponibles? combo estrella, combo doble estrella, combo estelar y la colección Aura tambien contamos con Stella bags.</p>
+      <p>🚚 ¿Hacen envíos? Sí, realizamos envíos a nivel nacional en un plazo de 2 a 5 días laborables.</p>
+      <p>💳 ¿Qué métodos de pago aceptan? Transferencia y efectivo contra entrega.</p>
+       <p>¿Cómo puedo hacer un pedido? A través de nuestra página web, el carrito de compras o escribiéndonos por WhatsApp para confirmar tu orden..</p>
+       <p>¿Cómo puedo hacer un pedido? A través de nuestra página web, el carrito de compras o escribiéndonos por WhatsApp para confirmar tu orden..</p>
+    </div>
+  </section>
+
+  <!-- Carrito -->
+  <div id="carrito">
+    <h3>Carrito</h3>
+    <ul id="carrito-list"></ul>
+    <p>Total: $<span id="carrito-total">0</span></p>
+    <button onclick="confirmarPedido()">Confirmar en WhatsApp</button>
   </div>
-  <div class="card">
-    <img src="producto2.jpg" alt="Producto 2">
-    <h3>Producto 2</h3>
-    <p>$30</p>
-    <button class="btn btn-primary" data-name="Producto 2" data-price="30">Añadir al carrito</button>
-  </div>
-  <div class="card">
-    <img src="producto3.jpg" alt="Producto 3">
-    <h3>Producto 3</h3>
-    <p>$20</p>
-    <button class="btn btn-primary" data-name="Producto 3" data-price="20">Añadir al carrito</button>
-  </div>
-  <div class="card">
-    <img src="producto4.jpg" alt="Producto 4">
-    <h3>Producto 4</h3>
-    <p>$18</p>
-    <button class="btn btn-primary" data-name="Producto 4" data-price="18">Añadir al carrito</button>
-  </div>
-  <div class="card">
-    <img src="producto5.jpg" alt="Producto 5">
-    <h3>Producto 5</h3>
-    <p>$22</p>
-    <button class="btn btn-primary" data-name="Producto 5" data-price="22">Añadir al carrito</button>
-  </div>
-</div>
-</section>
-
-<!-- Pedidos -->
-<section id="pedidos">
-<h2>Pedidos</h2>
-<div id="cartItemsContainer">
-<p>Aquí aparecerán tus productos añadidos al carrito y el seguimiento del pedido.</p>
-<div id="cartItems"></div>
-<p class="cart-total">Total: $<span id="cartTotal">0</span></p>
-</div>
-</section>
-
-<!-- Políticas -->
-<section id="politicas">
-<h2>Políticas de privacidad</h2>
-<p>Aquí puedes colocar tus políticas.</p>
-</section>
-
-<!-- Contactos -->
-<section id="contactos">
-<h2>Contactos</h2>
-<p>WhatsApp: <a href="https://wa.me/1234567890">Enviar mensaje</a></p>
-<p>Email: contacto@rayosdeluna.com</p>
-</section>
-
-<!-- FAQ -->
-<section id="faq">
-<h2>Preguntas frecuentes</h2>
-<p>Aquí puedes colocar las preguntas frecuentes.</p>
-</section>
-
-</div>
-
-<!-- Carrito ventana -->
-<div id="cartWindow">
-<h3>Carrito</h3>
-<div id="cartItems"></div>
-<p class="cart-total">Total: $<span id="cartTotalWindow">0</span></p>
-</div>
 
 <script>
-// Cambiar de pestañas
-const tabs = document.querySelectorAll('header nav a');
-const sections = document.querySelectorAll('section');
-tabs.forEach(tab => {
-  tab.addEventListener('click', () => {
-    tabs.forEach(t=>t.classList.remove('active'));
-    tab.classList.add('active');
-    const target = tab.getAttribute('data-tab');
-    sections.forEach(sec => sec.id===target?sec.classList.add('active'):sec.classList.remove('active'));
+  let carrito = [];
+  let carritoAbierto = false;
+
+  function agregarAlCarrito(nombre, precio) {
+    carrito.push({ nombre, precio });
+    actualizarCarrito();
+  }
+
+  function actualizarCarrito() {
+    document.getElementById("carrito-count").textContent = carrito.length;
+    let lista = document.getElementById("carrito-list");
+    lista.innerHTML = "";
+    let total = 0;
+    carrito.forEach(item => {
+      let li = document.createElement("li");
+      li.textContent = `${item.nombre} - $${item.precio}`;
+      lista.appendChild(li);
+      total += item.precio;
+    });
+    document.getElementById("carrito-total").textContent = total;
+  }
+
+  document.getElementById("carrito-btn").addEventListener("click", () => {
+    carritoAbierto = !carritoAbierto;
+    document.getElementById("carrito").style.display = carritoAbierto ? "block" : "none";
   });
-});
 
-// Carrito
-let cart = [];
-const cartBtn = document.getElementById('cart');
-const cartWindow = document.getElementById('cartWindow');
-const cartItemsDiv = document.getElementById('cartItems');
-const cartCount = document.getElementById('cartCount');
-const cartTotalWindow = document.getElementById('cartTotalWindow');
+  function confirmarPedido() {
+    let mensaje = "Hola, mi pedido está por confirmar: ";
+    carrito.forEach(item => {
+      mensaje += `\n- ${item.nombre} $${item.precio}`;
+    });
+    mensaje += `\nTotal: $${document.getElementById("carrito-total").textContent}`;
+    let url = `https://wa.me/593999999999?text=${encodeURIComponent(mensaje)}`;
+    window.open(url, "_blank");
+  }
 
-document.querySelectorAll('.btn-primary').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    const name = btn.getAttribute('data-name');
-    const price = parseFloat(btn.getAttribute('data-price'));
-    const existing = cart.find(p=>p.name===name);
-    if(existing){existing.qty+=1;} else {cart.push({name,price,qty:1});}
-    updateCart();
+  function finalizarPedido() {
+    let nombre = document.getElementById("nombre").value;
+    let numeroPedido = document.getElementById("numeroPedido").value;
+    let telefono = document.getElementById("telefono").value;
+
+    let mensaje = `Nuevo pedido:\n👤 Nombre: ${nombre}\n📦 Número de pedido: ${numeroPedido}\n📞 Teléfono: ${telefono}`;
+    let url = `https://wa.me/593999999999?text=${encodeURIComponent(mensaje)}`;
+    window.open(url, "_blank");
+  }
+
+  // Navegación entre secciones
+  document.querySelectorAll("nav a").forEach(enlace => {
+    enlace.addEventListener("click", e => {
+      e.preventDefault();
+      document.querySelectorAll("section").forEach(s => s.classList.remove("active"));
+      document.querySelectorAll("nav a").forEach(a => a.classList.remove("active"));
+      let id = enlace.getAttribute("href");
+      document.querySelector(id).classList.add("active");
+      enlace.classList.add("active");
+    });
   });
-});
+</script>
 
-cartBtn.addEventListener('click',()=>{cartWindow.style.display = cartWindow.style.display==='block'?'none':'block';});
-
-function updateCart(){
-  cartItemsDiv.innerHTML='';
-  let total=0;
-  cart.forEach(item=>{
-    total+=item.price*item.qty;
-    cartItemsDiv.innerHTML+=`<div class="cart-item">${item.name} x ${item.qty} = $${item.price*item.qty}</div>`;
-  });
-  cartCount.textContent=cart.reduce((a,b)=>a+b.qty,0);
-  cartTotalWindow.textContent=total;
-  document.getElementById('cartTotal').textContent=total;
-}
 </body>
 </html>
-// Navegación activa
-document.querySelectorAll('.navlinks a').forEach(link=>{
-  link.addEventListener('click',e=>{
-    document.querySelectorAll('.navlinks a').forEach(l=>l.classList.remove('active'));
-    e.target.classList.add('active');
-  });
-});
-
-// Carrito
 
 <!-- RAYITO: asistente flotante -->
 <style>
