@@ -245,7 +245,7 @@
 </a>
 <!-- Botón para catálogo Stella Bags -->
 <a href="https://www.canva.com/design/DAGw2zJWdKY/gUHcSTCXBe0ttl_0_bYkag/view?utm_content=DAGw2zJWdKY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb9ec7dedc2" target="_blank">
-  <button style="background-color:#f48b9a; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;"
+  <button style="background-color:#f48b9a; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">
     Ver catálogo Stella Bags
   </button>
 </a>
@@ -299,73 +299,57 @@ En el caso de carteras tejidas, solo se aceptan cambios por defectos de fabricac
        <p>¿Cómo puedo hacer un pedido? A través de nuestra página web, el carrito de compras o escribiéndonos por WhatsApp para confirmar tu orden..</p>
     </div>
   </section>
-<!-- Carrito -->
-  <div id="carrito">
-    <h3>Carrito</h3>
-    <ul id="carrito-list"></ul>
-    <p>Total: $<span id="carrito-total">0</span></p>
-    <button onclick="confirmarPedido()">Confirmar en WhatsApp</button>
-  </div>
+<h2>Carrito</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Número de Pedido</th>
+      <th>Producto</th>
+      <th>Cantidad</th>
+      <th>Precio</th>
+      <th>Eliminar</th>
+    </tr>
+  </thead>
+  <tbody id="carrito"></tbody>
+</table>
+
+<h3>Total: $<span id="total">0.00</span></h3>
 
 <script>
-  let carrito = [];
-  let carritoAbierto = false;
+function generarNumeroPedido() {
+  return Math.floor(Math.random() * 9000) + 1000; // 1000 a 9999
+}
 
-  function agregarAlCarrito(nombre, precio) {
-    carrito.push({ nombre, precio });
-    actualizarCarrito();
-  }
+function agregarAlCarrito(producto, precio) {
+  let numeroPedido = generarNumeroPedido();
+  let carrito = document.getElementById('carrito');
+  
+  let fila = document.createElement('tr');
+  fila.innerHTML = `
+    <td>${numeroPedido}</td>
+    <td>${producto}</td>
+    <td>1</td>
+    <td>${precio}</td>
+    <td><button onclick="eliminarFila(this)">❌</button></td>
+  `;
+  
+  carrito.appendChild(fila);
+  actualizarTotal();
+}
 
-  function actualizarCarrito() {
-    document.getElementById("carrito-count").textContent = carrito.length;
-    let lista = document.getElementById("carrito-list");
-    lista.innerHTML = "";
-    let total = 0;
-    carrito.forEach(item => {
-      let li = document.createElement("li");
-      li.textContent = `${item.nombre} - $${item.precio}`;
-      lista.appendChild(li);
-      total += item.precio;
-    });
-    document.getElementById("carrito-total").textContent = total;
-  }
+function eliminarFila(boton) {
+  boton.parentElement.parentElement.remove();
+  actualizarTotal();
+}
 
-  document.getElementById("carrito-btn").addEventListener("click", () => {
-    carritoAbierto = !carritoAbierto;
-    document.getElementById("carrito").style.display = carritoAbierto ? "block" : "none";
+function actualizarTotal() {
+  let filas = document.querySelectorAll('#carrito tr');
+  let total = 0;
+  filas.forEach(fila => {
+    total += parseFloat(fila.cells[3].innerText);
   });
-
-  function confirmarPedido() {
-    let mensaje = "Hola, mi pedido está por confirmar: ";
-    carrito.forEach(item => {
-      mensaje += `\n- ${item.nombre} $${item.precio}`;
-    });
-    mensaje += `\nTotal: $${document.getElementById("carrito-total").textContent}`;
-    let url = `https://wa.me/0995372875?text=${encodeURIComponent(mensaje)}`;
-    window.open(url, "_blank");
-  }
-
-  function finalizarPedido() {
-    let nombre = document.getElementById("nombre").value;
-    let numeroPedido = document.getElementById("numeroPedido").value;
-    let telefono = document.getElementById("telefono").value;
-
-    let mensaje = `Nuevo pedido:\n👤 Nombre: ${nombre}\n📦 Número de pedido: ${numeroPedido}\n📞 Teléfono: ${telefono}`;
-    let url = `https://wa.me/0995372875text=${encodeURIComponent(mensaje)}`;
-    window.open(url, "_blank");
-  }
-
-  // Navegación entre secciones
-  document.querySelectorAll("nav a").forEach(enlace => {
-    enlace.addEventListener("click", e => {
-      e.preventDefault();
-      document.querySelectorAll("section").forEach(s => s.classList.remove("active"));
-      document.querySelectorAll("nav a").forEach(a => a.classList.remove("active"));
-      let id = enlace.getAttribute("href");
-      document.querySelector(id).classList.add("active");
-      enlace.classList.add("active");
-    });
-  });
+  document.getElementById('total').innerText = total.toFixed(2);
+}
 </script>
 
 </body>
