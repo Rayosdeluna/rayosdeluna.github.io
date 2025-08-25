@@ -245,7 +245,7 @@
 </a>
 <!-- Botón para catálogo Stella Bags -->
 <a href="https://www.canva.com/design/DAGw2zJWdKY/gUHcSTCXBe0ttl_0_bYkag/view?utm_content=DAGw2zJWdKY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb9ec7dedc2" target="_blank">
-  <button style="background-color:#f48b9a; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">
+  <button style="background-color:#f48b9a; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;"
     Ver catálogo Stella Bags
   </button>
 </a>
